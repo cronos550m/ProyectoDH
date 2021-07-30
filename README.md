@@ -11,7 +11,7 @@ En este sitio podras encontrar todo lo necesario para poder armar la mejor compu
 
 ## Autores ✒️
 
-* **Itati Martinez** - *Creador* - [itaa7martinez](https://github.com/itaa7martinez)
+* **Itati Martinez** - *Creadora* - [itaa7martinez](https://github.com/itaa7martinez)
 * **Luciano Pagnutti** - *Creador* - [lpagnutti](https://github.com/lpagnutti)
 * **Sergio Cordoba** - *Creador* - [cronos550m](https://github.com/cronos550m/)
 
