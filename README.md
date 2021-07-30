@@ -15,3 +15,11 @@ En este sitio podras encontrar todo lo necesario para poder armar la mejor compu
 * **Luciano Pagnutti** - *Creador* - [lpagnutti](https://github.com/lpagnutti)
 * **Sergio Cordoba** - *Creador* - [cronos550m](https://github.com/cronos550m/)
 
+## Referentes 📄
+
+* [Compra Gamer](https://compragamer.com/)
+* [Venex](https://www.venex.com.ar/)
+* [Gezatek](https://www.gezatek.com.ar/)
+* [Maximus](https://www.maximus.com.ar/)
+* [Maldito Hard](https://www.malditohard.com.ar/)
+* [Next Games](https://nextgames.com.ar/)
