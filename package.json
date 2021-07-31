@@ -1,0 +1,23 @@
+{
+  "name": "ProyectoDH",
+  "version": "1.0.0",
+  "description": "En este sitio podras encontrar todo lo necesario para poder armar la mejor computadora posible al mejor precio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cronos550m/ProyectoDH.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cronos550m/ProyectoDH/issues"
+  },
+  "homepage": "https://github.com/cronos550m/ProyectoDH#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
