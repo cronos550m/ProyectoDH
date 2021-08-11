@@ -30,3 +30,13 @@ El sitio esta pensado para que cualquier persona pueda comprar la mejor computad
 * [Maximus](https://www.maximus.com.ar/)
 * [Maldito Hard](https://www.malditohard.com.ar/)
 * [Next Games](https://nextgames.com.ar/)
+
+## Wireframes 📄
+
+* [PC](https://miro.com/app/board/o9J_l4Kmv40=/)
+* [Responsive](https://miro.com/app/board/o9J_l4JiMzA=/)
+
+## Wireframes 📄
+
+* [GITHUB](https://github.com/cronos550m/ProyectoDH)
+
