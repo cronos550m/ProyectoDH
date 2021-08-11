@@ -36,7 +36,7 @@ El sitio esta pensado para que cualquier persona pueda comprar la mejor computad
 * [PC](https://miro.com/app/board/o9J_l4Kmv40=/)
 * [Responsive](https://miro.com/app/board/o9J_l4JiMzA=/)
 
-## Wireframes 📄
+## Proyecto Git 📄
 
 * [GITHUB](https://github.com/cronos550m/ProyectoDH)
 
