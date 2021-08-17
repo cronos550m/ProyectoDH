@@ -41,7 +41,7 @@ body {
     padding: 20px;
     text-align: center;
     width: 60vw;
-    
+    max-width: 400px;
     transition: .5s ease all;
     transform: scale(0.7);
     opacity: 0;
@@ -75,8 +75,27 @@ body {
     transition: .3s ease all;
 }
 
-.popup form container-inputs {
+.popup form .login-email{
     opacity: 0;
+    max-width: 150px;
+    margin-bottom: 5px;
+}
+.popup form .login-pass{
+    opacity: 0;
+    max-width: 150px;
+    margin-bottom: 5px;
+}
+.popup form .login-remember{
+    opacity: 0;
+    margin-bottom: 5px;
+}
+.popup form .login-register{
+    opacity: 0;
+    margin-bottom: 5px;
+}
+.popup form .login-forget{
+    opacity: 0;
+    margin-bottom: 5px;
 }
 
 .popup form container-inputs input {
@@ -87,7 +106,7 @@ body {
     font-size: 18px;
     text-align: center;
     border: 1px solid #BBBBBB;
-    opacity: 0;
+   
 }
 
 .popup form .btn-submit {
@@ -102,6 +121,7 @@ body {
     cursor: pointer;
     transition: .3s ease all;
     border-radius: 3px;
+    margin-bottom: 5px;
     opacity: 0;
 }
 
@@ -113,8 +133,13 @@ body {
 
 .popup.active { opacity: 1; transform: scale(1); }
 .popup.active img{ animation: user .8s ease .5s forwards; }
-.popup.active .container-inputs{ animation: enterInputs 1s ease 1s forwards; }
-.popup.active .btn-submit{ animation: enterSubmit 1.2s ease 1.2s forwards; }
+.popup.active .login-email{ animation: loginEmail .8s ease .8s forwards; }
+.popup.active .login-pass{ animation: loginPass 1s ease 1s forwards; }
+.popup.active .login-remember{ animation: loginRemember 1.2s ease 1.2s forwards; }
+.popup.active .btn-submit{ animation: loginSubmit 1.4s ease 1.4s forwards; }
+.popup.active .login-register{ animation: loginRegister 1.6s ease 1.6s forwards; }
+.popup.active .login-forget{ animation: loginForget 1.8s ease 1.8s forwards; }
+
 
 @keyframes user {
     from {
@@ -127,7 +152,7 @@ body {
     }
 }
 
-@keyframes enterInputs {
+@keyframes loginEmail {
     form {
         opacity: 0;
     }
@@ -135,11 +160,47 @@ body {
         opacity: 1;
     }
 }
-@keyframes enterSubmit {
+@keyframes loginRemember {
     form {
         opacity: 0;
     }
     to {
+        opacity: 1;
+    }
+}
+@keyframes loginPass {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes loginSubmit {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes loginRegister {
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes loginForget {
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
         opacity: 1;
     }
 }
