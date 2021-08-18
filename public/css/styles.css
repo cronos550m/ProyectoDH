@@ -1,25 +1,28 @@
-* {
-    box-sizing: border-box;
-}
-
-html{
-    font-family: Geometos;
-    src: url('./fonts/geometos-rounded.ttf') format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-    background-color: black;
-    text-align: center;
-}
 @font-face {
     font-family: Geometos;
     src: url('./fonts/geometos-rounded.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
-
 }
+
+* {
+    box-sizing: border-box;
+    font-family: Geometos;
+    src: url('./fonts/geometos-rounded.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* html{
+    
+} */
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
 
 /* ------------ POP-UP--------------*/
 
@@ -63,13 +66,13 @@ body {
 
 }
 
-.popup form {
+/* .popup form {
     
-    /* display: flex;
+     display: flex;
     flex-direction: column;
-    align-items: center; */
+    align-items: center; 
 
-}
+} */
 
 
 .popup .btn-close-popup {
@@ -108,7 +111,8 @@ body {
     margin-bottom: 10px;
     font-family: Geometos;
     font-size: 9px;
-    display: flex;
+    position: relative;
+    left: -50px;
 }
 
 
@@ -161,11 +165,11 @@ body {
 .popup.active { opacity: 1; transform: scale(1); }
 .popup.active img{ animation: user .8s ease .5s forwards; }
 .popup.active .login-email{ animation: loginEmail .8s ease .8s forwards; }
-.popup.active .login-pass{ animation: loginPass 1s ease 1s forwards; }
-.popup.active .login-remember{ animation: loginRemember 1.2s ease 1.2s forwards; }
-.popup.active .btn-submit{ animation: loginSubmit 1.4s ease 1.4s forwards; }
-.popup.active .login-register{ animation: loginRegister 1.6s ease 1.6s forwards; }
-.popup.active .login-forget{ animation: loginForget 1.8s ease 1.8s forwards; }
+.popup.active .login-pass{ animation: loginPass .9s ease .9s forwards; }
+.popup.active .login-remember-father{ animation: loginRemember 1s ease 1s forwards; }
+.popup.active .btn-submit{ animation: loginSubmit 1.1s ease 1.1s forwards; }
+.popup.active .login-register{ animation: loginRegister 1.2s ease 1.2s forwards; }
+.popup.active .login-forget{ animation: loginForget 1.3s ease 1.3s forwards; }
 
 
 @keyframes user {
