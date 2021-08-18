@@ -2,12 +2,19 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: Geometos;
+    src: url('./fonts/geometos-rounded.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: black;
     text-align: center;
 }
 @font-face {
-    font-family: Geometos Rounded;
+    font-family: Geometos;
     src: url('./fonts/geometos-rounded.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
@@ -37,11 +44,11 @@ body {
     background: #f8f8f8;
     box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.3);
     border-radius: 3px;
-    font-family: Geometos Rounded;
+    font-family: Geometos;
     padding: 20px;
     text-align: center;
     width: 60vw;
-    max-width: 400px;
+    max-width: 300px;
     transition: .5s ease all;
     transform: scale(0.7);
     opacity: 0;
@@ -53,6 +60,14 @@ body {
     height: 40px;
     opacity: 0;
     margin-bottom: 10px;
+
+}
+
+.popup form {
+    
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 
 }
 
@@ -79,23 +94,30 @@ body {
     opacity: 0;
     max-width: 150px;
     margin-bottom: 5px;
+    font-size: 13px;
+
 }
 .popup form .login-pass{
     opacity: 0;
     max-width: 150px;
     margin-bottom: 5px;
+    font-size: 13px;
 }
 .popup form .login-remember{
     opacity: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-family: Geometos;
+    font-size: 9px;
 }
 .popup form .login-register{
     opacity: 0;
     margin-bottom: 5px;
+    font-size: 9px;
 }
 .popup form .login-forget{
     opacity: 0;
     margin-bottom: 5px;
+    font-size: 9px;
 }
 
 .popup form container-inputs input {
@@ -109,6 +131,7 @@ body {
    
 }
 
+
 .popup form .btn-submit {
     padding: 0 20px;
     height: 30px;
@@ -117,12 +140,13 @@ body {
     background: #461466;
     color: #f8f8f8;
     font-family: Geometos Rounded;
-    font-size: 14px;
+    font-size: 11px;
     cursor: pointer;
     transition: .3s ease all;
     border-radius: 3px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     opacity: 0;
+
 }
 
 .popup form .btn-submit:hover {
