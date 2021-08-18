@@ -25,12 +25,21 @@
                         <img src="./images/user-icon.png">
                         <form action="">
                             <div class="container-inputs">
-                                <input type="email" placeholder="E-mail" class="login-email">
                                 <div>
-                                <input type="text" placeholder="Contraseña" class="login-pass">
+                                    <input type="email" placeholder="E-mail" class="login-email">
                                 </div>
-                                <label for="remember" class="login-remember">Recordar</label>
-                                <input type="checkbox" name="remember" value="remember" class="login-remember">
+                                <div>
+                                    <input type="text" placeholder="Contraseña" class="login-pass">
+                                </div>
+                                <div class="login-remember-father">
+                                    <div >
+                                        <label class="login-remember-son1" for="remember">Recordar</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="remember" value="remember" class="login-remember-son2">
+                                    </div>
+                                </div>
+
                             </div>
                             <div>
                             <input type="submit" class="btn-submit" value="Ingresar">

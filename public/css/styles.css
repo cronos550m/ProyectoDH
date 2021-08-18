@@ -103,12 +103,15 @@ body {
     margin-bottom: 5px;
     font-size: 13px;
 }
-.popup form .login-remember{
+.popup form .login-remember-father {
     opacity: 0;
     margin-bottom: 10px;
     font-family: Geometos;
     font-size: 9px;
+    display: flex;
 }
+
+
 .popup form .login-register{
     opacity: 0;
     margin-bottom: 5px;
