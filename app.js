@@ -8,7 +8,7 @@ app.use( express.static(publicPath) );
 
 app.listen(port,()=>{
 
-console.log('Server is runnig in the Port : ${port}');
+console.log(`Server is runnig in the Port : ${port}`);
 })
 
 // app.listen(3000,()=>{
