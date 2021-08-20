@@ -248,7 +248,7 @@ estilo articulos destacados
     display: flex;
     width: 95vw;
     margin: 5px;
-    height: 45vh;
+    height: 50vh;
     background-color: gainsboro;
     padding: 2px 2px 2px 2px;
     border: 2px solid gray;
@@ -259,7 +259,7 @@ estilo articulos destacados
 }
 
 .product img {
-    height: 30vh;
+    height: 37vh;
 }
 
 .product h3{
