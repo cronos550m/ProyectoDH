@@ -1,6 +1,6 @@
 @font-face {
     font-family: Geometos;
-    src: url('./fonts/geometos-rounded.ttf') format("truetype");
+    src: url('/fonts/geometos-rounded.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -8,7 +8,7 @@
 * {
     box-sizing: border-box;
     font-family: Geometos;
-    src: url('./fonts/geometos-rounded.ttf') format("truetype");
+    src: url('/fonts/geometos-rounded.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -19,8 +19,10 @@
 } */
 
 body {
-    background-color: black;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 
@@ -234,4 +236,46 @@ body {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+
+
+/*
+estilo articulos destacados 
+*/
+
+.product{
+    display: flex;
+    width: 95vw;
+    margin: 5px;
+    height: 50vh;
+    background-color: gainsboro;
+    padding: 2px 2px 2px 2px;
+    border: 2px solid gray;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.product img {
+    height: 37vh;
+}
+
+.product h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.product p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.75em;
+}
+
+.product a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.75em;
 }
