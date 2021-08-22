@@ -16,11 +16,18 @@
 
     <header class="main-header">
         <nav>
+            <a href="#popupVideo" data-rel="popup" data-position-to="window"
+                class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Ingreso</a>
+            <div data-role="popup" id="popupVideo" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+                    <iframe src="/views/index.html" width="497" height="298" seamless=""></iframe>
+            </div>
             <ul>
+                <li><a href="#" class="btn-open-popup" id="btn-open-popup">Ingresoviejo</a></li>
                 <div class="overlay" id="overlay">
                     <div class="popup" id="popup">
                         <a href="#" id="btn-close-popup" class="btn-close-popup"><i class="fas fa-times"></i></a>
-                        <img src="./images/logos/user-icon.png">
+                        <iframe src="/views/index.html" width="497" height="298" seamless=""></iframe>
+                        <!-- <img src="./images/logos/user-icon.png">
                         <form action="">
                             <div class="container-inputs">
                                 <div>
@@ -43,7 +50,7 @@
                             <div class="login-forget">
                                 <a href="#">¿Olvidaste tu contraseña?</a>
                             </div>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
                 <li><a href="#" class="btn-open-popup register" id="btn-open-popup">Registro</a></li>
@@ -479,6 +486,7 @@
     </footer>
     <script src="./js/popup.js"></script>
     <script src="https://kit.fontawesome.com/f3260f2ce3.js" crossorigin="anonymous"></script>
+    <script src="./js/popupexample.js"></script>
 </body>
 
 </html>
