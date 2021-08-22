@@ -36,6 +36,8 @@ body {
     align-items: center;
     justify-content: center;
     visibility: hidden;
+    width: 100%;
+    z-index: 50;
 }
 
 .overlay.active {
@@ -71,9 +73,27 @@ body {
 }
 .user-logo-header {
     position: absolute;
-    margin-top: -45px;
-    color: #f730fa;
+    margin-top: 7px;
+    color: #000;
     left: 307px;
+    text-shadow: 0 0 3px #f730fa;
+    
+}
+
+.user-logo-header a {
+    text-decoration: none;
+    color: #000;
+    
+}
+.user-logo-header a:visited {
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.user-logo-header a:link {
+    text-decoration: none;
+    color: #000;
     
 }
 
@@ -85,17 +105,23 @@ body {
     text-shadow: 0 0 3px #f730fa;
 }
 
-.main-header {
+/* .navbar {
     background-color: #000;
-    border: 0px;
-    border-bottom: 2px solid;
-    border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(157, 4, 204));
-    border-image-slice: 1;
-    color: white;
-    margin: auto;
     position: fixed;
     top: 0;
+    width: 100%;
+    z-index: 40;
     height: 70px;
+} */
+
+.main-header {
+    background-color: #000;
+    border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(157, 4, 204));
+    border-image-slice: 1;
+    top: 31px;
+    height: 70px;
+    z-index: 40;
+    position: fixed;
     width: 100%;
 
 }
@@ -204,9 +230,6 @@ body {
 }
 
 
-iframe {
-    border: #cc0be5;
-    }
 
 
 /*------------ Cartel Neon ----------- */
@@ -230,6 +253,7 @@ iframe {
   justify-content: center;
   top: -23px;
   flex-direction: column;
+  z-index: 10;
 }
 .neon-text-prod-salient-prod {
     font-family: Geometos;
@@ -272,7 +296,7 @@ iframe {
 
 /*============= Hexagon effect ==============*/
 /*=============STEP 1 ==============*/
-/* 
+
 .body-container-box{
     margin: 0;
     padding: 0;
@@ -294,7 +318,7 @@ iframe {
     background: #000;
 }
 
-=============STEP 2 ==============
+/* =============STEP 2 ============== */
 
 #hex-grid .grid {
     position: absolute;
@@ -307,7 +331,7 @@ repeat;
     z-index: 0;
     background-size: 100px;
 
-} */
+} 
 
 /*----------- Animaciones -------*/
 
@@ -383,4 +407,45 @@ repeat;
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+
+
+/*
+estilo articulos destacados 
+*/
+.product{
+    display: flex;
+    width: 95vw;
+    margin: 5px;
+    height: 50vh;
+    background-color: gainsboro;
+    padding: 2px 2px 2px 2px;
+    border: 2px solid gray;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.product img {
+    height: 37vh;
+}
+
+.product h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.product p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.75em;
+}
+
+.product a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.75em;
 }
