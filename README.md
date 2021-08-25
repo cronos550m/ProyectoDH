@@ -51,3 +51,6 @@ Apuntando principalmente a personas en el ambito de la programación, empresas, 
 
 ## Tablero de actividades 📄
 * [TRELLO] (https://trello.com/invite/b/t2yLB3Qk/e97dd1b8ef349189b4537472f483093c/sprint-2)
+
+## Estrella de Mar
+[Sprint 1] (https://app.moqups.com/FGtCAsevQX/view/page/aa9df7b72)
