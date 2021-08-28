@@ -39,11 +39,11 @@ body{
 }
 
 .contenido-slider:nth-child(2){
-    background-color: violet;
+    background-color:#C576D6;
 }
 
 .contenido-slider:nth-child(3){
-    background-color: yellow;
+    background-color:#8A3ADE;
 }
 
 .contenido-slider img{
