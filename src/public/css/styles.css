@@ -14,6 +14,9 @@ body {
     background-color: #121212 !important;
 }
 
+main {
+    margin-top: 74px;
+}
 
 /* ------------ POP-UP--------------*/
 
@@ -170,18 +173,13 @@ body {
 /*------------ Cartel Neon ----------- */
 
 .neon-wrapper-prod-salient {
-    box-shadow: 0 0 0.1vw 0.4vw #ffd8f8, 
-        0 0 0.4vw 0.6vw #e578f3, 
-        0 0 4vw 0.4vw #cc0be5, 
-        inset 0 0 1.5vw 0.4vw #cc0be5, 
-        inset 0 0 0.4vw 0.2vw #e578f3, 
-        inset 0 0 0.5vw 0.2vw #ffd8f8;
-    border-radius: 5rem;
-    width: 151px;
     display: flex;
     margin: 15px;
-    flex-direction: column;
-    z-index: 10;
+    padding-bottom: 6px;
+    border-bottom: solid;
+    border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(157, 4, 204));
+    border-image-slice: 1;
+    border-bottom-width: thin;
 }
 .neon-text-prod-salient-prod {
     font-family: Geometos;
@@ -460,4 +458,18 @@ estilo articulos destacados
     .contenido-slider div {
         width: 80%;
     }
+}
+
+
+.slider {
+    padding-top: 30px;
+    width: 80%;
+    margin: 0;
+    margin: auto;
+}
+
+.slider img {
+    width: 90%;
+    margin: 0;
+    margin: auto;
 }

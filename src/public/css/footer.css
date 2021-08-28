@@ -9,7 +9,7 @@
     margin-top:0;
     margin-bottom:12px;
     font-weight:bold;
-    font-size:16px;
+    font-size:14px;
     text-align:center;
     color: #fff;
     font-weight: 200;
@@ -19,7 +19,7 @@
     padding:0;
     list-style:none;
     line-height:1.6;
-    font-size:14px;
+    font-size:12px;
     margin-bottom:0;
     text-align:center;
   }
@@ -54,6 +54,7 @@
   .footer-dark .item.text p {
     opacity:0.6;
     margin-bottom:0;
+    font-size: 12px;
   }
   
   .footer-dark .item.social {
@@ -68,7 +69,7 @@
   }
   
   .footer-dark .item.social > a {
-    font-size:20px;
+    font-size:18px;
     width:36px;
     height:36px;
     line-height:36px;
@@ -89,6 +90,6 @@
     text-align:center;
     padding-top:24px;
     opacity:0.3;
-    font-size:13px;
+    font-size:11px;
     margin-bottom:0;
   }

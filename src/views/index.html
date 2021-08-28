@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
 
 </head>
@@ -21,6 +25,20 @@
     <div id="header"></div> 
     
     <main>
+        <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+            <div><img src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg"
+                alt="Producto destacado"></div>
+            <div><img src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg"
+                alt="Producto destacado"></div>
+            <div><img src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg"
+                alt="Producto destacado"></div>
+            <div><img src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg"
+                alt="Producto destacado"></div>
+            <div><img src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg"
+                alt="Producto destacado"></div>
+            <div><img src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg"
+                alt="Producto destacado"></div>
+          </div>
     <!-- Inicio de carrousel -->
     <!-- <div class="contenedor">
         <div class="slider-contenedor">
@@ -79,12 +97,14 @@
             <h3>Titulo del producto</h3>
             <p>Descripción del producto</p>
         </article>
-    </section>
-    <section> -->
+    </section> -->
+
+
+    <section>
         <!-- Inicio de productos destacados -->
         <div class="neon-wrapper-prod-salient animate__animated animate__flash">
-            <div class="neon-text-prod-salient-prod"> Productos </div>
-            <div class="neon-text-prod-salient-dest"> Destacados </div>
+            <div class="neon-text-prod-salient-prod"> Productos Destacados</div>
+            <!-- <div class="neon-text-prod-salient-dest"> </div> -->
         </div>
         <article class="product">
             <img src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg"
@@ -125,6 +145,17 @@ $(function(){
   $("#footer").load("./footer"); 
 });
 </script> 
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+          dots:true,
+          arrows: true,
+          autoplay: true,
+          autoplaySpeedy: 2000
+      });
+    });
+  </script>
 </body>
 
 </html>
