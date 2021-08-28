@@ -13,7 +13,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "157px";
+        //   document.getElementById("main").style.marginRight = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+        //   document.getElementById("main").style.marginRight= "0";
+        }
+        </script>
 </head>
 <header class="header-container">
     <nav class="nav-bar">
@@ -34,10 +44,20 @@
             <i class="fas fa-shopping-cart"></i>
             <!-- <div>Cantidad</div> deberia mostar la cantidad de dinero que acumulo el cliente en el carrito -->
         </div>
-        <div class="header-menu">
-            <a href="#" class="hamburger-button">
-                <i class="fas fa-bars"></i>
-        </div>
+        <div class="header-menu" id="main">
+            <!-- <a href="#" class="hamburger-button"> -->
+                <button class="hamburger-button" onclick="openNav()"><i class="fas fa-bars"></i></button>  
+        </div> 
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        <!-- <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+          </div> -->
     </nav>
     <!-- <div class="overlay" id="overlay">
         <div class="popup" id="popup">
