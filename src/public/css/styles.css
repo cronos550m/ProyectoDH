@@ -70,15 +70,12 @@ body {
 /*-----------------header -------------*/
 
 .logo-header {    
-    position: absolute;
-    margin-top: -51px;
+    grid-area: logo;
 }
 .user-logo-header {
-    position: absolute;
-    margin-top: 7px;
     color: #000;
-    left: 307px;
     text-shadow: 0 0 3px #f730fa;
+    grid-area: login;
     
 }
 
@@ -100,11 +97,26 @@ body {
 }
 
 .kart-header {
-    position: absolute;
-    margin-top: -45px;
     color: #000;
-    left: 337px;
     text-shadow: 0 0 3px #f730fa;
+    grid-area: cart; 
+}
+
+.header-menu {
+    grid-area: menu;
+
+    background-color: #0a56a7;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 9px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 17px;
+    margin-left: 18px;
+    margin-top: 2px;
 }
 
 /* .navbar {
@@ -116,36 +128,49 @@ body {
     height: 70px;
 } */
 
-.main-header {
-    background-color: #000;
+.header-container {
     border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(157, 4, 204));
     border-image-slice: 1;
-    top: 31px;
-    height: 70px;
     z-index: 40;
     position: fixed;
-    width: 100%;
+   top: 0;
+}
 
+.nav-bar {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2fr 6fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "logo search login cart menu";
+    width: 100%;
+    height: 70px;
 }
 
 .header-search-container {
     width: 100%;
-    max-width: 400px;
-    height: auto;
-    position: relative;
+    grid-area: search;
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: buscador;
 }
-
+.header-search-button {
+    width: 18%;
+    position: relative;
+    border-radius: 50%;
+    border: none;
+    
+}
+.header-search-input {
+    width: 90%;
+}
 
 .register {
     display: none;
 }
 
-.carrousel {
-    margin-top: 70px;
+/* .carrousel {
+    margin-top: 70px; */
 }
 
 
@@ -475,6 +500,7 @@ estilo articulos destacados
 .contenedor{
     width: 100%;
     overflow: hidden;
+    margin-top: 200px;
 }
 
 .slider-contenedor{
@@ -484,7 +510,7 @@ estilo articulos destacados
 
 .contenido-slider{
     width: 100%;
-    height: 600px;
+    height: 300px;
     display: flex;
     justify-content: space-around;
     align-items: center;
