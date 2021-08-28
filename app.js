@@ -27,4 +27,9 @@ app.get('/register',(req,res)=>{
 })
 app.get('/login',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/login.html'))
+    // res.sendFile(path.join(__dirname,'./views/login.html'))
+})
+
+app.get('/slider',(req,res)=>{
+    res.sendFile(path.join(__dirname,'./views/slider.html'))
 })

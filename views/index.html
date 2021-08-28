@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/f3260f2ce3.js" crossorigin="anonymous"></script>
+    <link href="../css/normalize.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="../images/Logo-video-CM-mega-red.mp4" class="logo">
+        </div>
+        <div>Busqueda</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="btn-open-popup" id="btn-open-popup">Ingreso</a></li>
+                <div class="overlay" id="overlay">
+                    <div class="popup" id="popup">
+                        <a href="#" id="btn-close-popup" class="btn-close-popup"><i class="fas fa-times"></i></a>
+                        <img src="./images/user-icon.png">
+                        <form action="">
+                            <div class="container-inputs">
+                                <div>
+                                    <input type="email" placeholder="E-mail" class="login-email">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Contraseña" class="login-pass">
+                                </div>
+                                <div class="login-remember-father">
+                                <label class="login-remember-son1" for="remember">Recordar</label>
+                                <input type="checkbox" name="remember" value="remember" class="login-remember-son2">
+                                </div>
+
+                            </div>
+                            <div>
+                            <input type="submit" class="btn-submit" value="Ingresar">
+                        </div>
+                        <div class="login-register">
+                            No tienes clave? <a href="#">Registrate</a>
+                        </div>
+                        <div class="login-forget">
+                            <a href="#">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+                <li><a href="#">Registro</a></li>
+            </ul>
+        </nav>
+        <div>Carrito</div>
+        <div>Cantidad</div><!-- deberia mostar la cantidad de dinero que acumulo el cliente en el carrito -->
+    </header>
+    <div class="contenedor">
+        <div class="slider-contenedor">
+            <section class="contenido-slider">
+                <div>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia possimus, corporis blanditiis
+                        natus saepe officiis fugit facilis dignissimos rerum ipsam!</h2>
+                    <a href="#">Mas info</a>
+                </div>
+                <img src="\images\productos\notebook\Apple-Macbook-AirChipM1-8gb-Ssd256gb-vistafrente.jpg" alt="">
+            </section>
+            <section class="contenido-slider">
+                <div>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia possimus, corporis blanditiis
+                        natus saepe officiis fugit facilis dignissimos rerum ipsam!</h2>
+                    <a href="#">Mas info</a>
+                </div>
+                <img src="\images\productos\notebook\Apple-Macbook-AirChipM1-8gb-Ssd256gb-vistalateral.jpg" alt="">
+            </section>
+            <section class="contenido-slider">
+                <div>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia possimus, corporis blanditiis
+                        natus saepe officiis fugit facilis dignissimos rerum ipsam!</h2>
+                    <a href="#">Mas info</a>
+                </div>
+                <img src="\images\productos\notebook\Apple-Macbook-AirChipM1-8gb-Ssd256gb-vistasuperior.jpg" alt="">
+            </section>
+            <section class="contenido-slider"> <!-- se repite el primero para el codigo de js -->
+                <div>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia possimus, corporis blanditiis
+                        natus saepe officiis fugit facilis dignissimos rerum ipsam!</h2>
+                    <a href="#">Mas info</a>
+                </div>
+                <img src="\images\productos\notebook\Apple-Macbook-AirChipM1-8gb-Ssd256gb-vistafrente.jpg" alt="">
+            </section>
+        </div>
+    </div>
+    <script src="\js\slider.js"></script>
+    <!-- <section>  Inicio de carrousel 
+        <article>
+            <img src="/img/carr1.jpg" alt="Titulo del producto">
+            <h3>Titulo del producto</h3>
+            <p>Descripción del producto</p>
+        </article>
+        <article>
+            <img src="/img/carr2.jpg" alt="Titulo del producto">
+            <h3>Titulo del producto</h3>
+            <p>Descripción del producto</p>
+        </article>
+        <article>
+            <img src="/img/carr3.jpg" alt="Titulo del producto">
+            <h3>Titulo del producto</h3>
+            <p>Descripción del producto</p>
+        </article>
+        <article>
+            <img src="/img/carr4.jpg" alt="Titulo del producto">
+            <h3>Titulo del producto</h3>
+            <p>Descripción del producto</p>
+        </article>
+    </section> -->
+    <section> <!-- Inicio de productos destacados -->
+        <article class="product"> 
+            <img src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg" alt="Producto destacado">
+            <h3>Disco HDD</h3>
+            <p>Disco rigido HDD Seagate 4TB</p>
+            <a href="#">ver más</a>
+        </article>
+        <article class="product">
+            <img src="\images\productos\componentes-de-pc\gabinetes\Gc-530-Ratchet-Redragon-vista-lateral-izq.jpg" alt="Producto destacado">
+            <h3>Gabinete Gamer</h3>
+            <p>Gabinete Redragon GC-530 Ratchet</p>
+            <a href="#">ver más</a>
+        </article>
+        <article class="product">
+            <img src="\images\productos\componentes-de-pc\memorias\DDR4-16Gb-Corsair-valueselect-vista-caja.jpg" alt="Producto destacado">
+            <h3>Memoria DDR4</h3>
+            <p>Memoria DDR4 Corsair ValueSelect 16gb</p>
+            <a href="#">ver más</a>
+        </article>
+    </section>
+    <footer> <!-- Inicio del pie de pagina -->
+        <div><img src="/img/logofoot.jpg" alt="Logo de la empresa"></div>
+        <section>
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="#">Enlace 1</a></li>
+                <li><a href="#">Enlace 2</a></li>
+                <li><a href="#">Enlace 3</a></li>
+                <li><a href="#">Enlace 4</a></li>
+            </ul>
+        </section>
+        <section></section>
+            <h2>Marcas</h2>
+            <ul>
+                <li><a href="#">Enlace 1</a></li>
+                <li><a href="#">Enlace 2</a></li>
+                <li><a href="#">Enlace 3</a></li>
+                <li><a href="#">Enlace 4</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Lo mas buscado</h2>
+            <ul>
+                <li><a href="#">Enlace 1</a></li>
+                <li><a href="#">Enlace 2</a></li>
+                <li><a href="#">Enlace 3</a></li>
+                <li><a href="#">Enlace 4</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Contacto</h2>
+            <ul>
+                <li><a href="#">E-mail</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Trabaja con nosotros</h2>
+            <ul>
+                <li><a href="#">Postulate</a></li>
+            </ul>
+        </section>
+        <section>
+            <div>
+                Suscribite al newsletter
+            </div>
+        </section>
+        <section>
+            <div>
+                <a href="https://www.facebook.com">facebook</a>
+                <a href="https://www.instagram.com">instagram</a>
+                <a href="https://www.twitter.com">twitter</a>
+            </div>
+        </section>
+    </footer>
+    <script src="./js/popup.js"></script>
+</body>
+</html>
