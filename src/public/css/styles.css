@@ -180,6 +180,9 @@ main {
     border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(157, 4, 204));
     border-image-slice: 1;
     border-bottom-width: thin;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
 }
 .neon-text-prod-salient-prod {
     font-family: Geometos;
