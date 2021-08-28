@@ -38,7 +38,7 @@ app.get('/footer',(req,res)=>{
 app.get('/header',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/header.html'))
 })
-
-app.get('/slider',(req,res)=>{
-    res.sendFile(path.join(__dirname,'./views/slider.html'))
+app.get('/forget',(req,res)=>{
+    res.sendFile(path.join(__dirname,'./src/views/forget.html'))
 })
+
