@@ -1,14 +1,13 @@
-@font-face {
+/* @font-face {
     font-family: Geometos;
     src: url('/fonts/geometos-rounded.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 * {
     box-sizing: border-box;
-    font-family: Geometos;
-    src: url('/fonts/geometos-rounded.ttf') format("truetype");
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -19,7 +18,7 @@
 } */
 
 body {
-    background-color: #121212;
+    background-color: #121212 !important;
 }
 
 
@@ -75,7 +74,7 @@ body {
 }
 .user-logo-header {
     color: #000;
-    text-shadow: 0 0 3px #f730fa;
+    /* text-shadow: 0 0 3px #f730fa; */
     grid-area: login;
     display: flex;
     justify-content: center;
@@ -85,24 +84,24 @@ body {
 
 .user-logo-header a {
     text-decoration: none;
-    color: #000;
+    color: #444343;
     
 }
 .user-logo-header a:visited {
     text-decoration: none;
-    color: #000;
+    color:  #444343;
     
 }
 
 .user-logo-header a:link {
     text-decoration: none;
-    color: #000;
+    color: #444343;
     
 }
 
 .kart-header {
-    color: #000;
-    text-shadow: 0 0 3px #f730fa;
+    color: #444343;
+    /* text-shadow: 0 0 3px #f730fa; */
     grid-area: cart; 
     display: flex;
     justify-content: center;
@@ -111,7 +110,7 @@ body {
 
 .header-menu {
     grid-area: menu;
-    background-color: #0a56a7;
+    background-color: none;
     color: #ffffff;
     display: flex;
     max-width: 50px;
@@ -126,7 +125,12 @@ body {
     justify-content: center;
     margin: auto;
 }
-
+.header-menu a {
+    color: #444343;
+    /* text-shadow: 0 0 4px #f730fa; */
+    text-decoration: none;
+    background-color: transparent;
+}
 /* .navbar {
     background-color: #000;
     position: fixed;
@@ -141,19 +145,23 @@ body {
     border-image-slice: 1;
     z-index: 40;
     position: fixed;
-   top: 0;
-   width: 100%;
+    top: 0;
+    width: 100%;
+    height: 74px;
+    background-color: black;
+    border-bottom: solid;
+    border-bottom-width: thin;
 }
 
 .nav-bar {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 3fr 5fr 1fr 1fr 2fr;
+    grid-template-columns: 3fr 5fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas: "logo search login cart menu";
     width: 100%;
-    height: 70px;
+    height: 74px;
 }
 
 .header-search-container {
@@ -162,27 +170,35 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 4px;
 }
 
 .header-search-form {
     display: flex;
     justify-content: center;
-    margin-left: 18%;
     align-items: center;
+    background-color: #2e2c2c;
+    border: none;
+    border-radius: 4px;
 }
 .header-search-button {
     width: 18%;
     position: relative;
     border-radius: 50%;
     border: none;
-    right: 33px;
-    background-color: white;
+    right: 2px;
+    background-color: #2e2c2c;
     
 }
 .header-search-input {
     width: 90%;
+    background-color: #2e2c2c;
+    border: none;
+    line-height: 1.15;
+    font-size: 11px;
+    padding-left: 10px;
+    font-weight: 800;
 }
-
 .register {
     display: none;
 }
@@ -292,25 +308,18 @@ body {
 /*------------ Cartel Neon ----------- */
 
 .neon-wrapper-prod-salient {
-  box-shadow:
-  0 0 0.1vw  0.4vw #ffd8f8,   
-  0 0 0.4vw  0.6vw #e578f3, 
-  0 0   4vw  0.4vw #cc0be5,
-  inset 0 0 1.5vw  0.4vw #cc0be5,
-  inset 0 0 0.4vw  0.2vw #e578f3,
-  inset 0 0 0.5vw  0.2vw #ffd8f8;
-  border-radius: 5rem;
-  text-align: center;
-  width: 151px;
-  height: 51px;
-  left: 34px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  top: -23px;
-  flex-direction: column;
-  z-index: 10;
+    box-shadow: 0 0 0.1vw 0.4vw #ffd8f8, 
+        0 0 0.4vw 0.6vw #e578f3, 
+        0 0 4vw 0.4vw #cc0be5, 
+        inset 0 0 1.5vw 0.4vw #cc0be5, 
+        inset 0 0 0.4vw 0.2vw #e578f3, 
+        inset 0 0 0.5vw 0.2vw #ffd8f8;
+    border-radius: 5rem;
+    width: 151px;
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
+    z-index: 10;
 }
 .neon-text-prod-salient-prod {
     font-family: Geometos;
@@ -483,7 +492,7 @@ estilo articulos destacados
     align-items: center;
     flex-direction: column;
     border-radius: 8px;
-    margin-top: 28px;
+    margin-bottom: 20px;
 
 }
 
