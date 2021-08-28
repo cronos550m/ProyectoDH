@@ -19,8 +19,11 @@ console.log(`Server is runnig in the Port : ${port}`);
 app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/index.html'))
 })
-app.get('/products',(req,res)=>{
-    res.sendFile(path.join(__dirname,'./src/views/products.html'))
+app.get('/productdetail',(req,res)=>{
+    res.sendFile(path.join(__dirname,'./src/views/productdetail.html'))
+})
+app.get('/productcart',(req,res)=>{
+    res.sendFile(path.join(__dirname,'./src/views/productcart.html'))
 })
 app.get('/register',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/register.html'))
