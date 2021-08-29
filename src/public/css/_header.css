@@ -150,11 +150,27 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
+    right: -2px;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    border-left: 2px outset;
+    border-image: linear-gradient(to top, rgb(255, 182, 255), rgb(157, 4, 204));
+    border-image-slice: 1;
+}
+    
+
+
+  .sidebar-button:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 67%;
+    border-bottom: 1px solid ;
+    border-image: linear-gradient(to top, rgb(255, 182, 255), rgb(157, 4, 204));
+    border-image-slice: 1;
+      
   }
   
   .sidebar a {
