@@ -1,0 +1,54 @@
+.prod-detail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    margin: 5%;
+    background-color: #2e2c2c;
+    border-radius: 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "title stars"
+        "foto-prod descripcion"
+        "foto-prod descripcion"
+        "foto-prod descripcion"
+        "foto-prod descuentos"
+        "foto-prod cantidad-prod"
+        "imagenes-prod card-delivery";
+  }
+  
+  .prod-detail-title { grid-area: title; }
+  
+  .prod-detail-stars { grid-area: stars; }
+  
+  .prod-detail-descripcion { grid-area: descripcion; }
+  
+  .prod-detail-card-delivery { grid-area: card-delivery; }
+  
+  .prod-detail-cantidad-prod { grid-area: cantidad-prod; }
+  
+  .prod-detail-descuentos { grid-area: descuentos; }
+  
+  .prod-detail-imagenes-prod { grid-area: imagenes-prod; }
+  
+  .prod-detail-foto-prod { grid-area: foto-prod; }
+  
+  .go-back-prod-detail {
+    font-size: 25px;
+    padding-left: 10px;
+    color: rgb(195 75 231);
+  }
+
+  .prod-detail-titulo {
+    display: flex;
+    margin: 15px;
+    padding-bottom: 6px;
+    border-bottom: solid;
+    border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(157, 4, 204));
+    border-image-slice: 1;
+    border-bottom-width: thin;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+      
+  }

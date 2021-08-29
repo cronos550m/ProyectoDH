@@ -2,8 +2,12 @@
 @import url(_header.css);
 @import url(_footer.css);
 @import url(_register.css);
+@import url(_prod-detail.css);
 
-
+/* 
+    color purpura : rgb(195 75 231) 
+    color fondo prod: #2e2c2c
+*/
 
 * {
     box-sizing: border-box;
@@ -19,6 +23,8 @@ body {
 
 main {
     margin-top: 74px;
+    background: url(/images/717792.jpg);
+    overflow: hidden;
 }
 
 /* ------------ POP-UP--------------*/
@@ -161,7 +167,6 @@ main {
     border-left: 0;
 }
 .neon-text-prod-salient-prod {
-    font-family: Geometos;
     font-size: 1rem;
     color: #ffffff;
     top: 3px;
@@ -321,6 +326,13 @@ estilo articulos destacados
     font-size: 0.75em;
     color: rgb(157 4 204 / 98%);
 }
+
+
+.home-precio-dest {
+    font-size: 12px !important;
+    color: violet !important;
+}
+
 
 /* slider*/
 
