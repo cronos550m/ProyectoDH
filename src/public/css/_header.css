@@ -162,15 +162,15 @@
     
 
 
-  .sidebar-button:before {
+  .sidebar-button::after {
     content: "";
     position: absolute;
+    display: block;
     height: 1px;
     width: 67%;
-    border-bottom: 1px solid ;
-    border-image: linear-gradient(to top, rgb(255, 182, 255), rgb(157, 4, 204));
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to left, rgb(255, 182, 255), rgb(157, 4, 204));
     border-image-slice: 1;
-      
   }
   
   .sidebar a {

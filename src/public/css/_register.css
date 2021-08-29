@@ -231,6 +231,58 @@ body {
   transform: rotate(45deg);
 }
 
+.register-terms {
+    color: white;
+    font-size: 13px;
+}
+.term-cond {
+    display: flex;
+    height: 90% !important;
+}
+
+.overlay-term {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    width: 100%;
+    z-index: 50;
+}
+
+.overlay-term.active {
+    visibility: visible;
+}
+
+.popup-term {
+    background: #242424;
+    box-shadow: 0px 0px 0px rgb(255 255 255 / 30%);
+    border-radius: 8px;
+    font-family: Geometos;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    transition: .5s ease all;
+    transform: scale(0.7);
+    /* opacity: 0; */
+    height: 90%;
+}
+
+
+
+.popup-term .btn-close-popup-term {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #BBBBBB;
+    transition: .3s ease all;
+}
 
 /* FOOTER
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
