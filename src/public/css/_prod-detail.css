@@ -5,6 +5,7 @@
     gap: 0px 0px;
     margin: 5%;
     background-color: #2e2c2c;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
     border-radius: 5px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -18,12 +19,21 @@
     grid-area: prod-detail-buy-container;
     display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .prod-detail-buy-button {
+    height: 30px;
+    width: 64px;
     border: none;
-    border-radius: 4px;
-
+    background: #461466;
+    color: #f8f8f8;
+    font-size: 11px;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    transition: .3s ease all;
+    border-radius: 3px;
 
   }
   
@@ -112,8 +122,8 @@
   
   .prod-detail-imagenes-prod { 
       grid-area: imagenes-prod;
-    width: 73%;
-    margin-left: 26px;
+    /* width: 73%;
+    margin-left: 26px; */
 
     }
 
