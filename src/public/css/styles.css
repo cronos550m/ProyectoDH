@@ -290,7 +290,7 @@ estilo articulos destacados
     width: 90%;
     margin: auto;
     background-color: #2e2c2c;
-    padding: 18px 2px 2px 2px;
+    padding: 10px 2px 2px 2px;
     box-shadow: 0 0 0 1px rgb(196 8 202); 
     align-items: center;
     flex-direction: column;
@@ -305,22 +305,22 @@ estilo articulos destacados
 }
 
 .product h3{
-    margin-top: 13px;
-    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     font-size: 1.5em;
     color: #e3e3e3;
 }
 
 .product p{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     font-size: 0.75em;
     color: #898989;
 }
 
 .product a{
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     font-size: 0.75em;
     color: rgb(157 4 204 / 98%);
 }
