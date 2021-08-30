@@ -158,9 +158,9 @@
         margin: auto;
     } 
 
-.prod-detail-imagenes-prod-img {
+/* .prod-detail-imagenes-prod-img {
     
-}
+} */
   
   .prod-detail-foto-prod { 
     grid-area: foto-prod;
