@@ -1,47 +1,77 @@
 .prod-detail-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 0.5fr 0.5fr 1fr;
     gap: 0px 0px;
     margin: 5%;
     background-color: #2e2c2c;
     border-radius: 5px;
     grid-auto-flow: row;
     grid-template-areas:
-        "title stars"
-        "foto-prod descripcion"
-        "foto-prod descripcion"
-        "foto-prod descripcion"
-        "foto-prod descuentos"
-        "foto-prod cantidad-prod"
-        "imagenes-prod card-delivery";
+        "title title stars stars"
+        "foto-prod foto-prod descripcion descripcion"
+        "foto-prod foto-prod descuentos descuentos"
+        "foto-prod foto-prod cantidad-prod cantidad-prod"
+        "imagenes-prod imagenes-prod card-delivery card-delivery";
   }
   
   .prod-detail-title { grid-area: title; }
   
-  .prod-detail-stars { grid-area: stars; }
+  .prod-detail-stars 
+  {
+    grid-area: stars;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
   
-  .prod-detail-descripcion { grid-area: descripcion; }
+.prod-detail-descripcion { 
+    grid-area: descripcion;
+    margin-right: 14px;
+}
+
+}
   
-  .prod-detail-card-delivery { grid-area: card-delivery; }
+  .prod-detail-card-delivery { 
+      grid-area: card-delivery; 
+    }
   
-  .prod-detail-cantidad-prod { grid-area: cantidad-prod; }
+  .prod-detail-cantidad-prod { 
+      grid-area: cantidad-prod; 
+    }
   
-  .prod-detail-descuentos { grid-area: descuentos; }
+  .prod-detail-descuentos { 
+      grid-area: descuentos; 
+    }
   
-  .prod-detail-imagenes-prod { grid-area: imagenes-prod; }
+  .prod-detail-imagenes-prod { 
+      grid-area: imagenes-prod; 
+
+    }
+
+.prod-detail-imagenes-prod-img {
+    
+}
   
-  .prod-detail-foto-prod { grid-area: foto-prod; }
+  .prod-detail-foto-prod { 
+    grid-area: foto-prod;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.prod-detail-foto-prod-img {
+    width: 85%;
+}
   
   .go-back-prod-detail {
-    font-size: 25px;
-    padding-left: 10px;
-    color: rgb(195 75 231);
+    font-size: 20px !important;
+    padding-left: 10px !important;
   }
 
   .prod-detail-titulo {
     display: flex;
-    margin: 15px;
+    margin: 15px !important;
     padding-bottom: 6px;
     border-bottom: solid;
     border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(157, 4, 204));
@@ -50,5 +80,148 @@
     border-top: 0;
     border-right: 0;
     border-left: 0;
+    position: relative !important;
+    /* margin: auto !important; */
+    font-size: 12px !important;
+    width: 121px;
       
   }
+  .prod-detail-titulo-container {
+    margin-left: 0px;
+}
+
+
+
+
+/* ---------- 5 star ----------*/
+
+/* use reverse flexbox to take advantage of flex-direction: reverse */
+.star-rating {
+    display: flex;
+    align-items: center;
+    width: 85px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-right: 11px;
+    margin-top: 5px;
+    position: relative;
+  }
+  /* hide the inputs */
+  .star-rating input {
+    display: none;
+  }
+  /* set properties of all labels */
+  .star-rating > label {
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 21px;
+    transition: 0.2s ease;
+    color: rgb(195 75 231);
+    
+  }
+  /* give label a hover state */
+  .star-rating label:hover {
+    color: rgb(221 154 241);
+    transition: 0.2s ease;
+  }
+  .star-rating label:active::before {
+    transform:scale(1.1);
+  }
+  
+  /* set shape of unselected label */
+  .star-rating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+  }
+  /* set full star shape for checked label and those that come after it */
+  .star-rating input:checked ~ label:before {
+    content:'\2605';
+  }
+  
+  @-moz-document url-prefix() {
+    .star-rating input:checked ~ label:before {
+    font-size: 21px;
+    line-height: 21px;
+    }
+  }  
+
+
+  /* ------- End 5 star ------- */
+
+
+/* ------- comienza tab de detalle del producto -------*/
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #707070;
+    background-color: #707070;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-color: #a9a9ab;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 3px 4px;
+    transition: 0.3s;
+    font-size: 11px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 2px 3px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    background-color: #a9a9ab;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-color: #a9a9ab;
+    height: 146px;
+    overflow:scroll;
+
+  }
+  
+  .tabcontent h3 {
+    font-size: 10px;
+    
+  }
+  .tabcontent p {
+    font-size: 8px;
+     
+  }
+
+  /* Fade in tabs */
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  /* ------- Termina detalle del producto --------*/
+
+
+
+

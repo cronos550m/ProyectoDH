@@ -23,28 +23,75 @@
     <main>
     
         <div class="prod-detail-container">
+            
             <div class="prod-detail-title">
-                <a href="javascript: history.go(-1)" class="go-back-prod-detail"><</a>
-               <textarea class="prod-detail-titulo"> Producto </textarea>
-               <div class="neon-wrapper-prod-salient animate__animated animate__flash">
-                <div class="neon-text-prod-salient-prod"> Detalle de producto</div>
+                <a href="javascript: history.go(-1)" class="go-back-prod-detail neon-text-prod-salient-prod animate__animated animate__flash"><</a>
+                <div class="prod-detail-titulo-container animate__animated animate__flash">
+                <div class="prod-detail-titulo neon-text-prod-salient-prod "> Detalle de producto</div>
                 <!-- <div class="neon-text-prod-salient-dest"> </div> -->
             </div>
             </div>
-            <div class="prod-detail-stars"></div>
-            <div class="prod-detail-descripcion"></div>
+            <div class="prod-detail-stars">
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5"/>
+                    <label for="star-a"></label>
+              
+                    <input type="radio" name="stars" id="star-b" value="4"/>
+                    <label for="star-b"></label>
+                
+                    <input type="radio" name="stars" id="star-c" value="3"/>
+                    <label for="star-c"></label>
+                
+                    <input type="radio" name="stars" id="star-d" value="2"/>
+                    <label for="star-d"></label>
+                
+                    <input type="radio" name="stars" id="star-e" value="1"/>
+                    <label for="star-e"></label>
+              </div>
+            </div>
+            <div class="prod-detail-descripcion">
+                <div class="tab">
+                    <button class="tablinks" onclick="openDesc(event, 'Descripcion')" id="defaultOpen">Desc</button>
+                    <button class="tablinks" onclick="openDesc(event, 'Caracteristicas')">Carac</button>
+                </div>
+                  
+                  <div id="Descripcion" class="tabcontent">
+                    <h3>Descripcion:</h3>
+                    <p>La unidad de disco duro portátil Expansion Portable de Seagate ofrece una sencilla solución cuando necesita agregar almacenamiento instantáneo a su computadora y llevar archivos con usted.
+                        
+                        Almacenamiento de archivos mediante la técnica de arrastrar y soltar listo para usarse
+                        USB energizado
+                        Rápida transferencia de datos con la conectividad USB 3.0</p>
+                  </div>
+                  
+                  <div id="Caracteristicas" class="tabcontent">
+                    <h3>Caracteristicas:</h3>
+                    <p>Capacidad: 4 TB
+                        Factor de forma: 2.5 "
+                        Aplicaciones: PC, Notebook
+                        Tecnología de almacenamiento: HDD
+                        Interfaces: USB 3.0
+                    </p> 
+                  </div>
+            </div>
+
             <div class="prod-detail-card-delivery"></div>
             <div class="prod-detail-cantidad-prod"></div>
             <div class="prod-detail-descuentos"></div>
-            <div class="prod-detail-imagenes-prod"></div>
-            <div class="prod-detail-foto-prod"></div>
+            <div class="prod-detail-imagenes-prod">
+
+            </div>
+            <div class="prod-detail-foto-prod">
+                <img class="prod-detail-foto-prod-img" src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg"
+                alt="Producto destacado">
+            </div>
           </div>
 
     </main>
     <div id="footer"></div>
     
         
-        <script src="/js/register.js"></script>
+        <script src="/js/prod-detail.js"></script>
         <!-- <script src="https://kit.fontawesome.com/f3260f2ce3.js" crossorigin="anonymous"></script> -->
         <script
         src="https://code.jquery.com/jquery-3.3.1.js"

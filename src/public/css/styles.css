@@ -182,7 +182,6 @@ main {
     .1vw 0vw  10vw #cc0be5, .2vw 0vw  30vw #cc0be5, .4vw 0vw  10vw #cc0be5;
   }
 .neon-text-prod-salient-dest {
-    font-family: Geometos;
     font-size: 1rem;
     color: #ffffff;
     position: relative;
