@@ -122,6 +122,7 @@
   
   .prod-detail-imagenes-prod { 
       grid-area: imagenes-prod;
+      
     /* width: 73%;
     margin-left: 26px; */
 
