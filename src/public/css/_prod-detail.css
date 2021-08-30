@@ -1,7 +1,7 @@
 .prod-detail-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 0.5fr 0.5fr 1fr;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 0.5fr 0.5fr;
     gap: 0px 0px;
     margin: 5%;
     background-color: #2e2c2c;
@@ -10,10 +10,22 @@
     grid-template-areas:
         "title title stars stars"
         "foto-prod foto-prod descripcion descripcion"
-        "foto-prod foto-prod descuentos descuentos"
-        "foto-prod foto-prod cantidad-prod cantidad-prod"
-        "imagenes-prod imagenes-prod card-delivery card-delivery";
+        "imagenes-prod imagenes-prod cantidad-prod cantidad-prod"
+        "prod-detail-buy-container prod-detail-buy-container descuentos descuentos";
   }
+
+  .prod-detail-buy-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .prod-detail-buy-button {
+    border: none;
+    border-radius: 4px;
+
+
+  }
+  
   
   .prod-detail-title { grid-area: title; }
   
@@ -21,8 +33,10 @@
   {
     grid-area: stars;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 14px;
     }
   
 .prod-detail-descripcion { 
@@ -37,17 +51,100 @@
     }
   
   .prod-detail-cantidad-prod { 
-      grid-area: cantidad-prod; 
+    grid-area: cantidad-prod;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 0fr;
+    gap: 0px 0px;
+    color: white;
+    font-size: 10px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "prod-stock prod-stock-total"
+        "prod-cant prod-cant-total";
+    align-content: end;
+    }
+    .prod-cant-total {
+        width: 22px;
+        background-color: #707070;
+        border: none;
+        font-size: 9px;
+        border-radius: 3px;
+        margin-bottom: 4px;
+        color: white;
+        font-weight: 600;
     }
   
   .prod-detail-descuentos { 
-      grid-area: descuentos; 
+    grid-area: descuentos;
+    color: white;
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    margin-bottom: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "prod-precio prod-precio-total"
+        "prod-desc prod-desc-total"
+        "prod-envio prod-envio-total"
+        "prod-total prod-total-total";
+    }
+
+    .prod-desc-total {
+        color: #e578f3;
+    }
+
+    .prod-total {
+        border-top: solid;
+        border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(207, 66, 207));
+        border-image-slice: 1;
+        
+    }
+    .prod-total-total {
+        border-top: solid;
+        border-image: linear-gradient(to right, rgb(207, 66, 207), rgb(157, 4, 204));
+        border-image-slice: 1;
+        margin-right: 14px;
     }
   
   .prod-detail-imagenes-prod { 
-      grid-area: imagenes-prod; 
+      grid-area: imagenes-prod;
+    width: 73%;
+    margin-left: 26px;
 
     }
+
+    .prod-califica {
+        font-size: 10px;
+        color: #a9a9ab;
+    }
+
+    .prod-detail-slider {
+        width: 80%;
+        margin: 0;
+        margin: auto;
+    }
+    
+    .prod-detail-slider img {
+        width: 90%;
+        margin: 0;
+        margin: auto;
+    } 
+
+    .prod-detail-slider-nav {
+        padding-top: 30px;
+        width: 80%;
+        margin: 0;
+        margin: auto;
+    }
+    
+    .prod-detail-slider-nav img {
+        width: 90%;
+        margin: 0;
+        margin: auto;
+    } 
 
 .prod-detail-imagenes-prod-img {
     
@@ -55,13 +152,11 @@
   
   .prod-detail-foto-prod { 
     grid-area: foto-prod;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    margin-left: 7px;
 }
 
 .prod-detail-foto-prod-img {
-    width: 85%;
+    width: 100%;
 }
   
   .go-back-prod-detail {
@@ -102,8 +197,6 @@
     width: 85px;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    margin-right: 11px;
-    margin-top: 5px;
     position: relative;
   }
   /* hide the inputs */
@@ -172,18 +265,20 @@
     cursor: pointer;
     padding: 3px 4px;
     transition: 0.3s;
-    font-size: 11px;
+    font-size: 9px;
   }
   
   /* Change background color of buttons on hover */
   .tab button:hover {
-    background-color: #ddd;
+    background-color: rgb(204, 204, 204);
   }
   
   /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #ccc;
+    background-color: rgb(204, 204, 204);
   }
+
+  
   
   /* Style the tab content */
   .tabcontent {
@@ -195,17 +290,18 @@
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
     border-color: #a9a9ab;
-    height: 146px;
+    height: 139px;
     overflow:scroll;
 
   }
+
   
   .tabcontent h3 {
-    font-size: 10px;
+    font-size: 8px;
     
   }
   .tabcontent p {
-    font-size: 8px;
+    font-size: 7px;
      
   }
 
