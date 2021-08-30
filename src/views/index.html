@@ -25,13 +25,12 @@
     <div id="header"></div> 
     
     <main>
-        <!-- Inicio de carrousel -->
         <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
             <div><img src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg"
                 alt="Producto destacado"></div>
-            <div><img src="\images\banner\imagen.descuento.jpg.jpg"
+            <div><img src="..."
                 alt="Producto destacado"></div>
-            <div><img src="\images\banner\imagen.hot.sale.png.png"
+            <div><img src="\images\banner\banner-tamano-800.png"
                 alt="Producto destacado"></div>
             <div><img src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg"
                 alt="Producto destacado"></div>
@@ -40,7 +39,68 @@
             <div><img src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg"
                 alt="Producto destacado"></div>
           </div>
-        <section>
+    <!-- Inicio de carrousel -->
+    <!-- <div class="contenedor">
+        <div class="slider-contenedor">
+            <section class="contenido-slider">
+                <div>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia possimus, corporis blanditiis
+                        natus saepe officiis fugit facilis dignissimos rerum ipsam!</h2>
+                    <a href="#">Mas info</a>
+                </div>
+                <img src="\images\productos\notebook\Apple-Macbook-AirChipM1-8gb-Ssd256gb-vistafrente.jpg" alt="">
+            </section>
+            <section class="contenido-slider">
+                <div>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia possimus, corporis blanditiis
+                        natus saepe officiis fugit facilis dignissimos rerum ipsam!</h2>
+                    <a href="#">Mas info</a>
+                </div>
+                <img src="\images\productos\notebook\Apple-Macbook-AirChipM1-8gb-Ssd256gb-vistalateral.jpg" alt="">
+            </section>
+            <section class="contenido-slider">
+                <div>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia possimus, corporis blanditiis
+                        natus saepe officiis fugit facilis dignissimos rerum ipsam!</h2>
+                    <a href="#">Mas info</a>
+                </div>
+                <img src="\images\productos\notebook\Apple-Macbook-AirChipM1-8gb-Ssd256gb-vistasuperior.jpg" alt="">
+            </section>
+            <section class="contenido-slider">  se repite el primero para el codigo de js
+                <div>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia possimus, corporis blanditiis
+                        natus saepe officiis fugit facilis dignissimos rerum ipsam!</h2>
+                    <a href="#">Mas info</a>
+                </div>
+                <img src="\images\productos\notebook\Apple-Macbook-AirChipM1-8gb-Ssd256gb-vistafrente.jpg" alt="">
+            </section>
+        </div>
+    </div> -->
+    <!-- <section class="carrousel">
+        <article>
+            <img src="/img/carr1.jpg" alt="Titulo del producto">
+            <h3>Titulo del producto</h3>
+            <p>Descripción del producto</p>
+        </article>
+        <article>
+            <img src="/img/carr2.jpg" alt="Titulo del producto">
+            <h3>Titulo del producto</h3>
+            <p>Descripción del producto</p>
+        </article>
+        <article>
+            <img src="/img/carr3.jpg" alt="Titulo del producto">
+            <h3>Titulo del producto</h3>
+            <p>Descripción del producto</p>
+        </article>
+        <article>
+            <img src="/img/carr4.jpg" alt="Titulo del producto">
+            <h3>Titulo del producto</h3>
+            <p>Descripción del producto</p>
+        </article>
+    </section> -->
+
+
+    <section>
         <!-- Inicio de productos destacados -->
         <div class="neon-wrapper-prod-salient animate__animated animate__flash">
             <div class="neon-text-prod-salient-prod"> Productos Destacados</div>
@@ -51,24 +111,21 @@
                 alt="Producto destacado">
             <h3>Disco HDD</h3>
             <p>Disco rigido HDD Seagate 4TB</p>
-            <p class="home-precio-dest">$5000</p>
-            <a href="/productDetail">ver más</a>
+            <a href="#">ver más</a>
         </article>
         <article class="product">
             <img src="\images\productos\componentes-de-pc\gabinetes\Gc-530-Ratchet-Redragon-vista-lateral-izq.jpg"
                 alt="Producto destacado">
             <h3>Gabinete Gamer</h3>
             <p>Gabinete Redragon GC-530 Ratchet</p>
-            <p class="home-precio-dest">$4600</p>
-            <a href="/productDetail">ver más</a>
+            <a href="#">ver más</a>
         </article>
         <article class="product">
             <img src="\images\productos\componentes-de-pc\memorias\DDR4-16Gb-Corsair-valueselect-vista-caja.jpg"
                 alt="Producto destacado">
             <h3>Memoria DDR4</h3>
             <p>Memoria DDR4 Corsair ValueSelect 16gb</p>
-            <p class="home-precio-dest">$3000</p>
-            <a href="/productDetail">ver más</a>
+            <a href="#">ver más</a>
         </article>
     </section>
 </main>
@@ -100,14 +157,6 @@ $(function(){
       });
     });
   </script>
-   <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
-  <script type="text/javascript">
-    $('section').movemouse(function(e){
-        var moveX = (e.pageY * -1 / 15);
-        var moveY = (e.pageX * -1 / 15);
-        $(this).css('background-position', moveX + 'px ' + moveX + 'px')
-    })
-</script>
 </body>
 
 </html>
