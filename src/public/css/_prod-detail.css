@@ -15,6 +15,7 @@
   }
 
   .prod-detail-buy-container {
+    grid-area: prod-detail-buy-container;
     display: flex;
     width: 100%;
   }
