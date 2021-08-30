@@ -23,8 +23,9 @@
 
 <body>
     <div id="header"></div> 
-        <!-- Inicio de carrousel -->
+    
     <main>
+        <!-- Inicio de carrousel -->
         <div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
             <div><img src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg"
                 alt="Producto destacado"></div>
@@ -39,7 +40,7 @@
             <div><img src="\images\productos\componentes-de-pc\discos\HDD-Ext-Seagate-4tb-vista-costado.jpg"
                 alt="Producto destacado"></div>
           </div>
-    <section>
+        <section>
         <!-- Inicio de productos destacados -->
         <div class="neon-wrapper-prod-salient animate__animated animate__flash">
             <div class="neon-text-prod-salient-prod"> Productos Destacados</div>
@@ -50,28 +51,31 @@
                 alt="Producto destacado">
             <h3>Disco HDD</h3>
             <p>Disco rigido HDD Seagate 4TB</p>
-            <a href="#">ver más</a>
+            <p class="home-precio-dest">$5000</p>
+            <a href="/productDetail">ver más</a>
         </article>
         <article class="product">
             <img src="\images\productos\componentes-de-pc\gabinetes\Gc-530-Ratchet-Redragon-vista-lateral-izq.jpg"
                 alt="Producto destacado">
             <h3>Gabinete Gamer</h3>
             <p>Gabinete Redragon GC-530 Ratchet</p>
-            <a href="#">ver más</a>
+            <p class="home-precio-dest">$4600</p>
+            <a href="/productDetail">ver más</a>
         </article>
         <article class="product">
             <img src="\images\productos\componentes-de-pc\memorias\DDR4-16Gb-Corsair-valueselect-vista-caja.jpg"
                 alt="Producto destacado">
             <h3>Memoria DDR4</h3>
             <p>Memoria DDR4 Corsair ValueSelect 16gb</p>
-            <a href="#">ver más</a>
+            <p class="home-precio-dest">$3000</p>
+            <a href="/productDetail">ver más</a>
         </article>
     </section>
 </main>
 <div id="footer"></div>
 
     
-    <script src="/js/popup.js"></script>
+    <!-- <script src="/js/popup.js"></script> -->
     <!-- <script src="https://kit.fontawesome.com/f3260f2ce3.js" crossorigin="anonymous"></script> -->
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
@@ -96,6 +100,14 @@ $(function(){
       });
     });
   </script>
+   <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+  <script type="text/javascript">
+    $('section').movemouse(function(e){
+        var moveX = (e.pageY * -1 / 15);
+        var moveY = (e.pageX * -1 / 15);
+        $(this).css('background-position', moveX + 'px ' + moveX + 'px')
+    })
+</script>
 </body>
 
 </html>
