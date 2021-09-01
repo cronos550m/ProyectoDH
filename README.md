@@ -54,3 +54,7 @@ Apuntando principalmente a personas en el ambito de la programación, empresas, 
 
 ## Estrella de Mar📄✒️
 [Sprint 1] (https://app.moqups.com/FGtCAsevQX/view/page/aa9df7b72)
+
+
+## Feedback sprint 1
+- Si pudiera les colocara 11 
