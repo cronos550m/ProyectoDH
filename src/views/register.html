@@ -23,7 +23,7 @@
     <main>
 
         <form class="my-form">
-            <div class="container">
+            <div class="register-container">
               
               <div class="neon-register animate__animated animate__flash">
                 <div class="neon-text-prod-salient-prod"> Registrate</div>
@@ -304,8 +304,14 @@
                     </div>
                   </li> 
                 <li>
-                  <input type="checkbox" id="terms">
-                  <label for="terms" class="register-terms">Leí y estoy de acuerdo con los <a href="#" id="btn-open-popup-term">terminos y condiciones.</a></label>
+                  <!-- <input type="checkbox" id="terms" class="css-checkbox" >
+                  <label for="terms" class="css-checkbox dark-plus-purple"> -->
+
+                    <input type="checkbox" class="css-checkbox" id="terms"/>
+                    <label for="terms" name="remember" class="css-checkbox dark-plus-purple">
+
+                    Leí y estoy de acuerdo con los 
+                    <a href="#" id="btn-open-popup-term">terminos y condiciones.</a></label>
                   <div class="overlay-term" id="overlay-term">
                     <div class="popup-term" id="popup-term">
                         <a href="#" id="btn-close-popup-term" class="btn-close-popup-term"><i class="fas fa-times"></i></a>

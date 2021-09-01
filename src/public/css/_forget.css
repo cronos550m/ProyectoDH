@@ -1,0 +1,85 @@
+
+
+.forget-container {
+    background-color: #2e2c2c;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 70%;
+    color: white;
+    margin: 90px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.forget-form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "forget-pass-text"
+        "forget-text-ingresa"
+        "forget-email"
+        "forget-submit"
+        "forget-register";
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.forget-pass-text {
+    margin-bottom: -4px;
+}
+
+.forget-text-ingresa {
+    font-size: 11px;
+}
+
+.forget-email {
+    font-size: 10px;
+}
+
+.forget-input-email {
+    font-size: 10px;
+    background: black;
+    border: 0;
+    padding: 2px;
+    padding-left: 5px;
+    color: white;
+    border-radius: 3px;
+    font-weight: 900; 
+}
+.forget-submit{
+    
+    margin-top: 8px;
+}
+.btn-forget {
+    font-size: 10px;
+    height: 23px;
+    width: 59px;
+    border: none;
+    background: #461466;
+    color: #f8f8f8;
+    font-size: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    transition: .3s ease all;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forget-register {
+    font-size: 9px;
+    position: relative;
+    bottom: -33px;
+}
+
+.forget-register a {
+    color: #c34be7;
+}

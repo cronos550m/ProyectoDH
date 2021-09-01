@@ -1,10 +1,14 @@
 const express = require('express');
 const app = express();
+let rutasProductos = require('./routes/productos.js');
+let rutasMain = require('./routes/main.js');
 const path = require('path');
 const publicPath = path.resolve(__dirname, './src/public');
 const port = process.env.PORT || '5000';
 
 app.use( express.static(publicPath) );
+app.use('/productos', rutasProductos);
+app.use('/', rutasMain);
 
 app.listen(port,()=>{
 
