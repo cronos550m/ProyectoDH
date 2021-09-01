@@ -57,4 +57,4 @@ Apuntando principalmente a personas en el ambito de la programación, empresas, 
 
 
 ## Feedback sprint 1
-- Si pudiera les colocara 11 
+- Si pudiera les colocara 11 , excelente trabajo calificacion (10/10)
