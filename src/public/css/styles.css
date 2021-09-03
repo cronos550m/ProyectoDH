@@ -234,3 +234,382 @@ estilo articulos destacados
     margin: 0;
     margin: auto;
 } 
+
+
+@media (min-width: 769px) {
+
+    
+@import url(_header.css);
+@import url(_footer.css);
+@import url(_register.css);
+@import url(_prod-detail.css);
+@import url(_login.css);
+@import url(_popup.css);
+@import url(_forget.css);
+@import url(_productCart.css);
+
+/* 
+    color purpura : rgb(195 75 231) / #c34be7
+    color fondo prod: #2e2c2c
+    Gris claro : #a9a9ab
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    background-color: #121212 !important;
+}
+
+main {
+    margin-top: 49px;
+    background: url(/images/717792.jpg);
+    overflow: hidden;
+}
+
+/* ------------ POP-UP--------------*/
+
+
+
+
+/*------------ Cartel Neon ----------- */
+
+.neon-wrapper-prod-salient {
+    display: flex;
+    margin: 15px;
+    padding-bottom: 6px;
+    border-bottom: solid;
+    border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(157, 4, 204));
+    border-image-slice: 1;
+    border-bottom-width: thin;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+.neon-text-prod-salient-prod {
+    font-size: 1rem;
+    color: #ffffff;
+    top: 3px;
+    position: relative;
+    margin: auto;
+    text-shadow: 
+    .1vw 0vw .25vw #ffd8f8, .2vw 0vw .25vw #ffd8f8, .4vw 0vw .25vw #ffd8f8, 
+    .1vw 0vw   0vw #e578f3, .2vw 0vw   0vw #e578f3, .4vw 0vw   0vw #e578f3,
+    .1vw 0vw  .1vw #e578f3, .2vw 0vw  .1vw #e578f3, .4vw 0vw  .1vw #e578f3,
+    .1vw 0vw   2vw #e578f3, .2vw 0vw   2vw #e578f3, .4vw 0vw   2vw #e578f3, 
+    .1vw 0vw   1vw #cc0be5, .2vw 0vw   1vw #cc0be5, .4vw 0vw   5vw #cc0be5, 
+    .1vw 0vw   5vw #cc0be5, .2vw 0vw  20vw #cc0be5, .4vw 0vw  10vw #cc0be5,
+    .1vw 0vw  10vw #cc0be5, .2vw 0vw  30vw #cc0be5, .4vw 0vw  10vw #cc0be5;
+  }
+.neon-text-prod-salient-dest {
+    font-size: 1rem;
+    color: #ffffff;
+    position: relative;
+    bottom:3px;
+    margin: auto;
+    text-shadow: 
+    .1vw 0vw .25vw #ffd8f8, .2vw 0vw .25vw #ffd8f8, .4vw 0vw .25vw #ffd8f8, 
+    .1vw 0vw   0vw #e578f3, .2vw 0vw   0vw #e578f3, .4vw 0vw   0vw #e578f3,
+    .1vw 0vw  .1vw #e578f3, .2vw 0vw  .1vw #e578f3, .4vw 0vw  .1vw #e578f3,
+    .1vw 0vw   2vw #e578f3, .2vw 0vw   2vw #e578f3, .4vw 0vw   2vw #e578f3, 
+    .1vw 0vw   1vw #cc0be5, .2vw 0vw   1vw #cc0be5, .4vw 0vw   5vw #cc0be5, 
+    .1vw 0vw   5vw #cc0be5, .2vw 0vw  20vw #cc0be5, .4vw 0vw  10vw #cc0be5,
+    .1vw 0vw  10vw #cc0be5, .2vw 0vw  30vw #cc0be5, .4vw 0vw  10vw #cc0be5;
+  }
+
+  :root {
+    --animate-duration: 0.5s;
+    --animate-delay: 2s;
+    --animate-repeat: 1;
+  }
+
+/*----------- Animaciones -------*/
+
+.popup.active { opacity: 1; transform: scale(1); }
+.popup.active img{ animation: user .8s ease .5s forwards; }
+.popup.active .login-email{ animation: loginEmail .8s ease .8s forwards; }
+.popup.active .login-pass{ animation: loginPass .9s ease .9s forwards; }
+.popup.active .login-remember-father{ animation: loginRemember 1s ease 1s forwards; }
+.popup.active .btn-submit{ animation: loginSubmit 1.1s ease 1.1s forwards; }
+.popup.active .login-register{ animation: loginRegister 1.2s ease 1.2s forwards; }
+.popup.active .login-forget{ animation: loginForget 1.3s ease 1.3s forwards; }
+
+
+@keyframes user {
+    from {
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes loginEmail {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes loginRemember {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes loginPass {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes loginSubmit {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes loginRegister {
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes loginForget {
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+/*
+estilo articulos destacados 
+*/
+
+
+
+.product{
+    display: flex;
+    width: 41%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product1{
+    display: flex;
+    width: 41%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product2{
+    display: flex;
+    width: 41%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product3{
+    display: flex;
+    width: 41%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product4{
+    display: flex;
+    width: 41%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product5{
+    display: flex;
+    width: 41%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product6{
+    display: flex;
+    width: 41%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product7 {
+    display: flex;
+    width: 41%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+
+}
+
+.product img {
+    width: 100%;
+    padding: 0 15px; 
+}
+
+.product h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+
+.product p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
+.product a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+
+
+.home-precio-dest {
+    font-size: 25px !important;
+    color: violet !important;
+    /*text-shadow: 2px 2px 20px rgb(238, 130, 238);*/
+    text-shadow: 4px -2px 10px rgba(238, 130, 238, 1);
+}
+
+.index-container-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 50% 50% 50% 50%;
+        gap: 0% 0%;
+        grid-auto-flow: row;
+        justify-content: center;
+        grid-template-areas:
+          "neon-wrapper-prod-salient neon-wrapper-prod-salient"
+          "product product1"
+          "product2 product3"
+          "product4 product5"
+          "product6 product7";
+        width: 100%;
+        height: 100%;
+      }
+      
+      .neon-wrapper-prod-salient { grid-area: neon-wrapper-prod-salient; }
+      
+      .product { grid-area: product; }
+      
+      .product1 { grid-area: product1; }
+      
+      .product2 { grid-area: product2; }
+      
+      .product3 { grid-area: product3; }
+      
+      .product4 { grid-area: product4; }
+      
+      .product5 { grid-area: product5; }
+      
+      .product6 { grid-area: product6; }
+      
+      .product7 { grid-area: product7; }
+      
+
+}
+
+.slider {
+    padding-top: 59px;
+    width: 48%;
+    height: auto;
+    margin: 0;
+    margin: auto;
+}
+
+.slider img {
+    width: 90%;
+    margin: 0;
+    margin: auto;
+} 
+
+}
