@@ -174,15 +174,115 @@ estilo articulos destacados
 
 .product{
     display: flex;
-    width: 90%;
+    width: 84%;
     margin: auto;
     background-color: #2e2c2c;
     padding: 10px 2px 2px 2px;
-    box-shadow: 0 0 0 1px rgb(196 8 202); 
-    align-items: center;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
     flex-direction: column;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product1{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product2{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product3{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product4{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product5{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product6{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+.product7 {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    background-color: #2e2c2c;
+    padding: 10px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    flex-direction: column;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
 
 }
 
@@ -190,8 +290,82 @@ estilo articulos destacados
     width: 100%;
     padding: 0 15px; 
 }
+.product1 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product2 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product2 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product3 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product4 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product5 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product6 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product7 img {
+    width: 100%;
+    padding: 0 15px; 
+}
 
 .product h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product1 h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product2 h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product3 h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product4 h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product5 h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product6 h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product7 h3{
     margin-top: 2px;
     margin-bottom: 2px;
     font-size: 1.5em;
@@ -205,7 +379,98 @@ estilo articulos destacados
     color: #898989;
 }
 
+.product1 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
+.product2 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
+.product3 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
+.product4 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
+.product5 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
+.product6 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
+.product7 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
 .product a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product1 a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product2 a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product3 a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product4 a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product5 a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product6 a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product7 a{
     margin-top: 2px;
     margin-bottom: 2px;
     font-size: 0.75em;
@@ -236,17 +501,15 @@ estilo articulos destacados
 } 
 
 
+/************************************************/
+/************************************************/
+/****************Resolution 769******************/
+/************************************************/
+/************************************************/
+
+
 @media (min-width: 769px) {
 
-    
-@import url(_header.css);
-@import url(_footer.css);
-@import url(_register.css);
-@import url(_prod-detail.css);
-@import url(_login.css);
-@import url(_popup.css);
-@import url(_forget.css);
-@import url(_productCart.css);
 
 /* 
     color purpura : rgb(195 75 231) / #c34be7
@@ -261,6 +524,13 @@ estilo articulos destacados
     font-style: normal;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 body {
     background-color: #121212 !important;
@@ -271,11 +541,6 @@ main {
     background: url(/images/717792.jpg);
     overflow: hidden;
 }
-
-/* ------------ POP-UP--------------*/
-
-
-
 
 /*------------ Cartel Neon ----------- */
 
@@ -414,112 +679,120 @@ estilo articulos destacados
 
 .product{
     display: flex;
-    width: 41%;
+    width: 86%;
     margin: auto;
     background-color: #2e2c2c;
     padding: 10px 2px 2px 2px;
     box-shadow: 0 0 0 1px rgb(196 8 202);
     flex-direction: column;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-left: 35px;
+    /* margin-bottom: 20px; */
     flex-wrap: nowrap;
     align-content: space-around;
     align-items: center;
 }
 .product1{
     display: flex;
-    width: 41%;
+    width: 86%;
     margin: auto;
     background-color: #2e2c2c;
     padding: 10px 2px 2px 2px;
     box-shadow: 0 0 0 1px rgb(196 8 202);
     flex-direction: column;
     border-radius: 8px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     flex-wrap: nowrap;
+    margin-right: 35px;
     align-content: space-around;
     align-items: center;
 }
 .product2{
     display: flex;
-    width: 41%;
+    width: 86%;
     margin: auto;
     background-color: #2e2c2c;
     padding: 10px 2px 2px 2px;
     box-shadow: 0 0 0 1px rgb(196 8 202);
     flex-direction: column;
+    margin-left: 35px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     flex-wrap: nowrap;
     align-content: space-around;
     align-items: center;
 }
 .product3{
     display: flex;
-    width: 41%;
+    width: 86%;
     margin: auto;
     background-color: #2e2c2c;
     padding: 10px 2px 2px 2px;
     box-shadow: 0 0 0 1px rgb(196 8 202);
     flex-direction: column;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-right: 35px;
+    /* margin-bottom: 20px; */
     flex-wrap: nowrap;
     align-content: space-around;
     align-items: center;
 }
 .product4{
     display: flex;
-    width: 41%;
+    width: 86%;
     margin: auto;
     background-color: #2e2c2c;
     padding: 10px 2px 2px 2px;
     box-shadow: 0 0 0 1px rgb(196 8 202);
     flex-direction: column;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-left: 35px;
+    /* margin-bottom: 20px; */
     flex-wrap: nowrap;
     align-content: space-around;
     align-items: center;
 }
 .product5{
     display: flex;
-    width: 41%;
+    width: 86%;
     margin: auto;
     background-color: #2e2c2c;
     padding: 10px 2px 2px 2px;
     box-shadow: 0 0 0 1px rgb(196 8 202);
     flex-direction: column;
+    margin-right: 35px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     flex-wrap: nowrap;
     align-content: space-around;
     align-items: center;
 }
 .product6{
     display: flex;
-    width: 41%;
+    width: 86%;
     margin: auto;
     background-color: #2e2c2c;
     padding: 10px 2px 2px 2px;
     box-shadow: 0 0 0 1px rgb(196 8 202);
     flex-direction: column;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-left: 35px;
+    /* margin-bottom: 20px; */
     flex-wrap: nowrap;
     align-content: space-around;
     align-items: center;
 }
 .product7 {
     display: flex;
-    width: 41%;
+    width: 86%;
     margin: auto;
     background-color: #2e2c2c;
     padding: 10px 2px 2px 2px;
     box-shadow: 0 0 0 1px rgb(196 8 202);
     flex-direction: column;
+    margin-right: 35px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     flex-wrap: nowrap;
     align-content: space-around;
     align-items: center;
@@ -530,8 +803,82 @@ estilo articulos destacados
     width: 100%;
     padding: 0 15px; 
 }
+.product1 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product2 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product2 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product3 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product4 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product5 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product6 img {
+    width: 100%;
+    padding: 0 15px; 
+}
+.product7 img {
+    width: 100%;
+    padding: 0 15px; 
+}
 
 .product h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product1 h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product2 h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product3 h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product4 h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product5 h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product6 h3{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+    color: #e3e3e3;
+}
+.product7 h3{
     margin-top: 2px;
     margin-bottom: 2px;
     font-size: 1.5em;
@@ -545,7 +892,98 @@ estilo articulos destacados
     color: #898989;
 }
 
+.product1 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
+.product2 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
+.product3 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
+.product4 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
+.product5 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
+.product6 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
+.product7 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: #898989;
+}
+
 .product a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product1 a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product2 a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product3 a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product4 a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product5 a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product6 a{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 0.75em;
+    color: rgb(157 4 204 / 98%);
+}
+.product7 a{
     margin-top: 2px;
     margin-bottom: 2px;
     font-size: 0.75em;
@@ -561,20 +999,21 @@ estilo articulos destacados
 }
 
 .index-container-section {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 10% 50% 50% 50% 50%;
-        gap: 0% 0%;
-        grid-auto-flow: row;
-        justify-content: center;
-        grid-template-areas:
-          "neon-wrapper-prod-salient neon-wrapper-prod-salient"
-          "product product1"
-          "product2 product3"
-          "product4 product5"
-          "product6 product7";
-        width: 100%;
-        height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5% 26% 26% 26% 26%;
+    gap: 0% 0%;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-template-areas:
+        "neon-wrapper-prod-salient neon-wrapper-prod-salient"
+        "product product1"
+        "product2 product3"
+        "product4 product5"
+        "product6 product7";
+    margin-bottom: 200px;
+    width: 100%;
+    height: 100%;
       }
       
       .neon-wrapper-prod-salient { grid-area: neon-wrapper-prod-salient; }
@@ -596,7 +1035,7 @@ estilo articulos destacados
       .product7 { grid-area: product7; }
       
 
-}
+
 
 .slider {
     padding-top: 59px;
