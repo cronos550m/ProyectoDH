@@ -24,8 +24,7 @@
     box-shadow: 0 0 0 1px rgb(196 8 202);
     border-radius: 5px;
     text-align: center;
-    width: 60vw;
-    max-width: 250px;
+    width: 75%;
     transition: .5s ease all;
     transform: scale(0.7);
     opacity: 0;
@@ -84,7 +83,7 @@
     margin-bottom: 10px;
     font-size: 9px;
     position: relative;
-    left: -62px;
+    left: -90px;
     color: white;
 }
 

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compumundomegared - Tu compañero tecnologico</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="../css/normalize.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <section class="container-cart">
+            <div class="cart-container-title">
+                <div class="cart-back">
+                    <a href="javascript: history.go(-1)"
+                        class="go-back-prod-detail neon-text-prod-salient-prod animate__animated animate__flash">
+                        < </a>
+                </div>
+                <div class="cart-title animate__animated animate__flash">
+                    
+                        <div class="cart-detail-titulo neon-text-prod-salient-prod ">Carro de compras</div>
+                    
+                </div>
+            </div>
+            <div class="cart-product">
+                    <div class="cart-photo">
+                        <img src="\images\productos\disco\disco-duro.png"
+                alt="Producto destacado">
+                    </div>
+                    <div class="cart-title-prod">
+                        <p>Disco Duro portátil Expansion Portable de Seagate</p>
+                    </div>
+                    <div class="cart-cant">
+                        <input type="number" value="1">
+                    </div>
+                    <div class="cart-delete">
+                        <a href="#">Eliminar</a>
+                    </div>
+                    <div class="cart-detail">
+                        <a href="#">Detalle</a>
+                    </div>
+                    <div class="cart-total-prod">
+                        <p>$5000</p>
+                    </div>
+                  
+            </div>
+            <div class="cart-product1">
+                <div class="cart-photo">
+                    <img src="\images\productos\gabinete\gabinete-01.png"
+            alt="Producto destacado">
+                </div>
+                <div class="cart-title-prod">
+                    <p>Gabinete Redragon GC-530 Ratchet</p>
+                </div>
+                <div class="cart-cant">
+                    <input type="number" value="1">
+                </div>
+                <div class="cart-delete">
+                    <a href="#">Eliminar</a>
+                </div>
+                <div class="cart-detail">
+                    <a href="#">Detalle</a>
+                </div>
+                <div class="cart-total-prod">
+                    <p>$4600</p>
+                </div>
+            </div>
+            <div class="cart-product2">
+                <div class="cart-photo">
+                    <img src="\images\productos\memoria\memoria-vista-lateral.png"
+            alt="Producto destacado">
+                </div>
+                <div class="cart-title-prod">
+                    <p>Memoria DDR4 Corsair ValueSelect 16gb</p>
+                </div>
+                <div class="cart-cant">
+                    <input type="number" value="1">
+                </div>
+                <div class="cart-delete">
+                    <a href="#">Eliminar</a>
+                </div>
+                <div class="cart-detail">
+                    <a href="#">Detalle</a>
+                </div>
+                <div class="cart-total-prod">
+                    <p>$3000</p>
+                </div>
+            </div>
+            <div class="cart-envio">
+                <label>Envio a: Calle siempre viva 742, Springfield</label> <label class="cart-send-free"> Gratis</label>
+            </div>
+            <div class="cart-total">
+                <input type="submit" class="button-cart-buy" value="Continuar compra"> 
+                
+                <label class="cart-total-total">Total:</label><label class="cart-precio-total"> $12600</label>
+            
+            </div>
+            <!-- <div class="cart-button"></div> -->
+        </section>
+    </main>
+    <div id="footer"></div>
+
+
+    <!-- <script src="/js/popup.js"></script> -->
+    <!-- <script src="https://kit.fontawesome.com/f3260f2ce3.js" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("./header");
+            $("#footer").load("./footer");
+        });
+    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider').slick({
+                dots: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeedy: 2000
+            });
+        });
+    </script>
+</body>
+
+</html>

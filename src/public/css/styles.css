@@ -6,6 +6,7 @@
 @import url(_login.css);
 @import url(_popup.css);
 @import url(_forget.css);
+@import url(_productCart.css);
 
 /* 
     color purpura : rgb(195 75 231) / #c34be7
@@ -26,7 +27,7 @@ body {
 }
 
 main {
-    margin-top: 74px;
+    margin-top: 49px;
     background: url(/images/717792.jpg);
     overflow: hidden;
 }
