@@ -661,7 +661,8 @@
     .menupc ul a:hover {
         color: #b51be4;
         background: #c34be7;
-        box-shadow: 0 0 10px #c34be7, 0 0 40px #c34be7, 0 0 80px #c34be7,;
+        box-shadow: 0 0 10px #c34be7, 0 0 40px #c34be7, 0 0 80px #c34be7;
+        transition-delay: 1s;
     } 
     
     .header-menu {
