@@ -23,6 +23,9 @@ console.log(`Server is runnig in the Port : ${port}`);
 app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/index.html'))
 })
+app.get('/loader',(req,res)=>{
+    res.sendFile(path.join(__dirname,'./src/views/loader.html'))
+})
 app.get('/productdetail',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/productdetail.html'))
 })
