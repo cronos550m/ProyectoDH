@@ -26,11 +26,11 @@ app.get('/',(req,res)=>{
 app.get('/loader',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/loader.html'))
 })
-app.get('/productdetail',(req,res)=>{
-    res.sendFile(path.join(__dirname,'./src/views/productdetail.html'))
+app.get('/productDetail',(req,res)=>{
+    res.sendFile(path.join(__dirname,'./src/views/productDetail.html'))
 })
-app.get('/productcart',(req,res)=>{
-    res.sendFile(path.join(__dirname,'./src/views/productcart.html'))
+app.get('/productCart',(req,res)=>{
+    res.sendFile(path.join(__dirname,'./src/views/produtCart.html'))
 })
 app.get('/register',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/register.html'))
@@ -47,11 +47,4 @@ app.get('/header',(req,res)=>{
 })
 app.get('/forget',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/forget.html'))
-})
-app.get('/productdetail',(req,res)=>{
-    res.sendFile(path.join(__dirname,'./src/views/productDetail.html'))
-})
-
-app.get('/productCart',(req,res)=>{
-    res.sendFile(path.join(__dirname,'./src/views/productCart.html'))
 })
