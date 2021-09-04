@@ -30,7 +30,7 @@ app.get('/productDetail',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/productDetail.html'))
 })
 app.get('/productCart',(req,res)=>{
-    res.sendFile(path.join(__dirname,'./src/views/produtCart.html'))
+    res.sendFile(path.join(__dirname,'./src/views/productCart.html'))
 })
 app.get('/register',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/register.html'))
