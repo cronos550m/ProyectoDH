@@ -497,3 +497,290 @@
 
 
   
+  
+/************************************************/
+/************************************************/
+/****************Resolution 1200******************/
+/************************************************/
+/************************************************/
+
+
+@media (min-width: 1200px) {
+
+
+
+
+  .container-login {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-auto-columns: 1fr;
+    margin: auto;
+    margin-top: 221px;
+    width: 34%;
+    margin-bottom: 151px;
+    padding-bottom: 13px;
+    background-color: #2e2c2c;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    border-radius: 5px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas:
+        "container-login-logo"
+        "container-form";
+    justify-items: center;
+  }
+  
+  .container-login-logo {     
+    grid-area: container-login-logo;
+    margin: 14px;
+    margin-top: 39px;
+}
+.container-login-logo img {     
+width: 60px;
+height: 60px; 
+}
+  
+  .container-form { grid-area: container-form; }
+  
+
+
+.container-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.4fr 0.2fr 0.2fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  color: white;
+  font-size: 16px;
+  justify-content: center;
+  grid-template-areas:
+      "container-inputs"
+      "login-submit"
+      "login-register"
+      "login-forget";
+  justify-items: center;
+  align-items: center;
+  }
+  
+ 
+  
+  .login-submit { 
+      grid-area: login-submit; 
+      
+    }
+.button-login-submit {
+  height: 41px;
+  width: 102px;
+  border: none;
+  background: #461466;
+  color: #f8f8f8;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgb(196 8 202);
+  transition: .3s ease all;
+  border-radius: 3px;
+}
+
+.button-login-submit:hover {
+  height: 44px;
+    width: 106px;
+    border: none;
+    background: #893fb9;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 0 4px rgb(196 8 202 / 50%);
+    transition: .3s ease all;
+    border-radius: 3px;
+}
+
+
+  
+  .login-register { 
+    grid-area: login-register;
+    font-size: 13px;
+    margin-top: 24px;
+  }
+
+  .login-register a { 
+    color: rgb(195 75 231);
+  }
+   
+  
+  .login-forget { 
+    grid-area: login-forget;
+    font-size: 13px;
+   }
+
+   .login-forget a { 
+    color: rgb(195 75 231);
+  }
+  
+
+
+
+
+
+.container-inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.1fr 1.1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-template-areas:
+        "login-container-email"
+        "login-container-pass"
+        "login-remember-father";
+  }
+  
+  .login-container-pass { 
+      grid-area: login-container-pass; 
+
+    }
+    .login-container-pass input, select, textarea{ 
+      background: black;
+      border: 0;
+      padding: 5px;
+      padding-left: 13px;
+      width: 246px;
+      margin: 5px;
+      color: white;
+      border-radius: 3px;
+      font-weight: 900;
+      color: white;
+        
+      }
+
+      .login-container-email { grid-area: login-container-email; }
+
+      .login-container-email input, select, textarea{ 
+        background: black;
+        border: 0;
+        padding: 5px;
+        padding-left: 13px;
+        width: 246px;
+        margin: 5px;
+        color: white;
+        border-radius: 3px;
+        font-weight: 900;
+        color: white;
+      }
+  
+
+  .login-remember-father { 
+    grid-area: login-remember-father;
+    margin-left: 4px; 
+  }
+
+  /************* Checkbox Login ***************/
+
+ 
+  /* .css-label{
+	background-image:url(http://csscheckbox.com/checkboxes/dark-check-green.png);
+} */
+
+  label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+    
+    input[type=checkbox].css-checkbox {
+          position: absolute; 
+        overflow: hidden; 
+        clip: rect(0 0 0 0); 
+        height:1px; 
+        width:1px; 
+        margin:-1px; 
+        padding:0;
+        border:0;
+    }
+    
+    input[type=checkbox].css-checkbox + label.css-checkbox {
+      padding-left: 20px;
+      height: 15px;
+      display: inline-block;
+      line-height: 15px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      font-size: 13px;
+      vertical-align: middle;
+      cursor: pointer;
+      color: white;
+    }
+    
+    input[type=checkbox].css-checkbox:checked + label.css-checkbox {
+        background-position: 0 -15px;
+    }
+
+    .dark-plus-purple{background-image:url(/images/forpage/dark-plus-purple2.png);}
+  
+
+
+    input[type=checkbox].css-checkbox.med + label.css-checkbox.med {
+        padding-left:22px;
+        height:17px; 
+        display:inline-block;
+        line-height:17px;
+        background-repeat:no-repeat;
+        background-position: 0 0;
+        font-size:15px;
+        vertical-align:middle;
+        cursor:pointer;
+    }
+    
+    input[type=checkbox].css-checkbox.med:checked + label.css-checkbox.med {
+    
+        background-position: 0 -17px;
+    }
+    input[type=checkbox].css-checkbox.sme + label.css-checkbox.sme {
+        padding-left:22px;
+        height:16px; 
+        display:inline-block;
+        line-height:16px;
+        background-repeat:no-repeat;
+        background-position: 0 0;
+        font-size:15px;
+        vertical-align:middle;
+        cursor:pointer;
+    }
+    
+    input[type=checkbox].css-checkbox.sme:checked + label.css-checkbox.sme{
+    
+        background-position: 0 -16px;
+    }
+    input[type=checkbox].css-checkbox.lrg + label.css-checkbox.lrg {
+        padding-left:22px;
+        height:20px; 
+        display:inline-block;
+        line-height:20px;
+        background-repeat:no-repeat;
+        background-position: 0 0;
+        font-size:15px;
+        vertical-align:middle;
+        cursor:pointer;
+    }
+    
+    input[type=checkbox].css-checkbox.lrg:checked + label.css-checkbox.lrg{
+    
+        background-position: 0 -20px;
+    }
+
+  /*************** end checkbox login ************/
+
+
+}
+
+
+
+
+  
