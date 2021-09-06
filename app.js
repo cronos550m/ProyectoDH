@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 let mainRoutes = require('./routes/main.routes');
+let productRoutes = require('./routes/product.routes');
 const path = require('path');
 const publicPath = path.resolve(__dirname, './src/public');
 const port = process.env.PORT || '5000';
@@ -12,6 +13,7 @@ app.listen(port, () => {
 })
 
 app.use('/', mainRoutes);
+app.use('/',productRoutes);
 
 
 

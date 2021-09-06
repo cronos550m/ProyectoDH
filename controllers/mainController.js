@@ -1,4 +1,4 @@
-/* este controlador se encarga de relacionar los eventos con las vistas*/
+/* este controlador se encarga de relacionar los eventos del main con las vistas*/
 const path = require('path'); // modulo para relacionar las vistas
 
 const controller={
@@ -7,15 +7,6 @@ const controller={
     },
     loader:(req,res)=>{
         res.sendFile(path.join(__dirname,'../src/views/loader.html')) //devuelve la vista del loader en este evento
-    },
-    productDetail:(req,res)=>{
-        res.sendFile(path.join(__dirname,'../src/views/productDetail.html')) //devuelve la vista deldetalle de producto en este evento
-    },
-    productDetail:(req,res)=>{ //pasar al controlador de productos por ahora aca para verificar que funcionen todas las rutas
-        res.sendFile(path.join(__dirname,'../src/views/productDetail.html')) //devuelve la vista del detalle de producto en este evento
-    },
-    productCart:(req,res)=>{ //pasar al controlador de productos por ahora aca para verificar que funcionen todas las rutas
-        res.sendFile(path.join(__dirname,'../src/views/productCart.html')) //devuelve la vista del carro de compras en este evento
     },
     register:(req,res)=>{ 
         res.sendFile(path.join(__dirname,'../src/views/register.html')) //devuelve la vista del registro en este evento
