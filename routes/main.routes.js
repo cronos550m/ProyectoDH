@@ -13,6 +13,9 @@ router.get('/productDetail', mainController.productDetail);// al acceder al deta
 router.get('/productCart', mainController.productDetail);// al acceder al carro de compras llamo al controlador en el metodo productCart
 // ^═pasar al routes de producto
 router.get('/register', mainController.register);// al acceder al registro llamo al controlador en el metodo register
-router.get('/login', mainController.register);// al acceder al login del sistema  llamo al controlador en el metodo login
+router.get('/login', mainController.login);// al acceder al login del sistema  llamo al controlador en el metodo login
+router.get('/footer', mainController.footer);// al acceder al footer  llamo al controlador en el metodo footer
+router.get('/header', mainController.header);// al acceder al header  llamo al controlador en el metodo header
+router.get('/forget', mainController.forget);// al acceder al forget  llamo al controlador en el metodo forget
 
 module.exports = router;

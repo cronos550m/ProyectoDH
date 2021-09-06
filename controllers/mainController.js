@@ -22,7 +22,16 @@ const controller={
     },
     login:(req,res)=>{ 
         res.sendFile(path.join(__dirname,'../src/views/login.html')) //devuelve la vista del login en este evento
-    }
+    },
+    footer:(req,res)=>{ 
+        res.sendFile(path.join(__dirname,'../src/views/footer.html')) //devuelve la vista del footer en este evento
+    },
+    header:(req,res)=>{ 
+        res.sendFile(path.join(__dirname,'../src/views/header.html')) //devuelve la vista del header en este evento
+    },
+    forget:(req,res)=>{ 
+        res.sendFile(path.join(__dirname,'../src/views/forget.html'))
+    },
 
 };
 
