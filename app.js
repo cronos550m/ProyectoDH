@@ -57,4 +57,8 @@ app.get('/header',(req,res)=>{
 app.get('/forget',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/forget.html'))
 })
+<<<<<<< HEAD
 */
+=======
+*/
+>>>>>>> origin/nuevarama1
