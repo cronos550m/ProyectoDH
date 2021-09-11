@@ -26,46 +26,79 @@
     
     <main>
     
-        <div class="prod-new-total-container">
+        <section class="prod-new-total-container">
             
-            <div class="prod-detail-title">
-                <a href="javascript: history.go(-1)" class="go-back-prod-detail neon-text-prod-salient-prod animate__animated animate__flash"><</a>
-                <div class="prod-detail-titulo-container animate__animated animate__flash">
-                <div class="prod-detail-titulo neon-text-prod-salient-prod "> Agrega y Edita tus productos</div>
-                <!-- <div class="neon-text-prod-salient-dest"> </div> -->
+            
+                <div class="new-arrow">
+                    <a href="javascript: history.go(-1)" class="go-back-prod-detail animate__animated animate__flash"><</a>
+                </div>
+                <div class="new-title animate__animated animate__flash">
+                <div class="new-title-title "> Agrega y Edita tus productos</div>
             </div>
-            </div>
+            
             <div class="container-new-prod">
-                <div class="new-name"></div>
-                <div class="new-add-name"></div>
-                <div class="new-add-desc"></div>
-                <div class="new-pics"></div>
-                <div class="new-add-pics"></div>
-                <div class="new-stock"></div>
-                <div class="new-add-stock"></div>
-                <div class="new-price"></div>
-                <div class="new-add-price"></div>
-                <div class="new-desc"></div>
-                <div class="new-disc"></div>
-                <div class="new-add-disc"></div>
-                <div class="new-ship"></div>
-                <div class="new-add-ship"></div>
+                <div class="new-name new-position-text">
+                    <label for="">Nombre</label>
+                </div>
+                <div class="new-add-name">
+                    <input type="text" value="" name="nombre" placeholder="  Ingresa el nombre del articulo" >
+                </div>
+                <div class="new-desc new-position-text">
+                    <label for="">Descripcion</label>
+                </div>
+                <div class="new-add-desc">
+                    <textarea name="descripcion" rows="4" cols="45">Ingresa una descripción</textarea>
+                </div>
+                <div class="new-detail new-position-text">
+                    <label for="">Detalle</label>
+                </div>
+                <div class="new-add-detail">
+                    <textarea name="detalle" rows="4" cols="45">Ingresa un detalle</textarea>
+                </div>
+                <div class="new-pics new-position-text">
+                    <label for="">Imagenes</label>
+                </div>
+                <div class="new-add-pics">
+                      <input type="file" multiple id="gallery-photo-add">
+                      <div class="gallery"></div>
+                </div>
+                <div class="new-stock new-position-text">
+                    <label for="">Cantidad</label>
+                </div>
+                <div class="new-add-stock">
+                    <input type="text" value="" name="cantidad" placeholder="  Ingresa la cantidad" >
+                </div>
+                <div class="new-price new-position-text">
+                    <label for="">Precio</label>
+                </div>
+                <div class="new-add-price">
+                    <input type="text" value="" name="precio" placeholder="  Ingresa el precio del articulo" >
+                </div>
+
+                <div class="new-disc new-position-text">
+                    <label for="">Descuento</label>
+                </div>
+                <div class="new-add-disc">
+                    <input type="text" value="" name="descuento" placeholder="  Ingresa un descuento" >
+                </div>
+                <div class="new-ship new-position-text">
+                    <label for="">Envio</label>
+                </div>
+                <div class="new-add-ship">
+                    <input type="text" value="" name="envio" placeholder="  Ingresa el valor del envio" >
+                </div>
+                <div class="new-cont-button">
+                    <input type="submit" value="Enviar" class="new-button">
+                </div>
               </div>
-            <!--descripcion-->
-            <!--caracteristicas-->
-            <!--fotos-->
-            <!--stock-->
-            <!--precio-->
-            <!--descuento-->
-            <!--envio-->
 
 
-        </div>
+        </section>
     </main>
     <div id="footer"></div>
     
         
-        <script src="/js/prod-detail.js"></script>
+        <script src="/js/product-new.js"></script>
         <!-- <script src="https://kit.fontawesome.com/f3260f2ce3.js" crossorigin="anonymous"></script> -->
         <script
         src="https://code.jquery.com/jquery-3.3.1.js"
