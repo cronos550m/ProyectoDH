@@ -1,25 +1,34 @@
 const express = require('express');
 const app = express();
-// let rutasProductos = require('./routes/productos.js');
-// let rutasMain = require('./routes/main.js');
+let mainRoutes = require('./routes/main.routes');
+let productRoutes = require('./routes/product.routes');
 const path = require('path');
 const publicPath = path.resolve(__dirname, './src/public');
 const port = process.env.PORT || '5000';
 
-app.use( express.static(publicPath) );
-// app.use('/productos', rutasProductos);
-// app.use('/', rutasMain);
+app.use(express.static(publicPath));
 
-app.listen(port,()=>{
-
-console.log(`Server is runnig in the Port : ${port}`);
+app.listen(port, () => {
+    console.log(`Server is runnig in the Port : ${port}`);
 })
+
+app.use('/', mainRoutes);
+app.use('/',productRoutes);
+
+
+
+
+
+
+
+
+
 
 // app.listen(3000,()=>{
 
 // console.log(`Server is runnig in the Port : 3000`);
 // })
-
+/*
 app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/index.html'))
 })
@@ -48,6 +57,4 @@ app.get('/header',(req,res)=>{
 app.get('/forget',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/forget.html'))
 })
-app.get('/productNew',(req,res)=>{
-    res.sendFile(path.join(__dirname,'./src/views/productNew.html'))
-})
+*/
