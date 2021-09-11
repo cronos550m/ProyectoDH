@@ -7,6 +7,6 @@ const productController = require ('../controllers/productController'); /*requie
 
 router.get('/productDetail', productController.productDetail);// al acceder al detalle de producto llamo al controlador en el metodo productDetail
 router.get('/productCart', productController.productCart);// al acceder al carro de compras llamo al controlador en el metodo productCart
-
+router.get('/productNew', productController.productNew);// al acceder al productNew  llamo al controlador en el metodo productNew
 
 module.exports = router;

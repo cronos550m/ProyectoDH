@@ -1,0 +1,109 @@
+.prod-new-total-container {
+    padding-bottom: 13px;
+    background-color: #2e2c2c;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    border-radius: 5px;
+    margin: 5%;
+    margin-top: 102px;
+    padding-bottom: 13px;
+    background-color: #2e2c2c;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-new-prod {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 26.7% 73.3%; 
+    grid-template-rows: 10% 10% 20% 10% 10% 10% 10%; 
+    gap: 0% 0%; 
+    grid-template-areas: 
+      "new-name new-add-name"
+      "new-desc new-add-desc"
+      "new-pics new-add-pics"
+      "new-stock new-add-stock"
+      "new-price new-add-price"
+      "new-disc new-add-disc"
+      "new-ship new-add-ship"; 
+    justify-content: center; 
+    width: 100%; 
+    height: 100%; 
+  }
+  .new-name {
+    border: 1px red dotted;
+      grid-area: new-name; 
+    }
+
+  .new-add-name { 
+    border: 1px red dotted;
+      grid-area: new-add-name; 
+    }
+
+  .new-add-desc { 
+    border: 1px red dotted;
+      grid-area: new-add-desc; 
+    }
+
+  .new-pics { 
+    border: 1px red dotted;
+      grid-area: new-pics; 
+    }
+
+  .new-add-pics { 
+        grid-area: new-add-pics; 
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10vh;
+        align-items: center;
+        flex-wrap: wrap; 
+    }
+  
+  .new-stock { 
+      grid-area: new-stock; 
+        border: 1px red dotted;    
+    }
+  
+  .new-add-stock { 
+    border: 1px red dotted;
+    grid-area: new-add-stock; 
+}
+  
+  .new-price { 
+    border: 1px red dotted;
+      grid-area: new-price; 
+    }
+  
+  .new-add-price { 
+    border: 1px red dotted;
+      grid-area: new-add-price; 
+    }
+  
+  .new-desc { 
+    border: 1px red dotted;
+      grid-area: new-desc; 
+    }
+  
+  .new-disc { 
+    border: 1px red dotted;
+    grid-area: new-disc; 
+}
+  
+  .new-add-disc { 
+    border: 1px red dotted;
+    grid-area: new-add-disc; 
+}
+  
+  .new-ship { 
+    border: 1px red dotted;
+    grid-area: new-ship; 
+}
+  
+  .new-add-ship { 
+    border: 1px red dotted;
+    grid-area: new-add-ship; 
+}
+  
