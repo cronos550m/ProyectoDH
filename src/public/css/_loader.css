@@ -54,7 +54,11 @@ body {
     bottom: 0;
     right: -100%;
     width: 100%;
+<<<<<<< HEAD
+    height: 2px;
+=======
     height:2px;
+>>>>>>> origin/nuevarama1
     background: linear-gradient(270deg,transparent,#2196f3);
     
     }
