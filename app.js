@@ -48,3 +48,6 @@ app.get('/header',(req,res)=>{
 app.get('/forget',(req,res)=>{
     res.sendFile(path.join(__dirname,'./src/views/forget.html'))
 })
+app.get('/productNew',(req,res)=>{
+    res.sendFile(path.join(__dirname,'./src/views/productNew.html'))
+})
