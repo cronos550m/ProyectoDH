@@ -1,8 +1,10 @@
 .footer-dark {
-    padding: 20px 10px;
-    color:#f9fdff;
-    background-color:#020202;
-    box-shadow:0 0 0 1px rgba(196, 8, 202, 0.767);
+  padding: 20px 10px;
+  color: #f9fdff;
+  position: fixed;
+  bottom: 0;
+  background-color: #020202;
+  box-shadow: 0 0 0 1px rgb(196 8 202 / 77%);
   }
   
   .footer-dark a {

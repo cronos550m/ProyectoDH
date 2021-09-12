@@ -5,6 +5,8 @@ let productRoutes = require('./routes/product.routes');
 const path = require('path');
 const publicPath = path.resolve(__dirname, './src/public');
 const port = process.env.PORT || '5000';
+app.use(express.urlencoded({ extended: false })); //para poder trabajar con los datos que envia el formulario
+app.use(express.json()); //para poder trabajar con archivos json
 
 app.use(express.static(publicPath));
 
@@ -14,7 +16,11 @@ app.listen(port, () => {
 
 app.use('/', mainRoutes);
 app.use('/',productRoutes);
-
+app.set('views', path.join(__dirname, './views'));
+app.set('view engine', 'ejs')
+app.use((req, res, next) => {
+    res.status(404).render('error')
+});
 
 
 

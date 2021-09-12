@@ -1,23 +1,23 @@
 .prod-new-total-container {
-    padding-bottom: 13px;
-    background-color: #2e2c2c;
-    box-shadow: 0 0 0 1px rgb(196 8 202);
-    border-radius: 5px;
-    margin: auto;
-    margin-top: 102px;
-    margin-bottom: 24px;
-    display: grid;
-    grid-template-columns: 10% 90%;
-    grid-template-rows: 10% 90%;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0% 0%;
-    grid-auto-flow: row;
-    justify-content: center;
-    grid-template-areas:
-        "new-arrow new-title"
-        "container-new-prod container-new-prod";
-    width: 90%;
+  padding-bottom: 13px;
+  background-color: #2e2c2c;
+  box-shadow: 0 0 0 1px rgb(196 8 202);
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 102px;
+  margin-bottom: 255px;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 10% 90%;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0% 0%;
+  grid-auto-flow: row;
+  justify-content: center;
+  grid-template-areas:
+      "new-arrow new-title"
+      "container-new-prod container-new-prod";
+  width: 90%;
   }
   
   .new-arrow { grid-area: new-arrow; }
@@ -114,7 +114,8 @@
 }
 .new-add-desc { 
      
-    grid-area: new-add-desc; 
+    grid-area: new-add-desc;
+    margin-bottom: 3px; 
               
 }
 .new-add-desc textarea{ 
@@ -146,12 +147,15 @@
     }
 
   .new-add-pics { 
-        grid-area: new-add-pics; 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap; 
-        font-size: 8px;
+    grid-area: new-add-pics;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4px;
+    margin-left: 2px;
+    font-size: 9px;
+    margin-bottom: 9px;
     }
 
     .new-add-pics input{

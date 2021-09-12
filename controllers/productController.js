@@ -10,6 +10,9 @@ const controller={
     },
     productNew:(req,res)=>{ 
         res.sendFile(path.join(__dirname,'../src/views/productNew.html')) //devuelve la vista adicion y edicion de producto en este evento
+    },
+    products:(req,res)=>{ 
+        res.sendFile(path.join(__dirname,'../src/views/products.html')) //devuelve la vista de los productos en este evento
     }
 };
 
