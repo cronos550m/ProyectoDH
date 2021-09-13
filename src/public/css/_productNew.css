@@ -1,0 +1,267 @@
+.prod-new-total-container {
+    padding-bottom: 13px;
+    background-color: #2e2c2c;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 102px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 10% 90%;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0% 0%;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-template-areas:
+        "new-arrow new-title"
+        "container-new-prod container-new-prod";
+    width: 90%;
+  }
+  
+  .new-arrow { grid-area: new-arrow; }
+  .new-arrow a { 
+    
+        font-size: 1rem;
+        color: #ffffff;
+        text-shadow: 0.1vw 0vw 0.25vw #ffd8f8, 0.2vw 0vw 0.25vw #ffd8f8, 0.4vw 0vw 0.25vw #ffd8f8, 0.1vw 0vw 0vw #e578f3, 0.2vw 0vw 0vw #e578f3, 0.4vw 0vw 0vw #e578f3, 0.1vw 0vw 0.1vw #e578f3, 0.2vw 0vw 0.1vw #e578f3, 0.4vw 0vw 0.1vw #e578f3, 0.1vw 0vw 2vw #e578f3, 0.2vw 0vw 2vw #e578f3, 0.4vw 0vw 2vw #e578f3, 0.1vw 0vw 1vw #cc0be5, 0.2vw 0vw 1vw #cc0be5, 0.4vw 0vw 5vw #cc0be5, 0.1vw 0vw 5vw #cc0be5, 0.2vw 0vw 20vw #cc0be5, 0.4vw 0vw 10vw #cc0be5, 0.1vw 0vw 10vw #cc0be5, 0.2vw 0vw 30vw #cc0be5, 0.4vw 0vw 10vw #cc0be5;
+    }      
+ 
+  
+  .new-title { 
+    grid-area: new-title;
+    display: flex;
+    padding-top: 30px;
+    position: relative;
+    left: -6px;
+    align-items: center;
+    justify-content: center;
+   }
+  
+.new-title-title {
+    font-size: 10px !important;
+
+        color: #ffffff;
+
+        text-shadow: 0.1vw 0vw 0.25vw #ffd8f8, 0.2vw 0vw 0.25vw #ffd8f8, 0.4vw 0vw 0.25vw #ffd8f8, 0.1vw 0vw 0vw #e578f3, 0.2vw 0vw 0vw #e578f3, 0.4vw 0vw 0vw #e578f3, 0.1vw 0vw 0.1vw #e578f3, 0.2vw 0vw 0.1vw #e578f3, 0.4vw 0vw 0.1vw #e578f3, 0.1vw 0vw 2vw #e578f3, 0.2vw 0vw 2vw #e578f3, 0.4vw 0vw 2vw #e578f3, 0.1vw 0vw 1vw #cc0be5, 0.2vw 0vw 1vw #cc0be5, 0.4vw 0vw 5vw #cc0be5, 0.1vw 0vw 5vw #cc0be5, 0.2vw 0vw 20vw #cc0be5, 0.4vw 0vw 10vw #cc0be5, 0.1vw 0vw 10vw #cc0be5, 0.2vw 0vw 30vw #cc0be5, 0.4vw 0vw 10vw #cc0be5;
+   
+        display: flex;
+        margin: 15px !important;
+        padding-bottom: 6px;
+        border-bottom: solid;
+        border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(157, 4, 204));
+        border-image-slice: 1;
+        border-bottom-width: thin;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        position: relative !important;
+        /* margin: auto !important; */
+        font-size: 12px !important;
+        width: 175px;
+
+}
+
+.container-new-prod {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-area: container-new-prod;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 0.5fr 4fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    gap: 0% 0%;
+    margin: auto;
+    color: white;
+    font-size: 11px;
+    width: 90%;
+    font-weight: 900;
+    grid-template-areas:
+        "new-name new-add-name"
+        "new-desc new-add-desc"
+        "new-detail new-add-detail"
+        "new-pics new-add-pics"
+        "new-stock new-add-stock"
+        "new-price new-add-price"
+        "new-disc new-add-disc"
+        "new-ship new-add-ship"
+        "new-cont-button  new-cont-button ";
+  }
+  .new-name {
+     
+      grid-area: new-name; 
+    }
+
+  .new-add-name { 
+     
+      grid-area: new-add-name; 
+
+    }
+    .new-add-name input{ 
+        width: 229px;
+        background-color: black;
+        border: none;
+        font-weight: 800;
+        border-radius: 3px;
+        color: gray;
+        }
+
+
+  
+.new-desc { 
+     
+    grid-area: new-desc; 
+}
+.new-add-desc { 
+     
+    grid-area: new-add-desc; 
+              
+}
+.new-add-desc textarea{ 
+    border-radius: 3px;
+    border: none;
+    color: gray;
+    background-color: black;
+}
+.new-detail { 
+     
+    grid-area: new-detail; 
+      
+}
+.new-add-detail { 
+     
+    grid-area: new-add-detail; 
+      
+}
+.new-add-detail textarea{ 
+    border-radius: 3px;
+    border: none;
+    color: gray;
+    background-color: black;
+}
+
+  .new-pics { 
+     
+      grid-area: new-pics; 
+    }
+
+  .new-add-pics { 
+        grid-area: new-add-pics; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; 
+        font-size: 8px;
+    }
+
+    .new-add-pics input{
+        border: none;
+        background: #461466;
+        color: #f8f8f8;
+        font-size: 9px;
+        width: 220px;
+        cursor: pointer;
+        box-shadow: 0 0 0 1px rgb(196 8 202);
+        transition: .3s ease all;
+        border-radius: 3px;
+    }
+  
+  .new-stock { 
+      grid-area: new-stock; 
+             
+    }
+  
+  .new-add-stock { 
+     
+    grid-area: new-add-stock; 
+}
+.new-add-stock input{
+        width: 229px;
+        background-color: black;
+        border: none;
+        font-weight: 800;
+        border-radius: 3px;
+        color: gray;
+}
+  .new-price { 
+     
+      grid-area: new-price; 
+    }
+  
+  .new-add-price { 
+     
+      grid-area: new-add-price; 
+    }
+  .new-add-price  input{
+    width: 229px;
+    background-color: black;
+    border: none;
+    font-weight: 800;
+    border-radius: 3px;
+    color: gray;
+}
+
+  
+  .new-disc { 
+     
+    grid-area: new-disc; 
+}
+  
+  .new-add-disc { 
+     
+    grid-area: new-add-disc; 
+}
+  .new-add-disc  input{
+    width: 229px;
+    background-color: black;
+    border: none;
+    font-weight: 800;
+    border-radius: 3px;
+    color: gray;
+}
+  
+  .new-ship { 
+     
+    grid-area: new-ship; 
+}
+  
+.new-position-text {
+    text-align: right;
+    padding-right: 7px;
+}
+
+  .new-add-ship { 
+     
+    grid-area: new-add-ship; 
+}
+  .new-add-ship  input{
+    width: 229px;
+    background-color: black;
+    border: none;
+    font-weight: 800;
+    border-radius: 3px;
+    color: gray;
+}
+
+.new-cont-button {
+    margin-top: 8px;
+    grid-area: new-cont-button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-button {
+    height: 23px;
+    width: 59px;
+    border: none;
+    background: #461466;
+    color: #f8f8f8;
+    font-size: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    transition: .3s ease all;
+    border-radius: 3px;
+}
+  
+

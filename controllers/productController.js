@@ -7,7 +7,15 @@ const controller={
     },
     productCart:(req,res)=>{ 
         res.sendFile(path.join(__dirname,'../src/views/productCart.html')) //devuelve la vista del carro de compras en este evento
+    },
+    productNew:(req,res)=>{ 
+        res.sendFile(path.join(__dirname,'../src/views/productNew.html')) //devuelve la vista adicion y edicion de producto en este evento
     }
 };
 
+
 module.exports = controller;
+
+
+
+

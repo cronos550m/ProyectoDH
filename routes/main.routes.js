@@ -14,4 +14,5 @@ router.get('/footer', mainController.footer);// al acceder al footer  llamo al c
 router.get('/header', mainController.header);// al acceder al header  llamo al controlador en el metodo header
 router.get('/forget', mainController.forget);// al acceder al forget  llamo al controlador en el metodo forget
 
+
 module.exports = router;
