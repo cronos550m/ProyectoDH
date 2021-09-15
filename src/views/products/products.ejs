@@ -1,0 +1,84 @@
+<!-- head added -->
+<%- include('../partials/head'); %>
+
+    <!-- header added -->
+    <%- include('../partials/header'); %>
+        <main>
+            <div class="prod-total-container">
+            <div class="prod-top-navbar">
+                <ul>
+                    <il>120 resultados</il>
+                    <il><label for="">Envio gratis&nbsp;</label><input type="checkbox"> </il>
+                    <il><label for="">Ofertas&nbsp;</label><input type="checkbox"></il>
+                    <il><label for="">Precio&nbsp;</label> <input type="text" name=""
+                            class="prod-top-navbar-input-text">
+                        <label for="">&nbsp;a&nbsp;</label><input type="text" name="" 
+                            class="prod-top-navbar-input-text">
+                    </il>
+                    <il>
+
+                        <div class="dropdown">
+                            <button onclick="myFuncDropNavBar()" class="dropbtn">Mas filtros ˅</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <button class="accordion">
+                                    Ordenar por:</button>
+                                <div class="panel">
+                                    <p><label>Mas relevantes&nbsp;</label><input type="radio"></p>
+                                    <il><label>Menor precio&nbsp;</label><input type="radio"></il>
+                                    <il><label>Mayor precio&nbsp;</label><input type="radio"></il>
+                                </div>
+
+                                <div><a href="#about">About</a></div>
+                                <div><a href="#contact">Contact</a></div>
+                            </div>
+                        </div>
+                    </il>
+                </ul>
+            </div>
+            
+            <section class="prod-sidebar-container">
+                <div class="prod-sidebar">
+                    <div class="prod-filter-title">
+                        <p>Filtros</p>
+                    </div>
+                    <div class="prod-filter-search">
+                        <form action="#" class="sidebar-search-form">
+                            <input class="sidebar-search-input" type="text" placeholder="Buscar.." name="search">
+                            </form>
+                    </div>
+                    <div class="prod-filter-categories">
+                        <p>Categorias</p>
+                        <ul class="prod-filter-categories-list">
+                                   <ul> Partes</ul>                 <ul>140</ul>
+                                <li>Microprocesadores       10</li>
+                                <li>Coolers                 20</li>
+                                <li>Gabinetes                5</li>
+                                <li>Memoria RAM             10</li>
+                                <li>Discos                  23</li>
+                                <li>Pendrives               30</li>
+                                <li>Placa de video          18</li>
+                                <li>Fuentes                 14</li>
+                        </ul>
+                    </div>
+                    <div class="prod-filter-price"></div>
+                    <div class="prod-filter-trademark"></div>
+                    <div class="prod-filter-others"></div>
+                    <div class="prod-filter-reset"></div>
+                </div>
+            </section>
+            <section class="products-container-section">
+
+                <%- include('../partials/product'); %>
+                <%- include('../partials/product'); %>
+                <%- include('../partials/product'); %>
+                <%- include('../partials/product'); %>
+                <%- include('../partials/product'); %>
+                <%- include('../partials/product'); %>
+                <%- include('../partials/product'); %>
+                <%- include('../partials/product'); %>
+
+            </section>
+        </div>
+        </main>
+        <!-- footer added -->
+        <%- include('../partials/footer'); %>

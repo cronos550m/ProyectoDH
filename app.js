@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 let mainRoutes = require('./routes/main.routes');
 let productRoutes = require('./routes/product.routes');
+let userRoutes = require('./routes/user.routes');
 const path = require('path');
 const publicPath = path.resolve(__dirname, './src/public');
 const port = process.env.PORT || '5000';
@@ -15,8 +16,9 @@ app.listen(port, () => {
 })
 
 app.use('/', mainRoutes);
-app.use('/',productRoutes);
-app.set('views', path.join(__dirname, './views'));
+app.use('/', productRoutes);
+app.use('/', userRoutes);
+// app.set('/views', path.join(__dirname, './src/views'));
 app.set('view engine', 'ejs')
 app.use((req, res, next) => {
     res.status(404).render('error')

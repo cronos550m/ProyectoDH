@@ -55,13 +55,11 @@
   .prod-main { 
     grid-area: prod-main;
     padding-bottom: 13px;
-    margin: auto;
     width: 100%;
-    position: absolute;
-    height: 100%;
-    margin-top: 121px;
+    position: relative;
+    top: 0;
+    margin-top: 113px;
     margin-bottom: 24px;
-    box-sizing: border-box;
     }
 
     .prod-sec-cont {
@@ -110,7 +108,7 @@
         font-size: 9px;
         display: flex;
         position: relative;
-        top: 8px;
+        top: -11px;
         align-items: flex-end;
         }
 
@@ -208,3 +206,608 @@
 
   /************** Accordion menu end ****************/
 
+
+
+
+  
+/************************************************/
+/************************************************/
+/****************Resolution 769******************/
+/************************************************/
+/************************************************/
+
+
+
+@media (min-width: 769px) {
+
+  .prod-total-container {
+
+    display: grid;
+    grid-template-columns: 50.1% 49.9%;
+    grid-template-rows: 17.8% 82.2%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "prod-top-navbar prod-top-navbar"
+        "prod-main prod-main";
+    width: 100%;
+    height: 100%;
+  }
+  
+  .prod-top-navbar { 
+    grid-area: prod-top-navbar;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    margin-top: 74px;
+    color: #bcbcbc;
+    width: 100%;
+    font-weight: 800;
+    font-size: 8px;
+    z-index: 80;
+    }
+  
+    .prod-top-navbar ul { 
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 0px;
+        height: 27px;
+    }
+
+    .prod-top-navbar ul il{ 
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+
+    }
+    .prod-top-navbar ul il label{ 
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+
+    }
+
+    .prod-top-navbar-input-text {
+        width: 30px;
+    }
+
+  .prod-main { 
+    grid-area: prod-main;
+    padding-bottom: 13px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    margin-top: 131px;
+    margin-bottom: 170px;
+    flex-wrap: wrap;
+    }
+
+    .prod-sec-cont {
+    display: grid;
+    grid-template-columns: 27% 40.9% 25.3% 5.8%;
+    grid-template-rows: 15.9% 34.1% 25% 25%;
+    gap: 0px 0px;
+    background-color: #2e2c2c;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    border-radius: 5px;
+    grid-auto-flow: row;
+    color: white;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    grid-template-areas:
+        "prod-sec-cont-img prod-sec-cont-name prod-sec-cont-name prod-sec-cont-heart"
+        "prod-sec-cont-img prod-sec-cont-name prod-sec-cont-name ."
+        "prod-sec-cont-img prod-sec-cont-price . ."
+        "prod-sec-cont-img prod-sec-cont-price prod-sec-cont-promo prod-sec-cont-promo";
+    width: 44%;
+    margin-bottom: 18px !important;
+
+      }
+      
+      .prod-sec-cont-img { 
+        rid-area: prod-sec-cont-img;
+        display: flex;
+        width: 112%;
+        margin-left: -5px;
+        align-items: center;
+        justify-content: center;
+    }
+      .prod-sec-cont-img img {
+        width: 71%;
+      }
+      .prod-sec-cont-heart { 
+        grid-area: prod-sec-cont-heart;
+        font-size: 9px;
+        display: flex;
+        margin-top: 5px;
+        position: relative;
+        right: 3px;
+        align-items: center;
+        justify-content: center;
+        }
+      
+      .prod-sec-cont-price { 
+        grid-area: prod-sec-cont-price;
+        font-size: 9px;
+        display: flex;
+        position: relative;
+        top: 0px;
+        align-items: flex-end;
+        }
+
+        .prod-sec-cont-price p {
+            grid-area: prod-sec-cont-price;
+            font-size: 16px;
+            font-weight: 900;
+        }
+      .prod-sec-cont-name { 
+        grid-area: prod-sec-cont-name;
+        font-size: 11px;
+        display: flex;
+        margin-top: 2px;
+        width: 200px;
+        }
+      
+      .prod-sec-cont-promo { 
+        grid-area: prod-sec-cont-promo;
+        font-size: 9px;
+        position: relative;
+        right: 9px;
+        display: flex;
+        top: 3px;
+        justify-content: flex-end;
+        }
+      
+
+/***********dropdown menu start **************/
+
+.dropbtn {
+    background-color: #808080;
+    color: #b0b5b6;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #bfbfbf;
+    min-width: 66px;
+    left: -12px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+/************* dropdown menu end**************/
+
+
+/************* accordion menu ***************/
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none !important;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  /************** Accordion menu end ****************/
+
+
+
+}
+
+ 
+/************************************************/
+/************************************************/
+/****************Resolution 1200******************/
+/************************************************/
+/************************************************/
+
+
+
+@media (min-width: 1200px) {
+
+
+  .products-container-section {
+    display: flex;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    padding: 11px;
+    width: 100%;
+    margin-top: 84px;
+    margin-bottom: 198px;
+    flex-wrap: wrap;
+}
+
+.product- {
+  display: flex;
+  width: 23%;
+  margin: auto;
+  background-color: #2e2c2c;
+  padding: 10px 2px 2px 2px;
+  box-shadow: 0 0 0 1px rgb(196 8 202);
+  flex-direction: column;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  align-items: center;
+}
+
+.product- img {
+  width: 100%;
+  padding: 0 15px; 
+}
+
+.product- h3{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 1.5em;
+  color: #e3e3e3;
+}
+
+.product- p{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 0.75em;
+  color: #898989;
+}
+
+.product- a{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 0.75em;
+  color: rgb(157 4 204 / 98%);
+}
+
+.prod-sidebar-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.prod-sidebar {
+  background-color: #2e2c2c;
+  padding: 10px 2px 2px 2px;
+  box-shadow: 0 0 0 1px rgb(196 8 202);
+  width: 90%;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 219px;
+  margin-top: 105px;
+  height: 100%;
+  left: 10px;
+}
+
+.sidebar-search-input {
+  width: 90%;
+  background-color: #000000;
+  border: none;
+  line-height: 2.50;
+  font-size: 13px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.sidebar-search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: white;
+  width: 179px;
+}
+
+  .prod-total-container {
+
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "prod-sidebar-container prod-main"
+        "prod-sidebar-container prod-main";
+    width: 100%;
+  } 
+  
+  .prod-top-navbar { 
+    grid-area: prod-top-navbar;
+    background-color: gray;
+    position: fixed;
+    display: none;
+    top: 0;
+    margin-top: 74px;
+    color: #bcbcbc;
+    width: 100%;
+    font-weight: 800;
+    font-size: 8px;
+    z-index: 80;
+    }
+  
+    .prod-top-navbar ul { 
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 0px;
+        height: 27px;
+    }
+
+    .prod-top-navbar ul il{ 
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+
+    }
+    .prod-top-navbar ul il label{ 
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+
+    }
+
+    .prod-top-navbar-input-text {
+        width: 30px;
+    }
+
+    .prod-filter-title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .prod-filter-title p{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+
+    .prod-filter-search {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .prod-filter-categories{
+      padding: 0 14px;
+    }
+
+    .prod-filter-categories p {
+      font-weight: 900;
+    }
+    .prod-filter-categories-list {
+      font-weight: 500 !important;
+    }
+
+    /* .prod-filter-categories ul {
+      font-weight: 500 !important;
+    }
+    .prod-filter-categories ul li{
+      font-weight: 200 !important;
+    } */
+
+
+    .prod-filter-price{
+      
+    }
+    .prod-filter-trademark{
+      
+    }
+    .prod-filter-others{
+      
+    }
+    .prod-filter-reset{
+      
+    }
+
+  .prod-main { 
+    grid-area: prod-main;
+    padding-bottom: 13px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    display: flex;
+    margin-top: 131px;
+    margin-bottom: 170px;
+    flex-wrap: wrap;
+    }
+
+    .prod-sec-cont {
+      display: grid;
+      grid-template-columns: 27% 40.9% 25.3% 5.8%;
+      grid-template-rows: 15.9% 34.1% 25% 25%;
+      gap: 0px 0px;
+      background-color: #2e2c2c;
+      box-shadow: 0 0 0 1px rgb(196 8 202);
+      border-radius: 5px;
+      grid-auto-flow: row;
+      color: white;
+      padding-bottom: 7px;
+      padding-top: 7px;
+      grid-template-areas:
+          "prod-sec-cont-img prod-sec-cont-img prod-sec-cont-img prod-sec-cont-img"
+          ". prod-sec-cont-name prod-sec-cont-name ."
+          ". prod-sec-cont-price prod-sec-cont-price ."
+          ". prod-sec-cont-promo prod-sec-cont-promo .";
+      width: 265px;
+      height: 300px;
+      margin-bottom: 18px !important;
+
+      }
+      
+      .prod-sec-cont-img { 
+        rid-area: prod-sec-cont-img;
+        display: flex;
+        width: 112%;
+        margin-left: -5px;
+        align-items: center;
+        justify-content: center;
+    }
+      .prod-sec-cont-img img {
+        width: 71%;
+      }
+      .prod-sec-cont-heart { 
+        grid-area: prod-sec-cont-heart;
+        font-size: 9px;
+        display: flex;
+        margin-top: 5px;
+        position: relative;
+        right: 3px;
+        align-items: center;
+        justify-content: center;
+        }
+      
+      .prod-sec-cont-price { 
+        grid-area: prod-sec-cont-price;
+        font-size: 9px;
+        display: flex;
+        position: relative;
+        top: 0px;
+        align-items: flex-end;
+        }
+
+        .prod-sec-cont-price p {
+            grid-area: prod-sec-cont-price;
+            font-size: 16px;
+            font-weight: 900;
+        }
+      .prod-sec-cont-name { 
+        grid-area: prod-sec-cont-name;
+        font-size: 11px;
+        display: flex;
+        margin-top: 2px;
+        width: 200px;
+        }
+      
+      .prod-sec-cont-promo { 
+        grid-area: prod-sec-cont-promo;
+        font-size: 9px;
+        position: relative;
+        right: 9px;
+        display: flex;
+        top: 3px;
+        justify-content: flex-end;
+        }
+      
+
+/***********dropdown menu start **************/
+
+.dropbtn {
+    background-color: #808080;
+    color: #b0b5b6;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #bfbfbf;
+    min-width: 66px;
+    left: -12px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+/************* dropdown menu end**************/
+
+
+/************* accordion menu ***************/
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none !important;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  /************** Accordion menu end ****************/
+
+
+
+}
