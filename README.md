@@ -60,3 +60,7 @@ Apuntando principalmente a personas en el ambito de la programación, empresas, 
 
 ## Feedback sprint 1
 - Si pudiera les colocara 11 , excelente trabajo calificacion (10/10)
+
+## FeedBack sprint 2
+Simplemente hermoso su trabajo , estoy orgulloso de ustedes , que buen equipo 
+- calificacion (10/10)
