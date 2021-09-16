@@ -51,10 +51,16 @@ Apuntando principalmente a personas en el ambito de la programación, empresas, 
 
 ## Tablero de actividades 📄✒️
 * [TRELLO] (https://trello.com/invite/b/t2yLB3Qk/e97dd1b8ef349189b4537472f483093c/sprint-2)
+* [JIRA] (https://proy-006.atlassian.net/jira/software/projects/PDG6/boards/1)
 
 ## Estrella de Mar📄✒️
 [Sprint 1] (https://app.moqups.com/FGtCAsevQX/view/page/aa9df7b72)
+[Sprint 2] (https://www.reetro.app/view/open-invite/613a1653c3c2de0017c7dde7/613a1653c3c2de0017c7dde9)
 
 
 ## Feedback sprint 1
 - Si pudiera les colocara 11 , excelente trabajo calificacion (10/10)
+
+## FeedBack sprint 2
+Simplemente hermoso su trabajo , estoy orgulloso de ustedes , que buen equipo 
+- calificacion (10/10)
