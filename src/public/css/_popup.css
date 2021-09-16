@@ -1,6 +1,6 @@
 
 .overlay {
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .3) !important;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -20,7 +20,7 @@
 
 .popup {
     padding: 20px;
-    background-color: #2e2c2c;
+    background-color: #2e2c2c !important;
     box-shadow: 0 0 0 1px rgb(196 8 202);
     border-radius: 5px;
     text-align: center;
