@@ -21,7 +21,7 @@ const controller={
         res.sendFile(path.join(__dirname,'../src/views/header.html')) //devuelve la vista del header en este evento
     },
     forget:(req,res)=>{ 
-        res.sendFile(path.join(__dirname,'../src/views/forget.html'))
+        res.sendFile(path.join(__dirname,'../src/views/forget.html')) 
     },
 
 };
