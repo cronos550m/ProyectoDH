@@ -731,7 +731,7 @@ footer span {
     /* --bgFormElsFocus: hsl(0, 7%, 20%); */
   }
   
-  * {
+  .register-main {
     padding: 0;
     margin: 0;
   
@@ -739,11 +739,11 @@ footer span {
     outline: none;
   }
   
-  a {
+  .register-main a {
     color: inherit;
   }
   
-  input,
+  .register-main input,
   select,
   textarea,
   button {
@@ -751,33 +751,33 @@ footer span {
     font-size: 100%;
   }
   
-  button,
+  .register-main button,
   label {
     cursor: pointer;
   }
   
-  select {
+  .register-main select {
     appearance: none;
   }
   
   /* Remove native arrow on IE */
-  select::-ms-expand {
+  .register-main  select::-ms-expand {
     display: none;
   }
   
   /*Remove dotted outline from selected option on Firefox*/
   /*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
   /*We use !important to override the color set for the select on line 99*/
-  select:-moz-focusring {
+  .register-main select:-moz-focusring {
     color: transparent !important;
     text-shadow: 0 0 0 var(--white);
   }
   
-  textarea {
+  .register-main textarea {
     resize: none;
   }
   
-  ul {
+  .register-main ul {
     list-style: none;
   }
   

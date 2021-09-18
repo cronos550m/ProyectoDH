@@ -49,25 +49,54 @@
                     <div class="prod-filter-categories">
                         <p>Categorias</p>
                         <ul class="prod-filter-categories-list">
-                                <ul> Partes</ul>                 <ul>140</ul>
-                                <li>Microprocesadores       10</li>
-                                <li>Coolers                 20</li>
-                                <li>Gabinetes                5</li>
-                                <li>Memoria RAM             10</li>
-                                <li>Discos                  23</li>
-                                <li>Pendrives               30</li>
-                                <li>Placa de video          18</li>
-                                <li>Fuentes                 14</li>
+                                <ul><span class="prod-filter-categories-list-cat">Partes</span>                <span class="prod-filter-categories-list-cat-num">(140)</span></ul>
+                                <li><span class="prod-filter-categories-list-cat-prod">Microprocesadores</span>       <span class="prod-filter-categories-list-cat-prod-num">(10)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Coolers</span>                 <span class="prod-filter-categories-list-cat-prod-num">(20)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Gabinetes</span>                <span class="prod-filter-categories-list-cat-prod-num">(5)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Memoria RAM</span>             <span class="prod-filter-categories-list-cat-prod-num">(10)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Discos</span>                  <span class="prod-filter-categories-list-cat-prod-num">(23)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Pendrives</span>              <span class="prod-filter-categories-list-cat-prod-num">(30)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Placa de video</span>          <span class="prod-filter-categories-list-cat-prod-num">(18)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Fuentes</span>                 <span class="prod-filter-categories-list-cat-prod-num">(14)</span></li>
                         </ul>
                     </div>
-                    <div class="prod-filter-price"></div>
-                    <div class="prod-filter-trademark"></div>
-                    <div class="prod-filter-others"></div>
-                    <div class="prod-filter-reset"></div>
+                    <div class="prod-filter-price-container"> 
+                        <p>Rango de precio</p>
+                    <div class="prod-filter-price">
+                        
+                        <div id='id66' class="range-slider">
+                            <div id='id66b' class='range__between'></div>
+                              <button id='id661' class="range__button_1"></button>
+                              <button id='id662' class="range__button_2"></button>
+                              <div class="range-slider-son">
+                              <input id='id66i1' class='range_inpt1' type='number' min='0' max='900000'>
+                              - <input id='id66i2' class='range_inpt2' type='number' min='0' max='900000'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="prod-filter-trademark">
+                        
+                        
+                        <div class="prod-filter-trademark-title">Marcas</div>
+                        <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="Todo" checked>Todo</div>
+                        <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="AMD">AMD</div>
+                        <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="Intel">Intel</div>
+                        <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="Asus">Asus</div>
+                        <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="MSI">MSI</div>
+                    </div>
+                    <div class="prod-filter-others">
+                        <div class="prod-filter-others-title">Otros</div>
+                        <div class="prod-filter-others-options"><input type="radio" name="others" value="Open" checked>Open BOX</div>
+                        <div class="prod-filter-others-options"><input type="radio" name="others" value="Free">Envio gratis</div>
+                    </div>
+                    <div class="prod-filter-reset">
+                        <input type="submit" class="prod-filter-reset-button" value="Borrar">
+                    </div>
                 </div>
             </section>
             <section class="products-container-section">
-
+                
                 <%- include('../partials/product'); %>
                 <%- include('../partials/product'); %>
                 <%- include('../partials/product'); %>

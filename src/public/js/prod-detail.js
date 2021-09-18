@@ -15,3 +15,37 @@ function openDesc(evt, desc) {
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
 
+
+
+  
+
+        $('.prod-detail-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  adaptiveHeight: true,
+  fade: true,
+  asNavFor: '.prod-detail-slider-nav',
+  cssEase: 'ease-out',
+  // responsive: [
+  // {
+  //   breakpoint: 1024,
+  //   settings: {
+  //     dots: false
+  //   }
+  // }]
+});
+       $('.prod-detail-slider-nav').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  asNavFor: '.prod-detail-slider',
+  arrows: false,
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
+
+
+    
