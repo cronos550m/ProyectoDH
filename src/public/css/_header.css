@@ -594,7 +594,7 @@
         padding: 6px 8px 8px 7px;
         text-decoration: none;
         font-size: 13px;
-        color: #c34be7;
+        color: #d23eff;
         font-weight: 900;
         display: block;
         transition: 0.3s;
@@ -605,7 +605,7 @@
         display: inline-block !important;
         padding: 9px 10px !important;
         margin: 3px !important;
-        color: #c34be7 !important;
+        color: #d23eff !important;
         text-transform: uppercase !important;
         letter-spacing: 1px !important;
         text-decoration: none !important;
@@ -625,7 +625,7 @@
         left: -100% !important;
         width: 100% !important;
         height: 2px !important;
-        background: linear-gradient(90deg, transparent,#c34be7) !important;
+        background: linear-gradient(90deg, transparent,#d23eff) !important;
     }
 
     .menupc-button:hover span:nth-child(1) {
@@ -639,7 +639,7 @@
         right: 0 !important;
         width: 2px !important;
         height: 100% !important;
-        background: linear-gradient(180deg, transparent,#c34be7) !important;
+        background: linear-gradient(180deg, transparent,#d23eff) !important;
     }
 
     .menupc-button:hover span:nth-child(2) {
@@ -652,7 +652,7 @@
         right: -100% !important;
         width: 100% !important;
         height: 2px !important;
-        background: linear-gradient(270deg, transparent,#c34be7) !important;
+        background: linear-gradient(270deg, transparent,#d23eff) !important;
     }
 
     .menupc-button:hover span:nth-child(3) {
@@ -665,7 +665,7 @@
         left: 0 !important;
         width: 2px !important;
         height: 100% !important;
-        background: linear-gradient(360deg, transparent,#c34be7) !important;
+        background: linear-gradient(360deg, transparent,#d23eff) !important;
     }
 
     .menupc-button:hover span:nth-child(4) {
@@ -677,8 +677,8 @@
     .menupc-button:hover {
         color: #000000 !important;
         font-weight: 900 !important;
-        background: #c34be7 !important;
-        box-shadow: 0 0 10px #c34be7, 0 0 40px #c34be7, 0 0 80px #c34be7 !important;
+        background: #d23eff !important;
+        box-shadow: 0 0 10px #d23eff, 0 0 40px #d23eff, 0 0 80px #d23eff !important;
         transition-delay: 1s !important;
     } 
     
@@ -948,7 +948,7 @@
         padding: 6px 8px 8px 7px;
         text-decoration: none;
         font-size: 13px;
-        color: #c34be7;
+        color: #d23eff;
         font-weight: 900;
         display: block;
         transition: 0.3s;
@@ -959,7 +959,7 @@
         display: inline-block !important;
         padding: 9px 10px !important;
         margin: 3px !important;
-        color: #c34be7 !important;
+        color: #d23eff !important;
         text-transform: uppercase !important;
         letter-spacing: 1px !important;
         text-decoration: none !important;
@@ -979,7 +979,7 @@
         left: -100% !important;
         width: 100% !important;
         height: 2px !important;
-        background: linear-gradient(90deg, transparent,#c34be7) !important;
+        background: linear-gradient(90deg, transparent,#d23eff) !important;
     }
 
     .menupc-button:hover span:nth-child(1) {
@@ -993,7 +993,7 @@
         right: 0 !important;
         width: 2px !important;
         height: 100% !important;
-        background: linear-gradient(180deg, transparent,#c34be7) !important;
+        background: linear-gradient(180deg, transparent,#d23eff) !important;
     }
 
     .menupc-button:hover span:nth-child(2) {
@@ -1006,7 +1006,7 @@
         right: -100% !important;
         width: 100% !important;
         height: 2px !important;
-        background: linear-gradient(270deg, transparent,#c34be7) !important;
+        background: linear-gradient(270deg, transparent,#d23eff) !important;
     }
 
     .menupc-button:hover span:nth-child(3) {
@@ -1019,7 +1019,7 @@
         left: 0 !important;
         width: 2px !important;
         height: 100% !important;
-        background: linear-gradient(360deg, transparent,#c34be7) !important;
+        background: linear-gradient(360deg, transparent,#d23eff) !important;
     }
 
     .menupc-button:hover span:nth-child(4) {
@@ -1031,8 +1031,8 @@
     .menupc-button:hover {
         color: #000000 !important;
         font-weight: 900 !important;
-        background: #c34be7 !important;
-        box-shadow: 0 0 10px #c34be7, 0 0 40px #c34be7, 0 0 80px #c34be7 !important;
+        background: #d23eff !important;
+        box-shadow: 0 0 10px #d23eff, 0 0 40px #d23eff, 0 0 80px #d23eff !important;
         transition-delay: 1s !important;
     } 
     

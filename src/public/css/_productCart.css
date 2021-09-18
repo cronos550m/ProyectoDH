@@ -131,7 +131,7 @@
       grid-area: cart-delete; 
     }
   .cart-delete a { 
-    color: #c34be7;
+    color: #d23eff;
     font-size: 8px;
     position: relative;
     right: 10px;
@@ -141,7 +141,7 @@
   .cart-detail { grid-area: cart-detail; }
 
   .cart-detail a { 
-    color: #c34be7;
+    color: #d23eff;
     font-size: 8px;
     position: relative;
     right: 10px;
@@ -427,7 +427,7 @@
           grid-area: cart-delete; 
         }
       .cart-delete a { 
-        color: #c34be7;
+        color: #d23eff;
         font-size: 11px;
         position: relative;
         right: 23px;
@@ -437,7 +437,7 @@
       .cart-detail { grid-area: cart-detail; }
     
       .cart-detail a { 
-        color: #c34be7;
+        color: #d23eff;
         font-size: 11px;
         position: relative;
         right: 15px;
