@@ -1,3 +1,16 @@
+<!-- viene por parametro un objeto que se llama product y tiene este formato
+{
+    "id": 6,
+    "nombre": "Memoria DDR4" ,
+    "descripcion": "Memoria DDR4 Corsair ValueSelect 16gb",
+    "detalle": "aca va la zaraza",
+    "imagen": "/images/productos/memoria/memoria-vista-lateral.png",
+    "cantidad": 100,
+    "precio": 3000,
+    "descuento": 0,
+    "envio": 0
+} -->
+
 <!-- head added -->
 <%- include('../partials/head'); %>
 
@@ -58,32 +71,48 @@
                     Interfaces: USB 3.0
                 </p> 
             </div>
-        </div>
-        <div class="prod-detail-foto-prod">
-            <!-- <img class="prod-detail-foto-prod-img" src="\images\productos\disco\disco-duro-superior.png"
-            alt="Producto destacado"> -->
-            <div class="prod-detail-slider prod-detail-foto-prod-img" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
-                <div><img src="\images\productos\disco\disco-duro.png"
-                    alt="Producto destacado"></div>
-                <div><img src="\images\banner\banner-tamano-800.png"
-                    alt="Producto destacado"></div>
-                <div><img src="\images\productos\disco\disco-duro-lateral.png"
-                    alt="Producto destacado"></div>
-                <div><img src="\images\productos\disco\disco-duro-superior.png"
-                    alt="Producto destacado"></div>
+            <div class="prod-detail-descripcion">
+                <div class="tab">
+                    <button class="tablinks" onclick="openDesc(event, 'Descripcion')" id="defaultOpen">Descripcion</button>
+                    <button class="tablinks" onclick="openDesc(event, 'Caracteristicas')">Caracteristicas</button>
+                </div>
+                  
+                  <div id="Descripcion" class="tabcontent">
+                    <p><%= product.descripcion %></p>
+                  </div>
+                  
+                  <div id="Caracteristicas" class="tabcontent">
+                    <p><%= product.detalle %></p> 
+                </div>
+            </div>
+            <div class="prod-detail-foto-prod">
+                <!-- <img class="prod-detail-foto-prod-img" src="\images\productos\disco\disco-duro-superior.png"
+                alt="Producto destacado"> -->
+                <div class="prod-detail-slider prod-detail-foto-prod-img" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+                    <div><img src="\images\productos\disco\disco-duro.png"
+                        alt="Producto destacado"></div>
+                    <div><img src="\images\banner\banner-tamano-800.png"
+                        alt="Producto destacado"></div>
+                    <div><img src="\images\productos\disco\disco-duro-lateral.png"
+                        alt="Producto destacado"></div>
+                    <div><img src="\images\productos\disco\disco-duro-superior.png"
+                        alt="Producto destacado"></div>
+                </div>
             </div>
         </div>
         <div class="prod-detail-imagenes-prod">
 
-            <div class="prod-detail-slider-nav">
-                <div><img src="\images\productos\disco\disco-duro.png"
-                    alt="Producto destacado"></div>
-                <div><img src="\images\productos\disco\disco-duro-lateral.png"
-                    alt="Producto destacado"></div>
-                <div><img src="\images\banner\banner-tamano-800.png"
-                    alt="Producto destacado"></div>
-                <div><img src="\images\productos\disco\disco-duro-superior.png"
-                    alt="Producto destacado"></div>
+            </div>
+            <div class="prod-detail-buy-container">
+                <button type="button" class="prod-detail-buy-button">Añadir al carro</button>
+            </div>
+            <div class="prod-detail-cantidad-prod">
+                <div class="prod-stock">Stock:</div> <div class="prod-stock-total"><%= product.stock %></div>
+                <div class="prod-cant">Cantidad:</div> <input type="text" class="prod-cant-total" value="    1"> 
+               <div class="prod-precio">Precio:</div> <div class="prod-precio-total">$<%= product.precio %></div>
+               <div class="prod-desc">Descuento:</div> <div class="prod-desc-total"><%= product.descuento %>%</div>
+               <div class="prod-envio">Envio:</div> <div class="prod-envio-total">$<%= product.envio %></div>
+               <div class="prod-total">Total:</div> <div class="prod-total-total">$<%= (product.precio*(1-(product.descuento/100))) %></div>
             </div>
 
         </div>

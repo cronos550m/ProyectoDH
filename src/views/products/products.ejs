@@ -96,16 +96,9 @@
                 </div>
             </section>
             <section class="products-container-section">
-                
-                <%- include('../partials/product'); %>
-                <%- include('../partials/product'); %>
-                <%- include('../partials/product'); %>
-                <%- include('../partials/product'); %>
-                <%- include('../partials/product'); %>
-                <%- include('../partials/product'); %>
-                <%- include('../partials/product'); %>
-                <%- include('../partials/product'); %>
-
+                <% products.forEach(function(product){ %> <!-- recorro el array de productos  -->
+                    <%- include('../partials/product',{product: product}) %> <!-- llamo a la vista parcial y le paso un producto -->
+                <% }); %>
             </section>
         </div>
         </main>
