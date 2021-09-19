@@ -1,3 +1,16 @@
+<!-- viene por parametro un objeto que se llama product y tiene este formato
+{
+    "id": 6,
+    "nombre": "Memoria DDR4" ,
+    "descripcion": "Memoria DDR4 Corsair ValueSelect 16gb",
+    "detalle": "aca va la zaraza",
+    "imagen": "/images/productos/memoria/memoria-vista-lateral.png",
+    "cantidad": 100,
+    "precio": 3000,
+    "descuento": 0,
+    "envio": 0
+} -->
+
 <!-- head added -->
 <%- include('../partials/head'); %>
 
@@ -43,20 +56,11 @@
                 </div>
                   
                   <div id="Descripcion" class="tabcontent">
-                    <p>Ofrece una sencilla solución cuando necesita agregar almacenamiento instantáneo a tu computadora o llevar tus archivos a donde sea.
-                        
-                        Almacenamiento mediante la técnica de arrastrar y soltar listo para usar su
-                        USB energizado.
-                        Rápida transferencia de datos con la conectividad USB 3.0</p>
+                    <p><%= product.descripcion %></p>
                   </div>
                   
                   <div id="Caracteristicas" class="tabcontent">
-                    <p>Capacidad: 4 TB
-                        Factor de forma: 2.5 "
-                        Aplicaciones: PC, Notebook.
-                        Tecnología de almacenamiento: HDD
-                        Interfaces: USB 3.0
-                    </p> 
+                    <p><%= product.detalle %></p> 
                 </div>
             </div>
             <div class="prod-detail-foto-prod">
@@ -91,12 +95,12 @@
                 <button type="button" class="prod-detail-buy-button">Añadir al carro</button>
             </div>
             <div class="prod-detail-cantidad-prod">
-                <div class="prod-stock">Stock:</div> <div class="prod-stock-total">10</div>
+                <div class="prod-stock">Stock:</div> <div class="prod-stock-total"><%= product.stock %></div>
                 <div class="prod-cant">Cantidad:</div> <input type="text" class="prod-cant-total" value="    1"> 
-               <div class="prod-precio">Precio:</div> <div class="prod-precio-total">$5000</div>
-               <div class="prod-desc">Descuento:</div> <div class="prod-desc-total">10%</div>
-               <div class="prod-envio">Envio:</div> <div class="prod-envio-total">¡GRATIS!</div>
-               <div class="prod-total">Total:</div> <div class="prod-total-total">$4500</div>
+               <div class="prod-precio">Precio:</div> <div class="prod-precio-total">$<%= product.precio %></div>
+               <div class="prod-desc">Descuento:</div> <div class="prod-desc-total"><%= product.descuento %>%</div>
+               <div class="prod-envio">Envio:</div> <div class="prod-envio-total">$<%= product.envio %></div>
+               <div class="prod-total">Total:</div> <div class="prod-total-total">$<%= (product.precio*(1-(product.descuento/100))) %></div>
             </div>
 
           </div>

@@ -1,7 +1,20 @@
+<!-- viene por parametro un objero que se llama product y tiene este formato
+{
+    "id": 6,
+    "nombre": "Memoria DDR4" ,
+    "descripcion": "Memoria DDR4 Corsair ValueSelect 16gb",
+    "detalle": "aca va la zaraza",
+    "imagen": "/images/productos/memoria/memoria-vista-lateral.png",
+    "cantidad": 100,
+    "precio": 3000,
+    "descuento": 0,
+    "envio": 0
+} -->
+
 <article class="product-">
-    <img src="\images\productos\disco\disco-duro.png" alt="Producto destacado">
-    <h3>Disco Duro</h3>
-    <p>Disco Duro Expansion Portable de Seagate</p>
-    <p class="home-precio-dest">$5000</p>
-    <a href="/productDetail">ver más</a>
+    <img src="<%= product.imagen %>" alt="Producto destacado"> <!-- llamo al atributo imagen del objeto del tipo product que recibo -->
+    <h3><%= product.nombre %></h3>  <!-- llamo al atributo imagen del objeto del tipo product que recibo -->
+    <p><%= product.descripcion %></p><!-- llamo al atributo imagen del objeto del tipo product que recibo -->
+    <p class="home-precio-dest">$<%= product.precio %></p><!-- llamo al atributo imagen del objeto del tipo product que recibo -->
+    <a href="/productDetail/<%= product.id %>">ver más</a> <!-- con el id para ir al detalle  -->
 </article>
