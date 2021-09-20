@@ -18,6 +18,7 @@
     Gris claro : #a9a9ab
 */
 
+
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -33,7 +34,7 @@ body {
 }
 
 main {
-    margin-top: -10px;
+    
     background: url(/images/717792.jpg);
     overflow: hidden;
 }
@@ -176,7 +177,12 @@ main {
 estilo articulos destacados 
 */
 
-
+.main-section {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 53px;
+    flex-direction: column;
+}
 
 .product{
     display: flex;
