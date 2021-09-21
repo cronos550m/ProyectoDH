@@ -10,6 +10,7 @@ router.get('/productCart', productController.productCart);// al acceder al carro
 router.get('/productNew', productController.productNew);// al acceder al productNew  llamo al controlador en el metodo productNew
 router.get('/products', productController.products);// al acceder al products  llamo al controlador en el metodo products
 router.post('/productNew',productController.insertProduct);// cuando llega el metodo post de product new accedo a esta ruta
+router.get('/products/:id/edit',productController.editProduct);
 
 
 module.exports = router;

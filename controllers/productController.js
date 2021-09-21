@@ -22,7 +22,7 @@ const controller = {
     },
     insertProduct: (req, res) => { // verificar porque no me llegan cosas del body
         const newId = dbProductos[(dbProductos.length) - 1].id + 1  // busco el ultimo id y le sumo 1
-        const {nombre,descripcion,detalle,cantidad,precio,descuento,envio}=req.body; // requiero toda la info del bodu
+        const {nombre,descripcion,detalle,cantidad,precio,descuento,envio}=req.body; // requiero toda la info del body
         const newProduct={ // creo un objeto con toda la info del body
                 "id": newId,
                 "nombre": nombre,
@@ -37,9 +37,13 @@ const controller = {
         dbProductos.push(newProduct) //agrego el nuevo producto al final de la base
         fs.writeFileSync(path.join(__dirname,"../db/product.json"), JSON.stringify(dbProductos, null, 4), {
             encoding: "utf8",
-          });
-        res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: dbProductos })
-
+          }); // escribo el array en el archivo de base de datos
+          res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: dbProductos }) // renderizo la vista de todos los productos
+    },
+    editProduct:(req,res)=>{
+        const id= req.params.id     // uso el id que viene desde la ruta
+        const producto= dbProductos.find(item => item.id == id); // busco el id en la base
+        res.render(path.join(__dirname, '../src/views/products/productNew.ejs'), { product: producto }) //devuelve el formulario de edicion de producto
     }
 };
 

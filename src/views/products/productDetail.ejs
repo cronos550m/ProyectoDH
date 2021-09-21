@@ -17,59 +17,37 @@
 <!-- header added -->
 <%- include('../partials/header'); %>
     
-<main>
+    <main>
     
-    <div class="prod-detail-container">
-        
-        <div class="prod-detail-title">
-            <a href="javascript: history.go(-1)" class="go-back-prod-detail neon-text-prod-salient-prod animate__animated animate__flash"><</a>
-            <div class="prod-detail-titulo-container animate__animated animate__flash">
-            <div class="prod-detail-titulo neon-text-prod-salient-prod "> Detalle de producto</div>
-            <!-- <div class="neon-text-prod-salient-dest"> </div> -->
-        </div>
-        </div>
-        <div class="prod-detail-stars">
-            <div class="prod-califica">
-                Califica el producto
+        <div class="prod-detail-container">
+            
+            <div class="prod-detail-title">
+                <a href="javascript: history.go(-1)" class="go-back-prod-detail neon-text-prod-salient-prod animate__animated animate__flash"><</a>
+                <div class="prod-detail-titulo-container animate__animated animate__flash">
+                <div class="prod-detail-titulo neon-text-prod-salient-prod "> Detalle de producto</div>
+                <!-- <div class="neon-text-prod-salient-dest"> </div> -->
             </div>
-            <div class="star-rating">
-                <input type="radio" name="stars" id="star-a" value="5"/>
-                <label for="star-a"></label>
-          
-                <input type="radio" name="stars" id="star-b" value="4"/>
-                <label for="star-b"></label>
-            
-                <input type="radio" name="stars" id="star-c" value="3"/>
-                <label for="star-c"></label>
-            
-                <input type="radio" name="stars" id="star-d" value="2"/>
-                <label for="star-d"></label>
-            
-                <input type="radio" name="stars" id="star-e" value="1"/>
-                <label for="star-e"></label>
-          </div>
-        </div>
-        <div class="prod-detail-descripcion">
-            <div class="tab">
-                <button class="tablinks" onclick="openDesc(event, 'Descripcion')" id="defaultOpen">Descripcion</button>
-                <button class="tablinks" onclick="openDesc(event, 'Caracteristicas')">Caracteristicas</button>
             </div>
+            <div class="prod-detail-stars">
+                <div class="prod-califica">
+                    Califica el producto
+                </div>
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5"/>
+                    <label for="star-a"></label>
               
-              <div id="Descripcion" class="tabcontent">
-                <p>Ofrece una sencilla solución cuando necesita agregar almacenamiento instantáneo a tu computadora o llevar tus archivos a donde sea.
-                    
-                    Almacenamiento mediante la técnica de arrastrar y soltar listo para usar su
-                    USB energizado.
-                    Rápida transferencia de datos con la conectividad USB 3.0</p>
+                    <input type="radio" name="stars" id="star-b" value="4"/>
+                    <label for="star-b"></label>
+                
+                    <input type="radio" name="stars" id="star-c" value="3"/>
+                    <label for="star-c"></label>
+                
+                    <input type="radio" name="stars" id="star-d" value="2"/>
+                    <label for="star-d"></label>
+                
+                    <input type="radio" name="stars" id="star-e" value="1"/>
+                    <label for="star-e"></label>
               </div>
-              
-              <div id="Caracteristicas" class="tabcontent">
-                <p>Capacidad: 4 TB
-                    Factor de forma: 2.5 "
-                    Aplicaciones: PC, Notebook.
-                    Tecnología de almacenamiento: HDD
-                    Interfaces: USB 3.0
-                </p> 
             </div>
             <div class="prod-detail-descripcion">
                 <div class="tab">
@@ -89,25 +67,35 @@
                 <!-- <img class="prod-detail-foto-prod-img" src="\images\productos\disco\disco-duro-superior.png"
                 alt="Producto destacado"> -->
                 <div class="prod-detail-slider prod-detail-foto-prod-img" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
-                    <div><img src="\images\productos\disco\disco-duro.png"
+                    <div><img src="<%= product.imagen %>"
                         alt="Producto destacado"></div>
-                    <div><img src="\images\banner\banner-tamano-800.png"
+                    <div><img src="<%= product.imagen %>"
                         alt="Producto destacado"></div>
-                    <div><img src="\images\productos\disco\disco-duro-lateral.png"
+                    <div><img src="<%= product.imagen %>"
                         alt="Producto destacado"></div>
-                    <div><img src="\images\productos\disco\disco-duro-superior.png"
+                    <div><img src="<%= product.imagen %>"
                         alt="Producto destacado"></div>
                 </div>
             </div>
-        </div>
-        <div class="prod-detail-imagenes-prod">
+            <div class="prod-detail-imagenes-prod">
+
+                <div class="prod-detail-slider-nav">
+                    <div><img src="<%= product.imagen %>"
+                        alt="Producto destacado"></div>
+                    <div><img src="<%= product.imagen %>"
+                        alt="Producto destacado"></div>
+                    <div><img src="<%= product.imagen %>"
+                        alt="Producto destacado"></div>
+                    <div><img src="<%= product.imagen %>"
+                        alt="Producto destacado"></div>
+                </div>
 
             </div>
             <div class="prod-detail-buy-container">
                 <button type="button" class="prod-detail-buy-button">Añadir al carro</button>
             </div>
             <div class="prod-detail-cantidad-prod">
-                <div class="prod-stock">Stock:</div> <div class="prod-stock-total"><%= product.stock %></div>
+                <div class="prod-stock">Stock:</div> <div class="prod-stock-total"><%= product.cantidad %></div>
                 <div class="prod-cant">Cantidad:</div> <input type="text" class="prod-cant-total" value="    1"> 
                <div class="prod-precio">Precio:</div> <div class="prod-precio-total">$<%= product.precio %></div>
                <div class="prod-desc">Descuento:</div> <div class="prod-desc-total"><%= product.descuento %>%</div>
@@ -115,20 +103,7 @@
                <div class="prod-total">Total:</div> <div class="prod-total-total">$<%= (product.precio*(1-(product.descuento/100))) %></div>
             </div>
 
-        </div>
-        <div class="prod-detail-buy-container">
-            <button type="button" class="prod-detail-buy-button">Añadir al carro</button>
-        </div>
-        <div class="prod-detail-cantidad-prod">
-            <div class="prod-stock">Stock:</div> <div class="prod-stock-total">10</div>
-            <div class="prod-cant">Cantidad:</div> <input type="text" class="prod-cant-total" value="    1"> 
-           <div class="prod-precio">Precio:</div> <div class="prod-precio-total">$5000</div>
-           <div class="prod-desc">Descuento:</div> <div class="prod-desc-total">10%</div>
-           <div class="prod-envio">Envio:</div> <div class="prod-envio-total">¡GRATIS!</div>
-           <div class="prod-total">Total:</div> <div class="prod-total-total">$4500</div>
-        </div>
-
-      </div>
-</main>
+          </div>
+    </main>
     <!-- footer added -->
 <%- include('../partials/footer'); %>
