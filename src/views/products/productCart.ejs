@@ -1,27 +1,28 @@
 <!-- head added -->
 <%- include('../partials/head'); %>
 
-<!-- header added -->
-<%- include('../partials/header'); %>
+    <!-- header added -->
+    <%- include('../partials/header'); %>
 
-    <main>
-        <section class="container-cart">
-            <div class="cart-container-title">
-                <div class="cart-back">
-                    <a href="javascript: history.go(-1)"
-                        class="go-back-prod-detail neon-text-prod-salient-prod animate__animated animate__flash">
-                        < </a>
-                </div>
-                <div class="cart-title animate__animated animate__flash">
-                    
-                        <div class="cart-detail-titulo neon-text-prod-salient-prod ">Carro de compras</div>
-                    
-                </div>
-            </div>
-            <div class="cart-product">
+        <main>
+            <div class="main-container-cart">
+                <section  class="container-cart">
+                    <div class="cart-container-title">
+                    <div class="cart-back">
+                        <a href="javascript: history.go(-1)"
+                            class="go-back-prod-detail neon-text-prod-salient-prod animate__animated animate__flash"><
+                        </a>
+                    </div>
+                    <div class="cart-title animate__animated animate__flash">
+
+                        <div class="cart-detail-titulo neon-text-prod-salient-prod ">
+                            Carro de compras
+                        </div>
+                    </div>
+                    </div>
+                    <div class="cart-product">
                     <div class="cart-photo">
-                        <img src="\images\productos\disco\disco-duro.png"
-                alt="Producto destacado">
+                        <img src="\images\productos\disco\disco-duro.png" alt="Producto destacado">
                     </div>
                     <div class="cart-title-prod">
                         <p>Disco Duro portátil Expansion Portable de Seagate</p>
@@ -38,62 +39,71 @@
                     <div class="cart-total-prod">
                         <p>$5000</p>
                     </div>
-                  
-            </div>
-            <div class="cart-product1">
-                <div class="cart-photo">
-                    <img src="\images\productos\gabinete\gabinete-01.png"
-            alt="Producto destacado">
-                </div>
-                <div class="cart-title-prod">
-                    <p>Gabinete Redragon GC-530 Ratchet</p>
-                </div>
-                <div class="cart-cant">
-                    <input type="number" value="1">
-                </div>
-                <div class="cart-delete">
-                    <a href="#">Eliminar</a>
-                </div>
-                <div class="cart-detail">
-                    <a href="#">Detalle</a>
-                </div>
-                <div class="cart-total-prod">
-                    <p>$4600</p>
-                </div>
-            </div>
-            <div class="cart-product2">
-                <div class="cart-photo">
-                    <img src="\images\productos\memoria\memoria-vista-lateral.png"
-            alt="Producto destacado">
-                </div>
-                <div class="cart-title-prod">
-                    <p>Memoria DDR4 Corsair ValueSelect 16gb</p>
-                </div>
-                <div class="cart-cant">
-                    <input type="number" value="1">
-                </div>
-                <div class="cart-delete">
-                    <a href="#">Eliminar</a>
-                </div>
-                <div class="cart-detail">
-                    <a href="#">Detalle</a>
-                </div>
-                <div class="cart-total-prod">
-                    <p>$3000</p>
-                </div>
-            </div>
-            <div class="cart-envio">
-                <label>Envio a: Calle siempre viva 742, Springfield</label> <label class="cart-send-free"> Gratis</label>
-            </div>
-            <div class="cart-total">
-                <input type="submit" class="button-cart-buy" value="Continuar compra"> 
-                
-                <label class="cart-total-total">Total:</label><label class="cart-precio-total"> $12600</label>
-            
-            </div>
-            <!-- <div class="cart-button"></div> -->
-        </section>
-    </main>
-    
-    <!-- footer added -->
-<%- include('../partials/footer'); %>
+
+                    </div>
+                    <div class="cart-product1">
+                    <div class="cart-photo">
+                        <img src="\images\productos\gabinete\gabinete-01.png" alt="Producto destacado">
+                    </div>
+                    <div class="cart-title-prod">
+                        <p>Gabinete Redragon GC-530 Ratchet</p>
+                    </div>
+                    <div class="cart-cant">
+                        <input type="number" value="1">
+                    </div>
+                    <div class="cart-delete">
+                        <a href="#">Eliminar</a>
+                    </div>
+                    <div class="cart-detail">
+                        <a href="#">Detalle</a>
+                    </div>
+                    <div class="cart-total-prod">
+                        <p>$4600</p>
+                    </div>
+                    </div>
+                    <div class="cart-product2">
+                    <div class="cart-photo">
+                        <img src="\images\productos\memoria\memoria-vista-lateral.png" alt="Producto destacado">
+                    </div>
+                    <div class="cart-title-prod">
+                        <p>Memoria DDR4 Corsair ValueSelect 16gb</p>
+                    </div>
+                    <div class="cart-cant">
+                        <input type="number" value="1">
+                    </div>
+                    <div class="cart-delete">
+                        <a href="#">Eliminar</a>
+                    </div>
+                    <div class="cart-detail">
+                        <a href="#">Detalle</a>
+                    </div>
+                    <div class="cart-total-prod">
+                        <p>$3000</p>
+                    </div>
+                    </div>
+                    <div class="cart-envio">
+                    <label>
+                        Envio a: Calle siempre viva 742, Springfield
+                    </label> 
+                    <label class="cart-send-free">
+                        Gratis
+                    </label>
+                    </div>
+                    <div class="cart-total">
+                    <input type="submit" class="button-cart-buy" value="Continuar compra">
+
+                    <label class="cart-total-total">
+                        Total:
+                    </label>
+                    <label class="cart-precio-total">
+                         $12600
+                    </label>
+
+                    </div>
+                   
+                    </section>
+                    </div>
+        </main>
+
+        <!-- footer added -->
+        <%- include('../partials/footer'); %>

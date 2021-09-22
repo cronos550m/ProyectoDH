@@ -34,23 +34,23 @@
 
 .user-logo-header a {
     text-decoration: none;
-    color: #444343;
+    color: #5a5a5a;
     
 }
 .user-logo-header a:visited {
     text-decoration: none;
-    color:  #444343;
+    color:  #5a5a5a;
     
 }
 
 .user-logo-header a:link {
     text-decoration: none;
-    color: #444343;
+    color: #5a5a5a;
     
 }
 
 .kart-header {
-    color: #444343;
+    color: #5a5a5a;
     /* text-shadow: 0 0 3px #f730fa; */
     grid-area: cart; 
     display: flex;
@@ -61,18 +61,18 @@
 
 .kart-header a {
     text-decoration: none;
-    color: #444343;
+    color: #5a5a5a;
     
 }
 .kart-header a:visited {
     text-decoration: none;
-    color:  #444343;
+    color:  #5a5a5a;
     
 }
 
 .kart-header a:link {
     text-decoration: none;
-    color: #444343;
+    color: #5a5a5a;
     
 }
 
@@ -99,10 +99,10 @@
 .hamburger-button {
     border: 0;
     background-color: black;
-    color: #444343;
+    color: #5a5a5a;
 }
 .header-menu a {
-    color: #444343;
+    color: #5a5a5a;
     /* text-shadow: 0 0 4px #f730fa; */
     text-decoration: none;
     background-color: transparent;
@@ -308,23 +308,23 @@
 
 .user-logo-header a {
     text-decoration: none;
-    color: #444343;
+    color: #5a5a5a;
     
 }
 .user-logo-header a:visited {
     text-decoration: none;
-    color:  #444343;
+    color:  #5a5a5a;
     
 }
 
 .user-logo-header a:link {
     text-decoration: none;
-    color: #444343;
+    color: #5a5a5a;
     
 }
 
 .kart-header {
-    color: #444343;
+    color: #5a5a5a;
     /* text-shadow: 0 0 3px #f730fa; */
     grid-area: cart; 
     display: flex;
@@ -353,10 +353,10 @@
 .hamburger-button {
     border: 0;
     background-color: black;
-    color: #444343;
+    color: #5a5a5a;
 }
 .header-menu a {
-    color: #444343;
+    color: #5a5a5a;
     /* text-shadow: 0 0 4px #f730fa; */
     text-decoration: none;
     background-color: transparent;
@@ -545,24 +545,24 @@
     
     .user-logo-header a {
         text-decoration: none;
-        color: #444343;
+        color: #5a5a5a;
         
     }
     .user-logo-header a:visited {
         text-decoration: none;
-        color:  #444343;
+        color:  #5a5a5a;
         
     }
     
     .user-logo-header a:link {
         text-decoration: none;
-        color: #444343;
+        color: #5a5a5a;
         
     }
     
     .kart-header {
         display: none !important;
-        color: #444343;
+        color: #5a5a5a;
         /* text-shadow: 0 0 3px #f730fa; */
         grid-area: cart; 
         display: flex;
@@ -704,10 +704,10 @@
     .hamburger-button {
         border: 0;
         background-color: black;
-        color: #444343;
+        color: #5a5a5a;
     }
     .header-menu a {
-        color: #444343;
+        color: #5a5a5a;
         /* text-shadow: 0 0 4px #f730fa; */
         text-decoration: none;
         background-color: transparent;
@@ -733,7 +733,7 @@
     .nav-bar {
         display: grid;
         grid-auto-flow: column;
-        grid-template-columns: 2fr 5fr 4fr;
+        grid-template-columns: 2fr 3fr 6fr;
         grid-template-rows: 1fr;
         gap: 0px 0px;
         grid-template-areas: "logo search menupc";
@@ -898,25 +898,25 @@
     
     .user-logo-header a {
         text-decoration: none;
-        color: #444343;
+        color: #5a5a5a;
         
     }
     
     .user-logo-header a:visited {
         text-decoration: none;
-        color:  #444343;
+        color:  #5a5a5a;
         
     }
     
     .user-logo-header a:link {
         text-decoration: none;
-        color: #444343;
+        color: #5a5a5a;
         
     }
     
     .kart-header {
         display: none !important;
-        color: #444343;
+        color: #5a5a5a;
         /* text-shadow: 0 0 3px #f730fa; */
         grid-area: cart; 
         display: flex;
@@ -1058,10 +1058,10 @@
     .hamburger-button {
         border: 0;
         background-color: black;
-        color: #444343;
+        color: #5a5a5a;
     }
     .header-menu a {
-        color: #444343;
+        color: #5a5a5a;
         /* text-shadow: 0 0 4px #f730fa; */
         text-decoration: none;
         background-color: transparent;
