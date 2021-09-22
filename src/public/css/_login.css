@@ -1,23 +1,25 @@
 
 
 .container-login {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr;
-    grid-auto-columns: 1fr;
-    margin: 19%;
-    padding-bottom: 13px;
-    background-color: #2e2c2c;
-    box-shadow: 0 0 0 1px rgb(196 8 202);
-    border-radius: 5px;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    align-items: center;
-    justify-content: center;
-    grid-template-areas:
-        "container-login-logo"
-        "container-form";
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.9fr 2.4fr;
+  grid-auto-columns: 1fr;
+  margin: 15%;
+  padding-bottom: 13px;
+  background-color: #2e2c2c;
+  box-shadow: 0 0 0 1px rgb(196 8 202);
+  border-radius: 5px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  align-items: center;
+  margin-top: 205px;
+  margin-bottom: 206px;
+  justify-content: center;
+  grid-template-areas:
+      "container-login-logo"
+      "container-form";
+  justify-items: center;
   }
   
   .container-login-logo {     
@@ -111,27 +113,31 @@
 
     }
     .login-container-pass input, select, textarea{ 
-        background: black;
-        border: 0;
-        padding: 2px;
-        padding-left: 5px;
-        color: white;
-        border-radius: 3px;
-        font-weight: 900;   
+      background: black;
+      border: 0;
+      padding: 2px;
+      padding-left: 5px;
+      width: 171px;
+      border-radius: 3px;
+      color: white;
+      font-weight: 900;
         
       }
 
-      .login-container-email { grid-area: login-container-email; }
+      .login-container-email { 
+        grid-area: login-container-email;
+        margin-bottom: 3px; 
+      }
 
       .login-container-email input, select, textarea{ 
         background: black;
         border: 0;
         padding: 2px;
         padding-left: 5px;
-        color: white;
+        width: 171px;
         border-radius: 3px;
-        font-weight: 900;
         color: white;
+        font-weight: 900;
       }
   
 

@@ -4,7 +4,6 @@
   position: fixed;
   width: 100%;
   bottom: 0;
-  /* display: none; */
   background-color: #020202;
   box-shadow: 0 0 0 1px rgb(196 8 202 / 77%);
   display: none;
@@ -113,6 +112,7 @@
     bottom: 0;
     z-index: 40;
     background: black;
+    color: #5a5a5a;
     width: 100%;
     height: 50px;
     justify-content: space-evenly;
@@ -165,6 +165,7 @@
   .footer-dark {
     padding: 20px 10px;
     color:#f9fdff;
+    display: none;
     background-color:#020202;
     box-shadow:0 0 0 1px rgba(196, 8, 202, 0.767);
   }

@@ -6,16 +6,16 @@
         <%- include('../partials/header'); %>
         <body>
             <main>
-                <form class="Register-form" action="/productNew" method="post" enctype="multipart/form-data">
+                
                     <section class="prod-new-total-container">
-
-
-                        <!-- <div class="new-arrow">
+                        <form class="Register-form" action="/productNew" method="post" enctype="multipart/form-data">
+                        <section class="prod-new-container">
+                        <div class="new-arrow">
                             <a href="javascript: history.go(-1)"
                                 class="go-back-prod-detail animate__animated animate__flash">
-                                << /a>
+                                < </a>
                         </div>
-                    lo comente porque se rompia -->
+                     
                         <div class="new-title animate__animated animate__flash">
                             <div class="new-title-title "> Agrega y Edita tus productos</div>
                         </div>
@@ -81,10 +81,10 @@
                                 <input type="submit" value="Enviar" class="new-button">
                             </div>
                         </div>
-
-
                     </section>
-                </form>
+                    </form>
+                    </section>
+                
             </main>
     </body>
     <!-- footer added -->
