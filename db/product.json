@@ -100,7 +100,7 @@
     },
     {
         "id": 10,
-        "nombre": "prueba",
+        "nombre": "prueba10",
         "descripcion": "descripcion de prueba",
         "detalle": "detalle de prueba",
         "imagen": "/images/imagen-no-disponible.jpg",

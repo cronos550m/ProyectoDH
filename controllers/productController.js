@@ -43,7 +43,27 @@ const controller = {
     editProduct:(req,res)=>{
         const id= req.params.id     // uso el id que viene desde la ruta
         const producto= dbProductos.find(item => item.id == id); // busco el id en la base
-        res.render(path.join(__dirname, '../src/views/products/productNew.ejs'), { product: producto }) //devuelve el formulario de edicion de producto
+        res.render(path.join(__dirname, '../src/views/products/productEdit.ejs'), { product: producto }) //devuelve el formulario de edicion de producto
+    },
+    saveEditedProduct:(req,res)=>{
+        const id= parseInt(req.params.id);     // uso el id que viene desde la ruta
+        const {nombre,descripcion,detalle,cantidad,precio,descuento,envio}=req.body; // requiero toda la info del body
+        const saveEditedProduct={ // creo un objeto con toda la info del body
+                "id": id,
+                "nombre": nombre,
+                "descripcion": descripcion,
+                "detalle": detalle,
+                "imagen": "/images/imagen-no-disponible.jpg", //harcodeo la imagen
+                "cantidad": cantidad,
+                "precio": precio,
+                "descuento": descuento,
+                "envio": envio
+        };
+        dbProductos[id-1]=saveEditedProduct 
+        fs.writeFileSync(path.join(__dirname,"../db/product.json"), JSON.stringify(dbProductos, null, 4), {
+            encoding: "utf8",
+          }); // escribo el array en el archivo de base de datos
+          res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: dbProductos }) // renderizo la vista de todos los productos
     }
 };
 

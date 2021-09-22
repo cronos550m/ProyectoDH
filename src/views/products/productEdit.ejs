@@ -6,7 +6,7 @@
         <%- include('../partials/header'); %>
         <body>
             <main>
-                <form class="Register-form" action="/productNew" method="post">
+                <form class="Register-form" action="/products/<%= product.id %>/edit" method="post">
                     <section class="prod-new-total-container">
 
 
@@ -25,20 +25,19 @@
                                 <label for="">Nombre</label>
                             </div>
                             <div class="new-add-name">
-                                <input type="text" value="" name="nombre"
-                                    placeholder="  Ingresa el nombre del articulo">
+                                <textarea name="nombre" rows="4" cols="45"><%= product.nombre %></textarea>
                             </div>
                             <div class="new-desc new-position-text">
                                 <label for="">Descripcion</label>
                             </div>
                             <div class="new-add-desc">
-                                <textarea name="descripcion" rows="4" cols="45">Ingresa una descripción</textarea>
+                                <textarea name="descripcion" rows="4" cols="45"><%= product.descripcion %></textarea>
                             </div>
                             <div class="new-detail new-position-text">
                                 <label for="">Detalle</label>
                             </div>
                             <div class="new-add-detail">
-                                <textarea name="detalle" rows="4" cols="45">Ingresa un detalle</textarea>
+                                <textarea name="detalle" rows="4" cols="45"><%= product.detalle %></textarea>
                             </div>
                             <div class="new-pics new-position-text">
                                 <label for="">Imagenes</label>
@@ -55,27 +54,26 @@
                                 <label for="">Cantidad</label>
                             </div>
                             <div class="new-add-stock">
-                                <input type="text" value="" name="cantidad" placeholder="  Ingresa la cantidad">
+                                <textarea name="cantidad" rows="4" cols="45"><%= product.cantidad %></textarea>
                             </div>
                             <div class="new-price new-position-text">
                                 <label for="">Precio</label>
                             </div>
                             <div class="new-add-price">
-                                <input type="text" value="" name="precio"
-                                    placeholder="  Ingresa el precio del articulo">
+                                <textarea name="precio" rows="4" cols="45"><%= product.precio %></textarea>
                             </div>
 
                             <div class="new-disc new-position-text">
                                 <label for="">Descuento</label>
                             </div>
                             <div class="new-add-disc">
-                                <input type="text" value="" name="descuento" placeholder="  Ingresa un descuento">
+                                <textarea name="descuento" rows="4" cols="45"><%= product.descuento %></textarea>
                             </div>
                             <div class="new-ship new-position-text">
                                 <label for="">Envio</label>
                             </div>
                             <div class="new-add-ship">
-                                <input type="text" value="" name="envio" placeholder="  Ingresa el valor del envio">
+                                <textarea name="envio" rows="4" cols="45"><%= product.envio %></textarea>
                             </div>
                             <div class="new-cont-button">
                                 <input type="submit" value="Enviar" class="new-button">
