@@ -191,7 +191,7 @@ estilo articulos destacados
 .main-section {
     display: flex;
     margin-top: 15px;
-    margin-bottom: 53px;
+    margin-bottom: 160px;
     flex-direction: column;
 }
 

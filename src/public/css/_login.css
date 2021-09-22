@@ -26,6 +26,11 @@
     grid-area: container-login-logo;
     margin: 14px; 
 }
+
+.container-login-logo img {
+width: 40px;
+height: 40px;
+}
   
   .container-form { grid-area: container-form; }
   
@@ -263,9 +268,10 @@
     grid-template-rows: 0.2fr 1fr;
     grid-auto-columns: 1fr;
     margin: auto;
-    margin-top: 127px;
-    width: 35%;
-    margin-bottom: 40px;
+    margin-top: 300px;
+    width: 52%;
+    height: 347px;
+    margin-bottom: 258px;
     padding-bottom: 13px;
     background-color: #2e2c2c;
     box-shadow: 0 0 0 1px rgb(196 8 202);
@@ -282,7 +288,12 @@
   
   .container-login-logo {     
     grid-area: container-login-logo;
-    margin: 14px; 
+    margin: 27px;
+}
+
+.container-login-logo img {
+  width: 60px;
+  height: 60px;
 }
   
   .container-form { grid-area: container-form; }
@@ -297,7 +308,7 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     color: white;
-    font-size: 11px;
+    font-size: 14px;
     justify-content: center;
     grid-template-areas:
         "container-inputs"
@@ -315,23 +326,23 @@
       
     }
 .button-login-submit {
-    height: 23px;
-    width: 59px;
-    border: none;
-    background: #461466;
-    color: #f8f8f8;
-    font-size: 10px;
-    cursor: pointer;
-    box-shadow: 0 0 0 1px rgb(196 8 202);
-    transition: .3s ease all;
-    border-radius: 3px;
+  height: 30px;
+  width: 69px;
+  border: none;
+  background: #461466;
+  color: #f8f8f8;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgb(196 8 202);
+  transition: .3s ease all;
+  border-radius: 3px;
 }
 
 
   
   .login-register { 
     grid-area: login-register;
-    font-size: 9px;
+    font-size: 10px;
   }
 
   .login-register a { 
@@ -341,7 +352,7 @@
   
   .login-forget { 
     grid-area: login-forget;
-    font-size: 9px;
+    font-size: 10px;
    }
 
    .login-forget a { 
@@ -371,13 +382,16 @@
 
     }
     .login-container-pass input, select, textarea{ 
-        background: black;
-        border: 0;
-        padding: 2px;
-        padding-left: 5px;
-        color: white;
-        border-radius: 3px;
-        font-weight: 900;   
+      background: black;
+      border: 0;
+      padding: 2px;
+      padding-left: 5px;
+      width: 229px;
+      border-radius: 3px;
+      font-weight: 900;
+      line-height: 1.6;
+      font-size: 14px;
+      color: white;
         
       }
 
@@ -388,9 +402,11 @@
         border: 0;
         padding: 2px;
         padding-left: 5px;
-        color: white;
+        width: 229px;
         border-radius: 3px;
         font-weight: 900;
+        line-height: 1.6;
+        font-size: 14px;
         color: white;
       }
   
@@ -522,9 +538,10 @@
     grid-template-rows: 0.2fr 1fr;
     grid-auto-columns: 1fr;
     margin: auto;
-    margin-top: 221px;
+    margin-top: 167px;
     width: 34%;
     margin-bottom: 151px;
+    height: 364px;
     padding-bottom: 13px;
     background-color: #2e2c2c;
     box-shadow: 0 0 0 1px rgb(196 8 202);
@@ -556,7 +573,7 @@ height: 60px;
 .container-form {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.4fr 0.2fr 0.2fr;
+  grid-template-rows: 0.8fr 0.2fr 0.1fr 0.1fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;

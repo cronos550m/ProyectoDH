@@ -2,13 +2,13 @@
 
 /* RESET RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-:root {
+/* :root {
   --white: #afafaf;
   --red: #e31b23;
   --bodyColor: #292a2b;
   --borderFormEls: hsl(0, 0%, 10%);
   --bgFormEls: hsl(0, 0%, 14%);
-  /* --bgFormElsFocus: hsl(0, 7%, 20%); */
+  
 }
 
 * {
@@ -39,14 +39,12 @@ select {
   appearance: none;
 }
 
-/* Remove native arrow on IE */
+
 select::-ms-expand {
   display: none;
 }
 
-/*Remove dotted outline from selected option on Firefox*/
-/*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
-/*We use !important to override the color set for the select on line 99*/
+
 select:-moz-focusring {
   color: transparent !important;
   text-shadow: 0 0 0 var(--white);
@@ -59,13 +57,9 @@ textarea {
 ul {
   list-style: none;
 }
+ */
 
-/* body {
-  font: 18px/1.5 "Open Sans", sans-serif;
-  background: var(--bodyColor);
-  color: var(--white);
-  margin: 1.5rem 0;
-} */
+
 
 .register-container {
   width: 70%;
@@ -472,7 +466,8 @@ ul {
 
 .my-form {
   display: flex;
-  margin-top: 85px;
+  margin-top: 250px;
+  margin-bottom: 225px;
 }
 
 .my-form h1 {
