@@ -22,7 +22,24 @@ const controller = {
     },
     insertProduct: (req, res) => { // verificar porque no me llegan cosas del body
         const newId = dbProductos[(dbProductos.length) - 1].id + 1  // busco el ultimo id y le sumo 1
-        console.log(req.body);
+        const {nombre,descripcion,detalle,cantidad,precio,descuento,envio}=req.body; // requiero toda la info del bodu
+        const newProduct={ // creo un objeto con toda la info del body
+                "id": newId,
+                "nombre": nombre,
+                "descripcion": descripcion,
+                "detalle": detalle,
+                "imagen": "/images/imagen-no-disponible.jpg", //harcodeo la imagen
+                "cantidad": cantidad,
+                "precio": precio,
+                "descuento": descuento,
+                "envio": envio
+        };
+        dbProductos.push(newProduct) //agrego el nuevo producto al final de la base
+        fs.writeFileSync(path.join(__dirname,"../db/product.json"), JSON.stringify(dbProductos, null, 4), {
+            encoding: "utf8",
+          });
+        res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: dbProductos })
+
     }
 };
 

@@ -86,5 +86,49 @@
         "precio": 3000,
         "descuento": 0,
         "envio": 0
+    },
+    {
+        "id": 9,
+        "nombre": "prueba",
+        "descripcion": "descripcion de prueba",
+        "detalle": "detalle de prueba",
+        "imagen": "/images/imagen-no-disponible.jpg",
+        "cantidad": "100",
+        "precio": "200",
+        "descuento": "5",
+        "envio": "150"
+    },
+    {
+        "id": 10,
+        "nombre": "prueba",
+        "descripcion": "descripcion de prueba",
+        "detalle": "detalle de prueba",
+        "imagen": "/images/imagen-no-disponible.jpg",
+        "cantidad": "100",
+        "precio": "200",
+        "descuento": "5",
+        "envio": "150"
+    },
+    {
+        "id": 11,
+        "nombre": "prueba",
+        "descripcion": "descripcion de prueba",
+        "detalle": "detalle de prueba",
+        "imagen": "/images/imagen-no-disponible.jpg",
+        "cantidad": "100",
+        "precio": "200",
+        "descuento": "5",
+        "envio": "150"
+    },
+    {
+        "id": 12,
+        "nombre": "prueba",
+        "descripcion": "descripcion de prueba",
+        "detalle": "detalle de prueba",
+        "imagen": "/images/imagen-no-disponible.jpg",
+        "cantidad": "100",
+        "precio": "200",
+        "descuento": "5",
+        "envio": "150"
     }
 ]
