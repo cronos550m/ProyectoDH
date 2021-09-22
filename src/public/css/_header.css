@@ -733,7 +733,7 @@
     .nav-bar {
         display: grid;
         grid-auto-flow: column;
-        grid-template-columns: 2fr 5fr 4fr;
+        grid-template-columns: 2fr 3fr 6fr;
         grid-template-rows: 1fr;
         gap: 0px 0px;
         grid-template-areas: "logo search menupc";
