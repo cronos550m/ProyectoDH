@@ -27,10 +27,11 @@
                         <div class="neon-text-prod-salient-prod"> Productos Destacados</div>
                         <!-- <div class="neon-text-prod-salient-dest"> </div> -->
                     </div>
-                    
+                    <section class="index-container-section-products">
                         <% products.forEach(function(product){ %> <!-- recorro el array de productos  -->
                             <%- include('./partials/product',{product: product}) %> <!-- llamo a la vista parcial y le paso un producto -->
                         <% }); %>
+                    </section>
                 </section>
             </section>
         </main>

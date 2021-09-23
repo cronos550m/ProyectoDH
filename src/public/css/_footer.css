@@ -9,6 +9,11 @@
       }
 
 
+.fas {
+  color: #5a5a5a;
+}
+
+
   .footer-mob {
     display: flex;
     align-items: center;
@@ -75,7 +80,9 @@ display: none;
 
   /******************* Nuevo footer***********************/
 
-
+  .fas {
+    color: #5a5a5a;
+  }
 
 
   .footer-mob {

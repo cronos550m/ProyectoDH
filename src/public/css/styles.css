@@ -16,6 +16,7 @@
     color purpura : rgb(195 75 231) / #d23eff
     color fondo prod: #2e2c2c
     Gris claro : #a9a9ab
+        color: #5a5a5a; gris oscuro
 */
 
 
@@ -33,6 +34,22 @@
     height: 100%;
     margin-bottom: 19px;
     flex-wrap: wrap;
+}
+
+
+
+
+
+.index-container-section-products {
+
+    justify-content: space-around;
+    padding: 11px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 19px;
+    flex-wrap: wrap;
+
 }
 html, body {
     width: 100%;
@@ -1032,23 +1049,27 @@ estilo articulos destacados
 }
 
 .index-container-section {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 5% 26% 26% 26% 26%;
-    gap: 0% 0%;
-    grid-auto-flow: row;
-    justify-content: center;
-    grid-template-areas:
-        "neon-wrapper-prod-salient neon-wrapper-prod-salient"
-        "product product1"
-        "product2 product3"
-        "product4 product5"
-        "product6 product7";
-    margin-bottom: 185px;
+    justify-content: space-around;
+    padding: 11px;
+    display: flex;
     width: 100%;
     height: 100%;
-      }
-      
+    margin-bottom: 19px;
+    flex-wrap: wrap;
+}
+
+.index-container-section-products {
+
+    justify-content: space-around;
+    padding: 11px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 19px;
+    flex-wrap: wrap;
+
+}
+
       .neon-wrapper-prod-salient { grid-area: neon-wrapper-prod-salient; }
       
       .product { grid-area: product; }
@@ -1699,22 +1720,28 @@ estilo articulos destacados
     }
     
     .index-container-section {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-rows: 6% 47% 47%;
-        gap: 0% 0%;
-        grid-auto-flow: row;
         justify-content: space-around;
-        grid-template-areas:
-            "neon-wrapper-prod-salient neon-wrapper-prod-salient neon-wrapper-prod-salient neon-wrapper-prod-salient"
-            "product product1 product2 product3"
-            " product4 product5 product6 product7";
         padding: 11px;
+        display: flex;
         width: 100%;
         height: 100%;
         margin-bottom: 19px;
-          }
-          
+        flex-wrap: wrap;
+    }
+
+    .index-container-section-products {
+
+        justify-content: space-around;
+        padding: 11px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 19px;
+        flex-wrap: wrap;
+
+    }
+    
+    
           .neon-wrapper-prod-salient { grid-area: neon-wrapper-prod-salient; }
           
           .product { grid-area: product; }
