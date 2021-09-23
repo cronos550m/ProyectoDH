@@ -259,11 +259,11 @@
 }
 
 .new-cont-button {
-    margin-top: 8px;
-    grid-area: new-cont-button;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  grid-area: new-cont-button;
+  margin-top: 13px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .new-button {
@@ -554,11 +554,11 @@
   }
   
   .new-cont-button {
-      margin-top: 8px;
-      grid-area: new-cont-button;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    grid-area: new-cont-button;
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
   
   .new-button {
@@ -854,11 +854,11 @@
   }
   
   .new-cont-button {
-      margin-top: 8px;
-      grid-area: new-cont-button;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    grid-area: new-cont-button;
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
   
   .new-button {
