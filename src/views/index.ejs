@@ -27,62 +27,10 @@
                         <div class="neon-text-prod-salient-prod"> Productos Destacados</div>
                         <!-- <div class="neon-text-prod-salient-dest"> </div> -->
                     </div>
-                    <article class="product">
-                        <img src="\images\productos\disco\disco-duro.png" alt="Producto destacado">
-                        <h3>Disco Duro</h3>
-                        <p>Disco Duro Expansion Portable de Seagate</p>
-                        <p class="home-precio-dest">$5000</p>
-                        <a href="/productDetail">ver más</a>
-                    </article>
-                    <article class="product1">
-                        <img src="\images\productos\gabinete\gabinete-01.png" alt="Producto destacado">
-                        <h3>Gabinete Gamer</h3>
-                        <p>Gabinete Redragon GC-530 Ratchet</p>
-                        <p class="home-precio-dest">$4600</p>
-                        <a href="/productDetail">ver más</a>
-                    </article>
-                    <article class="product2">
-                        <img src="\images\productos\memoria\memoria-vista-lateral.png" alt="Producto destacado">
-                        <h3>Memoria DDR4</h3>
-                        <p>Memoria DDR4 Corsair ValueSelect 16gb</p>
-                        <p class="home-precio-dest">$3000</p>
-                        <a href="/productDetail">ver más</a>
-                    </article>
-                    <article class="product3">
-                        <img src="\images\productos\disco\disco-duro.png" alt="Producto destacado">
-                        <h3>Disco Duro</h3>
-                        <p>Disco Duro Expansion Portable de Seagate</p>
-                        <p class="home-precio-dest">$5000</p>
-                        <a href="/productDetail">ver más</a>
-                    </article>
-                    <article class="product4">
-                        <img src="\images\productos\gabinete\gabinete-01.png" alt="Producto destacado">
-                        <h3>Gabinete Gamer</h3>
-                        <p>Gabinete Redragon GC-530 Ratchet</p>
-                        <p class="home-precio-dest">$4600</p>
-                        <a href="/productDetail">ver más</a>
-                    </article>
-                    <article class="product5">
-                        <img src="\images\productos\memoria\memoria-vista-lateral.png" alt="Producto destacado">
-                        <h3>Memoria DDR4</h3>
-                        <p>Memoria DDR4 Corsair ValueSelect 16gb</p>
-                        <p class="home-precio-dest">$3000</p>
-                        <a href="/productDetail">ver más</a>
-                    </article>
-                    <article class="product6">
-                        <img src="\images\productos\gabinete\gabinete-01.png" alt="Producto destacado">
-                        <h3>Gabinete Gamer</h3>
-                        <p>Gabinete Redragon GC-530 Ratchet</p>
-                        <p class="home-precio-dest">$4600</p>
-                        <a href="/productDetail">ver más</a>
-                    </article>
-                    <article class="product7">
-                        <img src="\images\productos\memoria\memoria-vista-lateral.png" alt="Producto destacado">
-                        <h3>Memoria DDR4</h3>
-                        <p>Memoria DDR4 Corsair ValueSelect 16gb</p>
-                        <p class="home-precio-dest">$3000</p>
-                        <a href="/productDetail">ver más</a>
-                    </article>
+                    
+                        <% products.forEach(function(product){ %> <!-- recorro el array de productos  -->
+                            <%- include('./partials/product',{product: product}) %> <!-- llamo a la vista parcial y le paso un producto -->
+                        <% }); %>
                 </section>
             </section>
         </main>
