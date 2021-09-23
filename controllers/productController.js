@@ -20,7 +20,7 @@ const controller = {
         res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: dbProductos })
         //devuelve la vista de los productos en este evento, paso como parametro la variable con todo el array de productos
     },
-    insertProduct: (req, res) => { // verificar porque no me llegan cosas del body
+    productInsert: (req, res) => { // verificar porque no me llegan cosas del body
         const newId = dbProductos[(dbProductos.length) - 1].id + 1  // busco el ultimo id y le sumo 1
         const {nombre,descripcion,detalle,cantidad,precio,descuento,envio}=req.body; // requiero toda la info del body
         const newProduct={ // creo un objeto con toda la info del body
@@ -40,12 +40,12 @@ const controller = {
           }); // escribo el array en el archivo de base de datos
           res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: dbProductos }) // renderizo la vista de todos los productos
     },
-    editProduct:(req,res)=>{
+    productEdit:(req,res)=>{
         const id= req.params.id     // uso el id que viene desde la ruta
         const producto= dbProductos.find(item => item.id == id); // busco el id en la base
         res.render(path.join(__dirname, '../src/views/products/productEdit.ejs'), { product: producto }) //devuelve el formulario de edicion de producto
     },
-    saveEditedProduct:(req,res)=>{
+    productSaveEdited:(req,res)=>{
         const id= parseInt(req.params.id);     // uso el id que viene desde la ruta
         const {nombre,descripcion,detalle,cantidad,precio,descuento,envio}=req.body; // requiero toda la info del body
         const saveEditedProduct={ // creo un objeto con toda la info del body
