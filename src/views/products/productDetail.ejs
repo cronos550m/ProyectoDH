@@ -1,4 +1,4 @@
-<!-- viene por parametro un objeto que se llama product y tiene este formato
+<%#<!-- viene por parametro un objeto que se llama product y tiene este formato
 {
     "id": 6,
     "nombre": "Memoria DDR4" ,
@@ -9,12 +9,12 @@
     "precio": 3000,
     "descuento": 0,
     "envio": 0
-} -->
+} -->%>
 
-<!-- head added -->
+<%#<!-- head added -->%>
 <%- include('../partials/head'); %>
 
-<!-- header added -->
+<%#<!-- header added -->%>
 <%- include('../partials/header'); %>
     
     <main>
@@ -25,7 +25,7 @@
                 <a href="javascript: history.go(-1)" class="go-back-prod-detail neon-text-prod-salient-prod animate__animated animate__flash"><</a>
                 <div class="prod-detail-titulo-container animate__animated animate__flash">
                 <div class="prod-detail-titulo neon-text-prod-salient-prod "> Detalle de producto</div>
-                <!-- <div class="neon-text-prod-salient-dest"> </div> -->
+                <%#<!-- <div class="neon-text-prod-salient-dest"> </div> -->%>
             </div>
             </div>
             <div class="prod-detail-stars">
@@ -64,8 +64,8 @@
                 </div>
             </div>
             <div class="prod-detail-foto-prod">
-                <!-- <img class="prod-detail-foto-prod-img" src="\images\productos\disco\disco-duro-superior.png"
-                alt="Producto destacado"> -->
+                <%#<!-- <img class="prod-detail-foto-prod-img" src="\images\productos\disco\disco-duro-superior.png"
+                alt="Producto destacado"> -->%>
                 <div class="prod-detail-slider prod-detail-foto-prod-img" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
                     <div><img src="<%= product.imagen %>"
                         alt="Producto destacado"></div>
@@ -92,7 +92,9 @@
 
             </div>
             <div class="prod-detail-buy-container">
-                <button type="button" class="prod-detail-buy-button">Añadir al carro</button>
+                <input type="button" class="prod-detail-buy-button-cart" value="Añadir al carro">
+                <input type="button" class="prod-detail-buy-button" value="Agregar">
+                <input type="button" class="prod-detail-buy-button" value="Eliminar">
             </div>
             <div class="prod-detail-cantidad-prod">
                 <div class="prod-stock">Stock:</div> <div class="prod-stock-total"><%= product.cantidad %></div>
@@ -105,5 +107,5 @@
 
           </div>
     </main>
-    <!-- footer added -->
+    <%#<!-- footer added -->%>
 <%- include('../partials/footer'); %>
