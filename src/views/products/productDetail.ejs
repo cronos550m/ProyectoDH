@@ -93,7 +93,9 @@
             </div>
             <div class="prod-detail-buy-container">
                 <input type="button" class="prod-detail-buy-button-cart" value="Añadir al carro">
-                <input type="button" class="prod-detail-buy-button" value="Agregar">
+                <form method="GET" action="/products/<%= product.id %>/edit">
+                <input type="submit" class="prod-detail-buy-button" value="Editar">
+            </form>
                 <input type="button" class="prod-detail-buy-button" value="Eliminar">
             </div>
             <div class="prod-detail-cantidad-prod">

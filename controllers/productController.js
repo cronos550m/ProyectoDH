@@ -42,6 +42,7 @@ const controller = {
     },
     productEdit:(req,res)=>{
         const id= req.params.id     // uso el id que viene desde la ruta
+        console.log("entre");
         const producto= dbProductos.find(item => item.id == id); // busco el id en la base
         res.render(path.join(__dirname, '../src/views/products/productEdit.ejs'), { product: producto }) //devuelve el formulario de edicion de producto
     },

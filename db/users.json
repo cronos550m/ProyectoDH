@@ -1,29 +1,29 @@
 [
     {
-        "Identificador": 1,
-        "Nombre": "Luciano",
-        "Apellido": "Pagnutti",
-        "Email": "lpagnutti@compumundo.com",
-        "Contraseña": "P@Ssw0rDG3neRic0!",
-        "Categoría": "admin",
-        "Imagen": "ruta imagen"
+        "identificador": 1,
+        "nombre": "Luciano",
+        "apellido": "Pagnutti",
+        "email": "lpagnutti@compumundo.com",
+        "password": "P@Ssw0rDG3neRic0!",
+        "categoria": "admin",
+        "imagen": "ruta imagen"
     },
     {
-        "Identificador": 2,
-        "Nombre": "Sergio",
-        "Apellido": "Cordoba",
-        "Email": "scordoba@compumundo.com",
-        "Contraseña": "P@Ssw0rDG3neRic0!",
-        "Categoría": "admin",
-        "Imagen": "ruta imagen"
+        "identificador": 2,
+        "nombre": "Sergio",
+        "apellido": "Cordoba",
+        "email": "scordoba@compumundo.com",
+        "password": "P@Ssw0rDG3neRic0!",
+        "categoria": "admin",
+        "imagen": "ruta imagen"
     },
     {
-        "Identificador": 1,
-        "Nombre": "Itati",
-        "Apellido": "Martinez",
-        "Email": "imartinez@compumundo.com",
-        "Contraseña": "P@Ssw0rDG3neRic0!",
-        "Categoría": "admin",
-        "Imagen": "ruta imagen"
+        "identificador": 3,
+        "nombre": "Itati",
+        "apellido": "Martinez",
+        "email": "imartinez@compumundo.com",
+        "password": "P@Ssw0rDG3neRic0!",
+        "categoria": "admin",
+        "imagen": "ruta imagen"
     }
 ]
