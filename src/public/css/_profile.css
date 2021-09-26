@@ -1,0 +1,17 @@
+.container-profile {
+    width: 70%;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin: auto;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    padding-bottom: 10px;
+    background-color: #2e2c2c;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    border-radius: 5px;
+  }
+
+  .container-profile-logo img {
+    width: 40px;
+    height: 40px;
+  }

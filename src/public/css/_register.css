@@ -2,7 +2,7 @@
 
 /* RESET RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* :root {
+ :root {
   --white: #afafaf;
   --red: #e31b23;
   --bodyColor: #292a2b;
@@ -10,7 +10,7 @@
   --bgFormEls: hsl(0, 0%, 14%);
   
 }
-
+/*
 * {
   padding: 0;
   margin: 0;
@@ -29,35 +29,36 @@ button {
   font-family: inherit;
   font-size: 100%;
 }
-
-button,
+ */
+ .my-form button,
 label {
   cursor: pointer;
 }
 
-select {
+.my-form select {
   appearance: none;
 }
 
 
-select::-ms-expand {
+.my-form select::-ms-expand {
   display: none;
 }
 
 
-select:-moz-focusring {
+.my-form select:-moz-focusring {
   color: transparent !important;
   text-shadow: 0 0 0 var(--white);
 }
 
-textarea {
+.my-form textarea {
   resize: none;
 }
 
-ul {
+.my-form ul {
   list-style: none;
+  display: initial;
 }
- */
+
 
 
 
@@ -354,17 +355,17 @@ footer span {
 } */
 
 .neon-register {
-    display: flex;
-    margin: 15px;
-    padding-bottom: 10px;
-    border-bottom: solid;
-    border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(157, 4, 204));
-    border-image-slice: 1;
-    border-bottom-width: thin;
-    border-top: 0;
-    border-right: 0;
-    padding-top: 20px;
-    border-left: 0;
+  display: flex;
+  margin: 2px;
+  padding-bottom: 11px;
+  border-bottom: solid;
+  border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(157, 4, 204));
+  border-image-slice: 1;
+  border-bottom-width: thin;
+  border-top: 0;
+  border-right: 0;
+  padding-top: 20px;
+  border-left: 0;
 }
 
 
@@ -390,19 +391,19 @@ footer span {
   --bgFormEls: hsl(0, 0%, 14%);
   /* --bgFormElsFocus: hsl(0, 7%, 20%); */
 }
-
+/* 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   outline: none;
-}
+} */
 
-a {
+.my-form a {
   color: inherit;
 }
 
-input,
+.my-form input,
 select,
 textarea,
 button {
@@ -410,33 +411,33 @@ button {
   font-size: 100%;
 }
 
-button,
+.my-form button,
 label {
   cursor: pointer;
 }
 
-select {
+.my-form select {
   appearance: none;
 }
 
 /* Remove native arrow on IE */
-select::-ms-expand {
+.my-form select::-ms-expand {
   display: none;
 }
 
 /*Remove dotted outline from selected option on Firefox*/
 /*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
 /*We use !important to override the color set for the select on line 99*/
-select:-moz-focusring {
+.my-form select:-moz-focusring {
   color: transparent !important;
   text-shadow: 0 0 0 var(--white);
 }
 
-textarea {
+.my-form textarea {
   resize: none;
 }
 
-ul {
+.my-form ul {
   list-style: none;
 }
 
@@ -688,17 +689,19 @@ footer span {
 }
 
 .neon-register {
-    display: flex;
-    margin: 15px;
-    padding-bottom: 10px;
-    border-bottom: solid;
-    border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(157, 4, 204));
-    border-image-slice: 1;
-    border-bottom-width: thin;
-    border-top: 0;
-    border-right: 0;
-    padding-top: 20px;
-    border-left: 0;
+  display: flex;
+  margin-bottom: 12px;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: solid;
+  border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(157, 4, 204));
+  border-image-slice: 1;
+  border-bottom-width: thin;
+  border-top: 0;
+  border-right: 0;
+  padding-top: 20px;
+  border-left: 0;
+  justify-content: center;
 }
 
 }
@@ -1025,9 +1028,9 @@ footer span {
   .neon-register {
     padding-left: 0;
     display: flex;
-    width: 773px;
+    width: 100%;
     position: relative;
-    right: 13px;
+    margin: auto;
     padding-right: 0;
     padding-bottom: 10px;
     border-bottom: solid;
@@ -1037,6 +1040,7 @@ footer span {
     border-top: 0;
     border-right: 0;
     padding-top: 22px;
+    margin-bottom: 16px;
     border-left: 0;
   }
   
