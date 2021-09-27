@@ -11,7 +11,8 @@ router.get('/productNew', productController.productNew);// al acceder al product
 router.get('/products', productController.products);// al acceder al products  llamo al controlador en el metodo products
 router.post('/productNew',productController.productInsert);// cuando llega el metodo post de product new accedo a esta ruta
 router.get('/products/:id/edit',productController.productEdit);
-router.post('/products/:id/edit',productController.productSaveEdited);
+router.put('/products/:id/edit',productController.productSaveEdited);
+router.delete('/products/:id', productController.productDelete)
 
 
 module.exports = router;

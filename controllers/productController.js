@@ -1,6 +1,6 @@
 /* este controlador se encarga de relacionar los eventos de los productos con las vistas*/
 const path = require('path'); // modulo para relacionar las rutas
-const dbProductos = require("../db/product.json");// levanto la base de datos de productos
+let dbProductos = require("../db/product.json");// levanto la base de datos de productos
 const fs = require("fs"); // requiero el modulo fs para poder leer archivos y escribirlos
 
 
@@ -20,7 +20,7 @@ const controller = {
         res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: dbProductos })
         //devuelve la vista de los productos en este evento, paso como parametro la variable con todo el array de productos
     },
-    productInsert: (req, res) => { // verificar porque no me llegan cosas del body
+    productInsert: (req, res) => {
         const newId = dbProductos[(dbProductos.length) - 1].id + 1  // busco el ultimo id y le sumo 1
         const {nombre,descripcion,detalle,cantidad,precio,descuento,envio}=req.body; // requiero toda la info del body
         const newProduct={ // creo un objeto con toda la info del body
@@ -42,7 +42,6 @@ const controller = {
     },
     productEdit:(req,res)=>{
         const id= req.params.id     // uso el id que viene desde la ruta
-        console.log("entre");
         const producto= dbProductos.find(item => item.id == id); // busco el id en la base
         res.render(path.join(__dirname, '../src/views/products/productEdit.ejs'), { product: producto }) //devuelve el formulario de edicion de producto
     },
@@ -60,11 +59,18 @@ const controller = {
                 "descuento": descuento,
                 "envio": envio
         };
-        dbProductos[id-1]=saveEditedProduct 
-        fs.writeFileSync(path.join(__dirname,"../db/product.json"), JSON.stringify(dbProductos, null, 4), {
+        dbProductos[id - 1] = saveEditedProduct
+        fs.writeFileSync(path.join(__dirname, "../db/product.json"), JSON.stringify(dbProductos, null, 4), {
             encoding: "utf8",
-          }); // escribo el array en el archivo de base de datos
-          res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: dbProductos }) // renderizo la vista de todos los productos
+        }); // escribo el array en el archivo de base de datos
+        res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: dbProductos }) // renderizo la vista de todos los productos
+    },
+    productDelete: (req,res)=>{
+        const idABorrar= parseInt(req.params.id);     // uso el id que viene desde la ruta
+        let newDb= dbProductos.filter(item => item.id != idABorrar);
+        dbProductos=newDb;
+        fs.writeFileSync(path.join(__dirname, "../db/product.json"), JSON.stringify(dbProductos, null, 4), { encoding: "utf8", }); // escribo el array en el archivo de base de datos
+        res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: dbProductos }) // renderizo la vista de todos los productos
     }
 };
 
