@@ -9,9 +9,10 @@ router.get('/productDetail/:id', productController.productDetail);// al acceder 
 router.get('/productCart', productController.productCart);// al acceder al carro de compras llamo al controlador en el metodo productCart
 router.get('/productNew', productController.productNew);// al acceder al productNew  llamo al controlador en el metodo productNew
 router.get('/products', productController.products);// al acceder al products  llamo al controlador en el metodo products
-router.post('/productNew',productController.insertProduct);// cuando llega el metodo post de product new accedo a esta ruta
-router.get('/products/:id/edit',productController.editProduct);
-router.post('/products/:id/edit',productController.saveEditedProduct);
+router.post('/productNew',productController.productInsert);// cuando llega el metodo post de product new accedo a esta ruta
+router.get('/products/:id/edit',productController.productEdit);
+router.put('/products/:id/edit',productController.productSaveEdited);
+router.delete('/products/:id', productController.productDelete)
 
 
 module.exports = router;
