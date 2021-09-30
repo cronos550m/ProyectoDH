@@ -1,89 +1,90 @@
 <!-- head added -->
 <%- include('../partials/head'); %>
 
-    
-        <!-- header added -->
-        <%- include('../partials/header'); %>
+
+    <!-- header added -->
+    <%- include('../partials/header'); %>
+
         <body>
             <main>
-                <form class="Register-form" action="/products/<%= product.id %>/edit?_method=PUT" method="post">
-                    <section class="prod-new-total-container">
-
-
-                        <!-- <div class="new-arrow">
-                            <a href="javascript: history.go(-1)"
-                                class="go-back-prod-detail animate__animated animate__flash">
-                                << /a>
-                        </div>
-                    lo comente porque se rompia -->
-                        <div class="new-title animate__animated animate__flash">
-                            <div class="new-title-title "> Agrega y Edita tus productos</div>
-                        </div>
-
-                        <div class="container-new-prod">
-                            <div class="new-name new-position-text">
-                                <label for="">Nombre</label>
+                <section class="prod-edit-total-container">
+                    <form class="Register-form" action="/products/<%= product.id %>/edit?_method=PUT" method="post">
+                        <section class="prod-edit-container">
+                            <div class="edit-arrow">
+                                <a href="javascript: history.go(-1)"
+                                    class="go-back-prod-detail animate__animated animate__flash">
+                                    < </a>
                             </div>
-                            <div class="new-add-name">
-                                <textarea name="nombre" rows="4" cols="45"><%= product.nombre %></textarea>
-                            </div>
-                            <div class="new-desc new-position-text">
-                                <label for="">Descripcion</label>
-                            </div>
-                            <div class="new-add-desc">
-                                <textarea name="descripcion" rows="4" cols="45"><%= product.descripcion %></textarea>
-                            </div>
-                            <div class="new-detail new-position-text">
-                                <label for="">Detalle</label>
-                            </div>
-                            <div class="new-add-detail">
-                                <textarea name="detalle" rows="4" cols="45"><%= product.detalle %></textarea>
-                            </div>
-                            <div class="new-pics new-position-text">
-                                <label for="">Imagenes</label>
-                            </div>
-                            <div class="new-add-pics">
-                                <input type="file" multiple id="gallery-photo-add">
-                                <div class="gallery"></div>
-                                <div class="new-gallery-pic"><i class="far fa-image"></i></div>
-                                <div class="new-gallery-pic"><i class="far fa-image"></i></div>
-                                <div class="new-gallery-pic"><i class="far fa-image"></i></div>
-                                <div class="new-gallery-pic"><i class="far fa-image"></i></div>
-                            </div>
-                            <div class="new-stock new-position-text">
-                                <label for="">Cantidad</label>
-                            </div>
-                            <div class="new-add-stock">
-                                <textarea name="cantidad" rows="4" cols="45"><%= product.cantidad %></textarea>
-                            </div>
-                            <div class="new-price new-position-text">
-                                <label for="">Precio</label>
-                            </div>
-                            <div class="new-add-price">
-                                <textarea name="precio" rows="4" cols="45"><%= product.precio %></textarea>
+                            <div class="edit-title animate__animated animate__flash">
+                                <div class="edit-title-title "> Agrega y Edita tus productos</div>
                             </div>
 
-                            <div class="new-disc new-position-text">
-                                <label for="">Descuento</label>
-                            </div>
-                            <div class="new-add-disc">
-                                <textarea name="descuento" rows="4" cols="45"><%= product.descuento %></textarea>
-                            </div>
-                            <div class="new-ship new-position-text">
-                                <label for="">Envio</label>
-                            </div>
-                            <div class="new-add-ship">
-                                <textarea name="envio" rows="4" cols="45"><%= product.envio %></textarea>
-                            </div>
-                            <div class="new-cont-button">
-                                <input type="submit" value="Enviar" class="new-button">
-                            </div>
-                        </div>
+                            <div class="container-edit-prod">
 
+                                <div class="edit-name edit-position-text">
+                                    <label for="">Nombre</label>
+                                </div>
+                                <div class="edit-add-name">
+                                    <textarea name="nombre" rows="4" cols="45"><%= product.nombre %></textarea>
+                                </div>
+                                <div class="edit-desc edit-position-text">
+                                    <label for="">Descripcion</label>
+                                </div>
+                                <div class="edit-add-desc">
+                                    <textarea name="descripcion" rows="4"
+                                        cols="45"><%= product.descripcion %></textarea>
+                                </div>
+                                <div class="edit-detail edit-position-text">
+                                    <label for="">Detalle</label>
+                                </div>
+                                <div class="edit-add-detail">
+                                    <textarea name="detalle" rows="4" cols="45"><%= product.detalle %></textarea>
+                                </div>
+                                <div class="edit-pics edit-position-text">
+                                    <label for="">Imagenes</label>
+                                </div>
+                                <div class="edit-add-pics">
+                                    <input type="file" multiple id="gallery-photo-add">
+                                    <div class="gallery"></div>
+                                    <div class="edit-gallery-pic"><i class="far fa-image"></i></div>
+                                    <div class="edit-gallery-pic"><i class="far fa-image"></i></div>
+                                    <div class="edit-gallery-pic"><i class="far fa-image"></i></div>
+                                    <div class="edit-gallery-pic"><i class="far fa-image"></i></div>
+                                </div>
+                                <div class="edit-stock edit-position-text">
+                                    <label for="">Cantidad</label>
+                                </div>
+                                <div class="edit-add-stock">
+                                    <textarea name="cantidad" rows="4" cols="45"><%= product.cantidad %></textarea>
+                                </div>
+                                <div class="edit-price edit-position-text">
+                                    <label for="">Precio</label>
+                                </div>
+                                <div class="edit-add-price">
+                                    <textarea name="precio" rows="4" cols="45"><%= product.precio %></textarea>
+                                </div>
 
-                    </section>
-                </form>
+                                <div class="edit-disc edit-position-text">
+                                    <label for="">Descuento</label>
+                                </div>
+                                <div class="edit-add-disc">
+                                    <textarea name="descuento" rows="4" cols="45"><%= product.descuento %></textarea>
+                                </div>
+                                <div class="edit-ship edit-position-text">
+                                    <label for="">Envio</label>
+                                </div>
+                                <div class="edit-add-ship">
+                                    <textarea name="envio" rows="4" cols="45"><%= product.envio %></textarea>
+                                </div>
+                                <div class="edit-cont-button">
+                                    <input type="submit" value="Enviar" class="edit-button">
+                                </div>
+                            </div>
+                        </section>
+                    </form>
+                </section>
+
             </main>
-    </body>
-    <!-- footer added -->
-    <%- include('../partials/footer'); %>
+        </body>
+        <!-- footer added -->
+        <%- include('../partials/footer'); %>

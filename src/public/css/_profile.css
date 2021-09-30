@@ -1,17 +1,185 @@
 .container-profile {
-    width: 70%;
-    padding-right: 32px;
-    padding-left: 32px;
-    margin: auto;
-    margin-top: 36px;
-    margin-bottom: 36px;
-    padding-bottom: 10px;
-    background-color: #2e2c2c;
-    box-shadow: 0 0 0 1px rgb(196 8 202);
-    border-radius: 5px;
+  width: 70%;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin: auto;
+  margin-top: 106px;
+  margin-bottom: 36px;
+  padding-bottom: 10px;
+  background-color: #2e2c2c;
+  box-shadow: 0 0 0 1px rgb(196 8 202);
+  border-radius: 5px;
   }
 
   .container-profile-logo img {
     width: 40px;
     height: 40px;
+  }  
+  .container-profile-logo {
+    display: flex;
+    justify-content: center;
+    height: 95px;
+    align-items: center;
+  }
+
+  .container-form-profile button,
+  label {
+    cursor: pointer;
+  }
+  
+  .container-form-profile select {
+    appearance: none;
+  }
+  
+  
+  .container-form-profile select::-ms-expand {
+    display: none;
+  }
+  
+  
+  .container-form-profile select:-moz-focusring {
+    color: transparent !important;
+    text-shadow: 0 0 0 var(--white);
+  }
+  
+  .container-form-profile textarea {
+    resize: none;
+  }
+  
+  .container-form-profile ul {
+    list-style: none;
+    display: initial;
+  }
+
+  .container-form-profile {
+    display: flex;
+    margin-top: 56px;
+    margin-bottom: 41px;
+    flex-direction: column;
+  }
+  
+  .container-form-profile h1 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .container-form-profile li,
+  .container-form-profile .grid > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  
+  .container-form-profile select,
+  .container-form-profile input,
+  .container-form-profile textarea,
+  .container-form-profile button {
+    width: 100%;
+    line-height: 1.5;
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    font-size: 11px;
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+    background: var(--bgFormEls);
+    transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25), transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+  }
+  
+  .container-form-profile textarea {
+    height: 170px;
+  }
+  
+  .container-form-profile ::placeholder {
+    color: inherit;
+    /*Fix opacity issue on Firefox*/
+    opacity: 1;
+  }
+  
+  .container-form-profile select:focus,
+  .container-form-profile input:focus,
+  .container-form-profile textarea:focus,
+  .container-form-profile button:enabled:hover,
+  .container-form-profile button:focus,
+  .container-form-profile input[type="checkbox"]:focus + label {
+    background: var(--bgFormElsFocus);
+  }
+  
+  .container-form-profile select:focus,
+  .container-form-profile input:focus,
+  .container-form-profile textarea:focus {
+    transform: scale(1.02);
+  }
+  
+  .container-form-profile *:required,
+  .container-form-profile select {
+    background-repeat: no-repeat;
+    background-position: center right 12px;
+    background-size: 13px 13px;
+  }
+  
+  .container-form-profile *:required {
+    background-image: url(/images/forpage/asterisk1.svg);  
+  }
+  
+  .container-form-profile select {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
+  }
+  
+  .container-form-profile *:disabled {
+    cursor: default;
+    filter: blur(2px);
+  }
+  
+  
+  /* FORM BTNS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .container-form-profile .required-msg {
+    display: none;
+    background: url(/images/forpage/asterisk1.svg)
+      no-repeat center left / 15px 15px;
+    padding-left: 20px;
+  }
+  
+  .container-form-profile .btn-grid {
+    position: relative;
+    overflow: hidden;
+    transition: filter 0.2s;
+  }
+  
+  .container-form-profile button {
+    font-weight: bold;
+  }
+  
+  .container-form-profile button > * {
+    display: inline-block;
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .container-form-profile button .back {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-110%, -50%);
+  }
+  
+  .container-form-profile button:enabled:hover .back,
+  .container-form-profile button:focus .back {
+    transform: translate(-50%, -50%);
+  }
+  
+  .container-form-profile button:enabled:hover .front,
+  .container-form-profile button:focus .front {
+    transform: translateX(110%);
+  }
+
+  .button-perfil-change .button-perfil-delete{
+    height: 23px;
+    width: 59px;
+    border: none;
+    background: #461466;
+    color: #f8f8f8;
+    font-size: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    transition: .3s ease all;
+    border-radius: 3px;
   }
