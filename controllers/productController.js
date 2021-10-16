@@ -34,7 +34,8 @@ const controller = {
          // llamo al modelo para guardar un producto editado
     },
     productDelete: (req,res)=>{
-        res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: productModelJSON.productDelete(parseInt(req.params.id)) }) // renderizo la vista de todos los productos
+        res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: productModelJSON.productDelete(parseInt(req.params.id)) })
+         // llamo al modelo para eliminar un producto
     }
 };
 
