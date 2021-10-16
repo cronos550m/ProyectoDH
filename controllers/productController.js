@@ -1,7 +1,5 @@
 /* este controlador se encarga de relacionar los eventos de los productos con las vistas*/
 const path = require('path'); // modulo para relacionar las rutas
-let dbProductos = require("../db/product.json");// levanto la base de datos de productos
-const fs = require("fs"); // requiero el modulo fs para poder leer archivos y escribirlos
 const productModelJSON= require("../models/productModelJSON") // requiero el modelo
 
 const controller = {
