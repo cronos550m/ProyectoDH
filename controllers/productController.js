@@ -6,9 +6,8 @@ const productModelJSON= require("../models/productModelJSON") // requiero el mod
 
 const controller = {
     productDetail: (req, res) => {
-        const producto = productModelJSON.productSearch(req.params.id);// llamo al modelo con el id que viene de la url
-        res.render(path.join(__dirname, '../src/views/products/productDetail.ejs'), { product: producto })
-         //devuelve la vista del detalle de producto y paso como parametro un prodructo
+        res.render(path.join(__dirname, '../src/views/products/productDetail.ejs'), { product: productModelJSON.productSearch(req.params.id) })
+         //llamo al modelo con el id que viene de la url devuelve la vista del detalle de producto
     },
     productCart: (req, res) => {
         res.render(path.join(__dirname, '../src/views/products/productCart.ejs')) //devuelve la vista del carro de compras en este evento
@@ -17,17 +16,16 @@ const controller = {
         res.render(path.join(__dirname, '../src/views/products/productNew.ejs')) //devuelve la vista para agregar y editar producto en este evento
     },
     products: (req, res) => {
-        const productos= productModelJSON.products(); //llamo al modelo para obtener todos los productos
-        res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: productos })
-        //devuelve la vista de los productos en este evento, paso como parametro la variable con todo el array de productos
+        res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: productModelJSON.products() })
+        //llamo al modelo para obtener todos los productos devuelve la vista de los productos
     },
     productInsert: (req, res) => {
           res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: productModelJSON.productInsert(req.body) }) 
-          // renderizo la vista de todos los productos una vez llamado al modelo para insertar un producto
+          // llamado al modelo para insertar un producto yr enderizo la vista de todos los productos una vez 
     },
     productEdit:(req,res)=>{
-        const producto = productModelJSON.productSearch(req.params.id)// llamo al modelo con el id que viene de la url
-        res.render(path.join(__dirname, '../src/views/products/productEdit.ejs'), { product: producto }) //devuelve el formulario de edicion de producto
+        res.render(path.join(__dirname, '../src/views/products/productEdit.ejs'), { product: productModelJSON.productSearch(req.params.id) })
+         //// llamo al modelo con el id que viene de la url y devuelve el formulario de edicion de producto
     },
     productSaveEdited:(req,res)=>{
         res.render(path.join(__dirname, '../src/views/products/products.ejs'), { products: productModelJSON.productSaveEdited(parseInt(req.params.id),req.body) })
