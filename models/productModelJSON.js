@@ -8,7 +8,7 @@ const productModelJSON={
         const producto = dbProductos.find(item => item.id == id); // busco el id en la base
         return producto 
     },
-    products: function(){ // devuelve todos los productos
+    productAll: function(){ // devuelve todos los productos
         return dbProductos;
     },
     productInsert: function(objetoProducto){// inserta un producto y devuelve todos los productos
@@ -25,13 +25,13 @@ const productModelJSON={
                 "descuento": descuento,
                 "envio": envio
         };
-        dbProductos.push(newProduct) //agrego el nuevo producto al final de la base y devuelve todos los productos
+        dbProductos.push(newProduct) //agrego el nuevo producto al final de la base
         fs.writeFileSync(path.join(__dirname,"../db/product.json"), JSON.stringify(dbProductos, null, 4), {
             encoding: "utf8",
           }); // escribo el array en el archivo de base de datos
-        return dbProductos
+        return dbProductos 
     },
-    productSaveEdited: function(id,objetoProducto){// modifica y guarda un producto y devuelve todos los productos
+    productSaveEdited: function(id,objetoProducto){// guarda un producto modificado y devuelve todos los productos
         const {nombre,descripcion,detalle,cantidad,precio,descuento,envio}=objetoProducto; // requiero toda la info del body
         const saveEditedProduct={ // creo un objeto con toda la info del body
                 "id": id,
