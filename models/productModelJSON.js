@@ -29,7 +29,7 @@ const productModelJSON={
         fs.writeFileSync(path.join(__dirname,"../db/product.json"), JSON.stringify(dbProductos, null, 4), {
             encoding: "utf8",
           }); // escribo el array en el archivo de base de datos
-        return dbProductos 
+        return this.productAll()
     },
     productSaveEdited: function(id,objetoProducto){// guarda un producto modificado y devuelve todos los productos
         const {nombre,descripcion,detalle,cantidad,precio,descuento,envio}=objetoProducto; // requiero toda la info del body
@@ -44,17 +44,17 @@ const productModelJSON={
                 "descuento": descuento,
                 "envio": envio
         };
-        dbProductos[id - 1] = saveEditedProduct
-        fs.writeFileSync(path.join(__dirname, "../db/product.json"), JSON.stringify(dbProductos, null, 4), {
-            encoding: "utf8",
-        }); // escribo el array en el archivo de base de datos
-        return dbProductos
+        dbProductos[id - 1] = saveEditedProduct // -1 porque id empieza desde 1
+        fs.writeFileSync(path.join(__dirname, "../db/product.json"), JSON.stringify(dbProductos, null, 4), { encoding: "utf8",});
+         // escribo el array en el archivo de base de datos
+        return this.productAll()
     },
     productDelete: function(id){ //elimina un producto y devuelve todos los productos
         let newDb= dbProductos.filter(item => item.id != id);
         dbProductos=newDb;
-        fs.writeFileSync(path.join(__dirname, "../db/product.json"), JSON.stringify(dbProductos, null, 4), { encoding: "utf8", }); // escribo el array en el archivo de base de datos
-        return dbProductos
+        fs.writeFileSync(path.join(__dirname, "../db/product.json"), JSON.stringify(dbProductos, null, 4), { encoding: "utf8", }); 
+        // escribo el array en el archivo de base de datos
+        return this.productAll()
     }
 
 }
