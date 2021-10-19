@@ -8,7 +8,7 @@ const productController = require ('../controllers/productController'); /*requie
 router.get('/productDetail/:id', productController.productDetail);// al acceder al detalle de producto llamo al controlador en el metodo productDetail con su id
 router.get('/productCart', productController.productCart);// al acceder al carro de compras llamo al controlador en el metodo productCart
 router.get('/productNew', productController.productNew);// al acceder al productNew  llamo al controlador en el metodo productNew
-router.get('/products', productController.products);// al acceder al products  llamo al controlador en el metodo products
+router.get('/products', productController.productAll);// al acceder al products  llamo al controlador en el metodo products
 router.post('/productNew',productController.productInsert);// cuando llega el metodo post de product new accedo a esta ruta
 router.get('/products/:id/edit',productController.productEdit);
 router.put('/products/:id/edit',productController.productSaveEdited);
