@@ -7,10 +7,10 @@ const userController = require ('../controllers/userController.js'); /*requiero 
 
 
 
-router.get('/register', userController.register);// al acceder al registro llamo al controlador en el metodo register
-router.get('/login', userController.login);// al acceder al login del sistema  llamo al controlador en el metodo login
-router.get('/forget', userController.forget);// al acceder al forget  llamo al controlador en el metodo forget
-router.get('/profile', userController.profile);// al acceder al forget  llamo al controlador en el metodo profile
-
+router.get('/register', userController.userRegister);// al acceder al registro llamo al controlador en el metodo register
+router.get('/login', userController.userLogin);// al acceder al login del sistema  llamo al controlador en el metodo login
+router.get('/forget', userController.userForget);// al acceder al forget  llamo al controlador en el metodo forget
+router.get('/profile', userController.userProfile);// al acceder al forget  llamo al controlador en el metodo profile
+router.post('/register',userController.userInsert);
 
 module.exports = router;
