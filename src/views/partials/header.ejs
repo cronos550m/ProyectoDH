@@ -18,66 +18,144 @@
         <div class="kart-header">
             <a href="productCart">
             <i class="fas fa-shopping-cart"></i></a>
-            <!-- <div>Cantidad</div> deberia mostar la cantidad de dinero que acumulo el cliente en el carrito -->
+            <%# <div>Cantidad</div> deberia mostar la cantidad de dinero que acumulo el cliente en el carrito %>
         </div>
-        <div class="menupc">
-        <ul>
-            <li>
-                <a class="menupc-button" href="/">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Principal
-                </a>
-            </li>
-            <li>
-                <a class="menupc-button" href="/login">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Ingresar
-                </a>
-            </li>
-            <li>
-                <a class="menupc-button" href="/register">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Registrarse
-                </a>
-            </li>
-            <li>
-                <a class="menupc-button" href="/products">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Productos
-                </a>
-            </li>
-            <li>
-                <a class="menupc-button" href="/productNew">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Nuevo prod
-                </a>
-            </li>
-            <li>
-                <a class="menupc-button" href="/#">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Contact
-                </a>
-            </li>
-        </ul>
-        </div>
+           <div class="menupc">
+
+            <% if (false) { %>
+                <ul>
+                    <li>
+                        <a class="menupc-button" href="/">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Principal
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menupc-button" href="/products">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Productos
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menupc-button" href="/productNew">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Nuevo prod
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menupc-button" href="/profile">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Perfil
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menupc-button" href="/">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Desloguear
+                        </a>
+                    </li> 
+                </ul>
+            <%} else { %>
+                <% if (false) { %>
+                    <ul>
+                       <li>
+                            <a class="menupc-button" href="/">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Principal
+                            </a>
+                        </li> 
+                        <li>
+                            <a class="menupc-button" href="/products">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Productos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menupc-button" href="/profile">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Perfil
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menupc-button" href="/">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Desloguear
+                            </a>
+                        </li> 
+                    </ul>
+                <%} else { %>
+                    <ul>
+                        <li>
+                            <a class="menupc-button" href="/">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Principal
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menupc-button" href="/login">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Ingresar
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menupc-button" href="/register">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Registrarse
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menupc-button" href="/products">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Productos
+                            </a>
+                        </li>
+                    </ul>
+                <% } %>
+            <% } %>
+
+        
+        </div> 
+
+        
         <div class="header-menu" id="main">
           
                 <button class="hamburger-button" onclick="openNav()"><i class="fas fa-bars"></i></button>  
