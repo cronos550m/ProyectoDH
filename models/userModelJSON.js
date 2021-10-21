@@ -19,7 +19,8 @@ const userModelJSON = {
             "numero": numero,
             "codigoPostal": codigoPostal,
             "dni": dni,
-            "password": password            
+            "password": password,
+            "categoria": "user"            
         }
         dbUsuarios.push(newUser)
         fs.writeFileSync(path.join(__dirname,"../db/user.json"), JSON.stringify(dbUsuarios, null, 4), {encoding: "utf8",}); 
