@@ -6,7 +6,7 @@
 
     <main>
 
-      <form class="my-form"  action="/register" method="post>
+      <form class="my-form"  action="/register" method="post" enctype="multipart/form-data">
         <div class="register-container">
 
           <div class="neon-register animate__animated animate__flash">
@@ -16,20 +16,20 @@
           <ul>
             <li>
               <div class="grid grid-2">
-                <input type="text" placeholder="Nombre" required>
-                <input type="text" placeholder="Apellido" required>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
               </div>
             </li>
             <li>
               <div class="grid grid-2">
-                <input type="email" placeholder="Correo" required>
-                <input type="tel" placeholder="Telefono">
+                <input type="email" name="email" placeholder="Correo" required>
+                <input type="tel" name="telefono" placeholder="Telefono">
               </div>
             </li>
             <li>
               <div class="grid grid-2">
-                <input type="file" name="Imagen" placeholder="Agrega una imagen">
-                <select class="pais-reg ">
+                <input type="file" name="imagen" placeholder="Agrega una imagen">
+                <select class="pais-reg " name="pais">
                   <option selected disabled>Pais donde resides</option>
                   <option value="Elegir" id="AF">Elegir opción</option>
                   <option value="Afganistán" id="AF">Afganistán</option>
@@ -278,26 +278,26 @@
             </li>
             <li>
               <div class="grid grid-2">
-                <input type="text" placeholder="Provincia">
-                <input type="text" placeholder="Ciudad">
+                <input type="text" name="provincia" placeholder="Provincia">
+                <input type="text" name="ciudad" placeholder="Ciudad">
               </div>
             </li>
             <li>
               <div class="grid grid-2">
-                <input type="text" placeholder="Calle">
-                <input type="number" placeholder="Numero">
+                <input type="text" name="calle" placeholder="Calle">
+                <input type="number" name="numero" placeholder="Numero">
               </div>
             </li>
 
             <li>
               <div class="grid grid-2">
-                <input type="text" placeholder="Codigo postal">
-                <input type="text" placeholder="Documento de identidad">
+                <input type="text" name="codigoPostal" placeholder="Codigo postal">
+                <input type="text" name="dni" placeholder="Documento de identidad">
               </div>
             </li>
             <li>
               <div class="grid grid-2">
-                <input type="password" placeholder="Ingrese una contraseña">
+                <input type="password" name="password" placeholder="Ingrese una contraseña">
                 <input type="password" placeholder="Repita la contraseña">
               </div>
             </li>

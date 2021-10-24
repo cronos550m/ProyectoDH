@@ -17,7 +17,7 @@ const controller={
         res.render(path.join(__dirname,'../src/views/users/profile')) //devuelve la vista del forget en este evento
     },
     userInsert: (req,res)=>{
-        res.render(path.join(__dirname,'../src/views/index.ejs'), { products: dbProductos , user: userModelJSON.userInsert(req.body)})
+        res.render(path.join(__dirname,'../src/views/index.ejs'), { products: dbProductos , user: userModelJSON.userInsert(req.body,req.file.filename)})
          //devuelve la vista del index en este evento, con los datos de articulos y del usuario
     }
 };

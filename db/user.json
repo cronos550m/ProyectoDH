@@ -1,1 +1,19 @@
-[]
+[
+    {
+        "id": 1,
+        "nombre": "Pagnutti",
+        "apellido": "Luciano",
+        "email": "lpagnutti@gmail.com",
+        "telefono": "02235250297",
+        "imagen": "../src/public/images/userimagen-1635115930958-340254508",
+        "pais": "Argentina",
+        "provincia": "Mar Del Plata",
+        "ciudad": "Mar Del Plata",
+        "calle": "",
+        "numero": "",
+        "codigoPostal": "7600",
+        "dni": "",
+        "password": "$2b$10$mjeTxqrkzK5ZQh2f6HvhEeZb07gZZDnpUZm/ee856YcUH.QUmTjIq",
+        "categoria": "user"
+    }
+]
