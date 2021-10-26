@@ -2,6 +2,7 @@
 const path = require('path'); // modulo para relacionar las vistas
 const userModelJSON= require ('../models/userModelJSON')
 const dbProductos = require("../db/product.json");// levanto la base de datos de productos
+const { validationResult } = require('express-validator');
 
 const controller={
     userRegister:(req,res)=>{ 
@@ -17,8 +18,19 @@ const controller={
         res.render(path.join(__dirname,'../src/views/users/profile')) //devuelve la vista del forget en este evento
     },
     userInsert: (req,res)=>{
-        res.render(path.join(__dirname,'../src/views/index.ejs'), { products: dbProductos , user: userModelJSON.userInsert(req.body,req.file.filename)})
-         //devuelve la vista del index en este evento, con los datos de articulos y del usuario
+        
+        
+        
+        
+        
+        /*const resultValidation = validationResult(req)
+        if (resultValidation.errors.length > 0) {
+            return res.render(path.join(__dirname,'../src/views/users/register.ejs'),{
+                errors: resultValidation.mapped(),
+                dataEntry: req.body
+            })
+        };
+        no validamos desde express validator pero lo implementamos*/
     }
 };
 

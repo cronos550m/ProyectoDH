@@ -1,6 +1,6 @@
 /* este controlador se encarga de relacionar los eventos de los productos con las vistas*/
 const path = require('path'); // modulo para relacionar las rutas
-const productModelJSON= require("../models/productModelJSON") // requiero el modelo de productos
+const productModelJSON= require("../models/roductModelJSON") // requiero el modelo de productos
 
 const controller = {
     productDetail: (req, res) => {

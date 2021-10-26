@@ -11,9 +11,9 @@ methodOverride = require('method-override')
 
 app.use(express.urlencoded({ extended: false })); //para poder trabajar con los datos que envia el formulario
 app.use(express.json()); //para poder trabajar con archivos json
-app.use(express.static(publicPath));
+app.use(express.static(publicPath)); // expone la carpeta publica
 app.listen(port, () => {
-    console.log(`Server is runnig in the Port : ${port}`);
+    console.log(`Server is runnig in Port : ${port}`);
 })
 app.use(methodOverride('_method'))
 app.use('/', mainRoutes);
