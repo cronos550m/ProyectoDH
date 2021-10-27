@@ -9,13 +9,18 @@
             <div class="container-login-logo">
             <img src="\images\logos\user-icon.png">
             </div>
-            <form action="" class="container-form">
+            <form class="container-form" action="/login" method="post">
                 <div class="container-inputs">
                     <div class="login-container-email">
-                            <input type=" email" placeholder="E-mail" class="login-email">
+                            <input type=" email" name="email" placeholder="E-mail" class="login-email">
+                            <% if (locals.errors && errors.email) { %>
+                                <div>
+                                  <%= errors.email.msg %>
+                                </div>
+                              <% } %>
                     </div>
                     <div class="login-container-pass">
-                        <input type="password" placeholder="Contraseña" class="login-pass">
+                        <input type="password" name="password" placeholder="Contraseña" class="login-pass">
                     </div>
                     <div class="login-remember-father">
                                 <input type="checkbox" class="css-checkbox" id="checkbox16" checked="checked" />

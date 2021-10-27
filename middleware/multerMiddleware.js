@@ -5,8 +5,8 @@ const storage = multer.diskStorage({
       cb(null, path.join(__dirname, '../src/public/images/user'))
     },
     filename: function (req, file, cb) {
-      const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
-      cb(null, file.fieldname + '-' + uniqueSuffix)
+      const fileName = "user_" + Date.now() + file.originalname;
+      cb(null, fileName);
     }
   })
   

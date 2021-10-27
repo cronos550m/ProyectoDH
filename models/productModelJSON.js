@@ -8,9 +8,11 @@ const productModelJSON={
         const producto = dbProductos.find(item => item.id == id); // busco el id en la base
         return producto 
     },
+
     productAll: function(){ // devuelve todos los productos
         return dbProductos;
     },
+
     productInsert: function(objetoProducto){// inserta un producto y devuelve todos los productos
         const newId = dbProductos.length+1 //PASAR AL OBJETO NEWPRODUCT
         const {nombre,descripcion,detalle,cantidad,precio,descuento,envio}=objetoProducto; // requiero toda la info del body
@@ -30,6 +32,7 @@ const productModelJSON={
         // escribo el array en el archivo de base de datos
         return this.productAll()
     },
+
     productSaveEdited: function(id,objetoProducto){// guarda un producto modificado y devuelve todos los productos
         const {nombre,descripcion,detalle,cantidad,precio,descuento,envio}=objetoProducto; // requiero toda la info del body
         const saveEditedProduct={ // creo un objeto con toda la info del body
@@ -48,6 +51,7 @@ const productModelJSON={
          // escribo el array en el archivo de base de datos
         return this.productAll()
     },
+    
     productDelete: function(id){ //elimina un producto y devuelve todos los productos
         let newDb= dbProductos.filter(item => item.id != id);
         dbProductos=newDb;

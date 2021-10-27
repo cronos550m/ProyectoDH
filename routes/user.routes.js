@@ -14,5 +14,5 @@ router.get('/login', userController.userLogin);// al acceder al login del sistem
 router.get('/forget', userController.userForget);// al acceder al forget  llamo al controlador en el metodo forget
 router.get('/profile', userController.userProfile);// al acceder al forget  llamo al controlador en el metodo profile
 router.post('/register',multerMiddleware.single('imagen'), userController.userInsert); // procesar el registro de usuario
-
+router.post('/login',userController.userLoginProcess); // proceso el login de usuario
 module.exports = router;

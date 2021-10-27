@@ -1,2 +1,34 @@
 [
+    {
+        "id": 1,
+        "nombre": "Luciano",
+        "apellido": "Pagnutti",
+        "email": "lpagnutti@gmail.com",
+        "telefono": 2236332716,
+        "imagen": null,
+        "pais": "Argentina",
+        "provincia": "Buenos Aires",
+        "ciudad": "Mar del Plata",
+        "calle": "Friuli",
+        "numero": 1649,
+        "codigoPostal": 7600,
+        "dni": 32668336,
+        "password": "pass",
+        "categoria": "admin"
+    },
+    {
+        "id": 2,
+        "nombre": "Luciano",
+        "apellido": "Pagnutti",
+        "email": "correo@correo.com",
+        "telefono": "",
+        "provincia": "",
+        "ciudad": "",
+        "calle": "",
+        "numero": "",
+        "codigoPostal": "",
+        "dni": "",
+        "password": "$2a$10$5x2aV4IA/htB6MtD8pML6u9HvtvUkn/aASBfPWmsyAAhWI1wueCY6",
+        "imagen": "/images/user/user_1635291504665FONDO EN BLANCO.jpg"
+    }
 ]

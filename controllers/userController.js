@@ -1,8 +1,12 @@
-/* este controlador se encarga de relacionar los eventos del main con las vistas*/
+/* este controlador se encarga de relacionar los eventos de los usuarios con las vistas*/
+
+//const dbProductos = require("../db/product.json");// levanto la base de datos de productos
+//const { validationResult } = require('express-validator'); se crea pero no se utiliza
 const path = require('path'); // modulo para relacionar las vistas
-const userModelJSON= require ('../models/userModelJSON')
-const dbProductos = require("../db/product.json");// levanto la base de datos de productos
-const { validationResult } = require('express-validator');
+const UserModelJSON= require ('../models/UserModelJSON')
+const bcryptjs = require('bcryptjs');
+
+
 
 const controller={
     userRegister:(req,res)=>{ 
@@ -18,19 +22,48 @@ const controller={
         res.render(path.join(__dirname,'../src/views/users/profile')) //devuelve la vista del forget en este evento
     },
     userInsert: (req,res)=>{
-        
-        
-        
-        
-        
-        /*const resultValidation = validationResult(req)
+        console.log(req.body, req.file);
+        userToCreate = {
+            ...req.body,
+            password: bcryptjs.hashSync(req.body.password,10),
+            imagen: `/images/user/${req.file.filename}`,
+        }
+        let userCreated = UserModelJSON.userCreate(userToCreate);
+        return res.redirect("/login");
+        /* const resultValidation = validationResult(req) //validaciones del body
         if (resultValidation.errors.length > 0) {
             return res.render(path.join(__dirname,'../src/views/users/register.ejs'),{
                 errors: resultValidation.mapped(),
                 dataEntry: req.body
             })
         };
-        no validamos desde express validator pero lo implementamos*/
+
+        let userExist = userSearchByField('email', req.body.email); //validaciones del email
+        if (userExist) {
+            return res.render(path.join(__dirname,'../src/views/users/register.ejs'),{
+                errors: {
+                    msg: "Este email ya se encuentra registrado"
+                },
+                dataEntry: req.body
+            })
+        }
+        no validamos desde express validator pero lo implementamos */
+    },
+
+    userLoginProcess:(req,res) => {
+        let userToLogin = UserModelJSON.userSearchByField('email', req.body.email);
+        console.log(userToLogin);
+        if (userToLogin) {
+            if (bcryptjs.compareSync(req.body.password,userToLogin.password)) {
+                return res.redirect('/profile')
+            }
+        }
+       return res.render(path.join(__dirname,'../src/views/users/login.ejs'),{
+            errors:{
+                email: {
+                    msg: "credenciales invalidas"}
+            }
+        })
     }
 };
 
