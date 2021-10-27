@@ -13,7 +13,7 @@
         "codigoPostal": "codigo postal",
         "dni": "1234",
         "password": "$2a$10$0v5NKKjKiz44HSC./o7j6OlCx/Sy.Z5EvVDXYm0DR5CEqgOO9jARK",
-        "imagen": "/images/user/user_1635355502152preciosnueva.jpg",
+        "imagen": "/images/imagen-no-disponible.jpg",
         "categoria": "admin"
     },
     {
@@ -30,7 +30,7 @@
         "codigoPostal": "codigo",
         "dni": "documento",
         "password": "$2a$10$DG6KteoMUKvDSHMm9CRpy./EFZrTmYFUCzHGwW3G28/mJO/CECODS",
-        "imagen": "/images/user/user_1635357298952preciosnueva.jpg",
+        "imagen": "/images/imagen-no-disponible.jpg",
         "categoria": "user"
     }
 ]

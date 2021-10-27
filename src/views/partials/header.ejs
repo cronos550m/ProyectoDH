@@ -22,108 +22,63 @@
         </div> deberia mostar la cantidad de dinero que acumulo el cliente en el carrito %>
         </div>
         <div class="menupc">
-    
-            <% if (false) { %>
-                <ul>
-                    <li>
-                        <a class="menupc-button" href="/">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Principal
-                        </a>
-                    </li>
-                    <li>
-                        <a class="menupc-button" href="/products">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Productos
-                        </a>
-                    </li>
-                    <li>
-                        <a class="menupc-button" href="/productNew">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Nuevo prod
-                        </a>
-                    </li>
-                    <li>
-                        <a class="menupc-button" href="/profile">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Perfil
-                        </a>
-                    </li>
-                    <li>
-                        <a class="menupc-button" href="/">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Desloguear
-                        </a>
-                    </li>
-                    <li>
-                        <p>Lucho Pagnutti</p>
-                    </li>
-                    <li>
-                        <img src="\images\logos\user-icon.png">
-                    </li>
-                </ul>
-                <%} else { %>
-                    <% if (false) { %>
-                        <ul>
-                            <li>
-                                <a class="menupc-button" href="/">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Principal
-                                </a>
-                            </li>
-                            <li>
-                                <a class="menupc-button" href="/products">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Productos
-                                </a>
-                            </li>
-                            <li>
-                                <a class="menupc-button" href="/profile">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Perfil
-                                </a>
-                            </li>
-                            <li>
-                                <a class="menupc-button" href="/">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Desloguear
-                                </a>
-                            </li>
-                            <li>
-                                <p>Lucho Pagnutti</p>
-                            </li>
-                            <li>
-                                <img src="\images\logos\user-icon.png">
-                            </li>
-                        </ul>
-                        <%} else { %>
+            <% if (locals.isLogged) { %>
+                <% if (locals.userLogged.categoria=='admin' ) { %>
+                    <ul>
+                        <li>
+                            <a class="menupc-button" href="/">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Principal
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menupc-button" href="/products">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Productos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menupc-button" href="/productNew">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Nuevo prod
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menupc-button" href="/profile">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Perfil
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menupc-button" href="/logout">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Desloguear
+                            </a>
+                        </li>
+                        <li>
+                            <p><%= locals.userLogged.nombre %>  <%= locals.userLogged.apellido %></p>
+                        </li>
+                        <li>
+                            <img src=<%= locals.userLogged.imagen %>>
+                        </li>
+                    </ul>
+                    <%} else { %>
+                        <% if (locals.userLogged.categoria=='user' ) { %>
                             <ul>
                                 <li>
                                     <a class="menupc-button" href="/">
@@ -135,24 +90,6 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="menupc-button" href="/login">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        Ingresar
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="menupc-button" href="/register">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        Registrarse
-                                    </a>
-                                </li>
-                                <li>
                                     <a class="menupc-button" href="/products">
                                         <span></span>
                                         <span></span>
@@ -161,11 +98,77 @@
                                         Productos
                                     </a>
                                 </li>
+                                <li>
+                                    <a class="menupc-button" href="/profile">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        Perfil
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="menupc-button" href="/logout">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        Desloguear
+                                    </a>
+                                </li>
+                                <li>
+                                    <p><%= locals.userLogged.nombre %>  <%= locals.userLogged.apellido %></p>
+                                </li>
+                                <li>
+                                    <img src=<%= locals.userLogged.imagen %>>
+                                </li>
                             </ul>
-                            <% } %>
-                                <% } %>
-    
-    
+                        <%} %>
+                    <% } %>
+                <% } else {%>
+                                <ul>
+                                    <li>
+                                        <a class="menupc-button" href="/">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Principal
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menupc-button" href="/login">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Ingresar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menupc-button" href="/register">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Registrarse
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="menupc-button" href="/products">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Productos
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                                    
+                                        <% } %>
+        
+        
         </div>
     
     
