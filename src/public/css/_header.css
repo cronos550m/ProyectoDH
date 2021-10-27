@@ -572,7 +572,7 @@
 
      .menupc {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         margin-right: 14px;
     }
@@ -926,7 +926,7 @@
 
      .menupc {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         margin-right: 14px;
     }

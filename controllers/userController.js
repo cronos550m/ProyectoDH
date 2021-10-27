@@ -12,7 +12,10 @@ const controller={
         res.render(path.join(__dirname,'../src/views/users/forget.ejs')) //devuelve la vista del forget en este evento
     },
     profile:(req,res)=>{ 
-        res.render(path.join(__dirname,'../src/views/users/profile')) //devuelve la vista del forget en este evento
+        res.render(path.join(__dirname,'../src/views/users/profile')) //devuelve la vista del profile en este evento
+    },
+    adminPanel:(req,res)=>{ 
+        res.render(path.join(__dirname,'../src/views/users/adminPanel')) //devuelve la vista del adminPanel en este evento
     }
 };
 
