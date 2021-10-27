@@ -12,15 +12,19 @@ const controller={
     userRegister:(req,res)=>{ 
         res.render(path.join(__dirname,'../src/views/users/register.ejs')) //devuelve la vista del registro en este evento
     },
+
     userLogin:(req,res)=>{ 
         res.render(path.join(__dirname,'../src/views/users/login.ejs')) //devuelve la vista del login en este evento
     },
+
     userForget:(req,res)=>{ 
         res.render(path.join(__dirname,'../src/views/users/forget.ejs')) //devuelve la vista del forget en este evento
     },
+
     userProfile:(req,res)=>{ 
         res.render(path.join(__dirname,'../src/views/users/profile'),{user: req.session.userLogged}) //devuelve la vista del forget en este evento
     },
+
     userInsert: (req,res)=>{
         userToCreate = {
             ...req.body,
@@ -66,6 +70,11 @@ const controller={
                     msg: "credenciales invalidas"}
             }
         })
+    },
+
+    userLogout: (req,res) =>{
+        req.session.destroy();
+        return res.redirect('/')
     }
 };
 
