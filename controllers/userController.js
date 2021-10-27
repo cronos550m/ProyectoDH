@@ -19,17 +19,18 @@ const controller={
         res.render(path.join(__dirname,'../src/views/users/forget.ejs')) //devuelve la vista del forget en este evento
     },
     userProfile:(req,res)=>{ 
-        res.render(path.join(__dirname,'../src/views/users/profile')) //devuelve la vista del forget en este evento
+        res.render(path.join(__dirname,'../src/views/users/profile'),{user: req.session.userLogged}) //devuelve la vista del forget en este evento
     },
     userInsert: (req,res)=>{
-        console.log(req.body, req.file);
         userToCreate = {
             ...req.body,
             password: bcryptjs.hashSync(req.body.password,10),
             imagen: `/images/user/${req.file.filename}`,
+            categoria: "user"
         }
         let userCreated = UserModelJSON.userCreate(userToCreate);
         return res.redirect("/login");
+
         /* const resultValidation = validationResult(req) //validaciones del body
         if (resultValidation.errors.length > 0) {
             return res.render(path.join(__dirname,'../src/views/users/register.ejs'),{
@@ -52,9 +53,10 @@ const controller={
 
     userLoginProcess:(req,res) => {
         let userToLogin = UserModelJSON.userSearchByField('email', req.body.email);
-        console.log(userToLogin);
         if (userToLogin) {
             if (bcryptjs.compareSync(req.body.password,userToLogin.password)) {
+                delete userToLogin.password
+                req.session.userLogged = userToLogin;
                 return res.redirect('/profile')
             }
         }

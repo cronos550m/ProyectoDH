@@ -1,26 +1,39 @@
-const express = require('express');
-const app = express();
+const express = require('express'); 
+const session = require('express-session');
+
 let mainRoutes = require('./routes/main.routes');
 let productRoutes = require('./routes/product.routes');
 let userRoutes = require('./routes/user.routes');
+
+const app = express();
+
+
 const path = require('path');
 const publicPath = path.resolve(__dirname, './src/public');
+const methodOverride = require('method-override')
+
 const port = process.env.PORT || '5000';
-methodOverride = require('method-override')
 
 
 app.use(express.urlencoded({ extended: false })); //para poder trabajar con los datos que envia el formulario
 app.use(express.json()); //para poder trabajar con archivos json
 app.use(express.static(publicPath)); // expone la carpeta publica
+app.use(session({
+    secret: "compumundo-hypermegared,  No me hice rico firmando cheques",
+    resave: false,
+    saveUninitialized: false
+}));
+
 app.listen(port, () => {
     console.log(`Server is runnig in Port : ${port}`);
 })
-app.use(methodOverride('_method'))
+app.use(methodOverride('_method'));
+app.set('view engine', 'ejs');
 app.use('/', mainRoutes);
 app.use('/', productRoutes);
 app.use('/', userRoutes);
 // app.set('/views', path.join(__dirname, './src/views'));
-app.set('view engine', 'ejs')
+
 app.use((req, res, next) => {
     res.status(404).render('error')
 });
