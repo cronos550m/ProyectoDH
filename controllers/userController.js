@@ -75,7 +75,10 @@ const controller={
     userLogout: (req,res) =>{
         req.session.destroy();
         return res.redirect('/')
+    },
+    
+    adminPanel:(req,res)=>{ 
+        res.render(path.join(__dirname,'../src/views/users/adminPanel')) //devuelve la vista del adminPanel en este evento
     }
 };
-
-module.exports = controller;
+module.exports = controller
