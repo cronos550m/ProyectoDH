@@ -61,6 +61,9 @@ const controller={
             if (bcryptjs.compareSync(req.body.password,userToLogin.password)) {
                 delete userToLogin.password
                 req.session.userLogged = userToLogin;
+                if (req.body.remember) {
+                    res.cookie('userEmail', req.body.email, {maxAge: (1000*600) }) //(1000*600) 10 minutos
+                }
                 return res.redirect('/profile')
             }
         }
@@ -73,6 +76,7 @@ const controller={
     },
 
     userLogout: (req,res) =>{
+        res.clearCookie('userEmail')
         req.session.destroy();
         return res.redirect('/')
     },

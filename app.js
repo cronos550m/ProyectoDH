@@ -1,5 +1,6 @@
 const express = require('express'); 
 const session = require('express-session');
+const cookies= require('cookie-parser');
 
 let mainRoutes = require('./routes/main.routes');
 let productRoutes = require('./routes/product.routes');
@@ -13,19 +14,20 @@ const publicPath = path.resolve(__dirname, './src/public');
 const methodOverride = require('method-override')
 const UserLoggedMiddleware = require('./middleware/UserLoggedMiddleware');
 
-
 const port = process.env.PORT || '5000';
-
 
 app.use(express.urlencoded({ extended: false })); //para poder trabajar con los datos que envia el formulario
 app.use(express.json()); //para poder trabajar con archivos json
 app.use(express.static(publicPath)); // expone la carpeta publica
+
 app.use(session({
     secret: "compumundo-hypermegared,  No me hice rico firmando cheques",
     resave: false,
     saveUninitialized: false
 })); //mid para verificar sesiones 
+app.use(cookies()); //mid para usar cookies
 app.use(UserLoggedMiddleware); //mid para verificar usuario logeado
+
 
 app.listen(port, () => {
     console.log(`Server is runnig in Port : ${port}`);
