@@ -13,7 +13,11 @@
             </form>
         </div>
         <div class="user-logo-header">
-            <a href="#" id="btn-open-popup-login"><i class="fas fa-user"></i></a>
+            <% if (locals.isLogged) { %>
+            <a href="/profile"><i class="fas fa-user"></i></a>
+            <%} else { %>
+                <a href="#" id="btn-open-popup-login"><i class="fas fa-user"></i></a>
+            <% } %>
         </div>
         <div class="kart-header">
             <a href="productCart">
@@ -74,7 +78,7 @@
                             <p><%= locals.userLogged.nombre %>  <%= locals.userLogged.apellido %></p>
                         </li>
                         <li>
-                            <img src=<%= locals.userLogged.imagen %>>
+                            <img class="img-redonda" src=<%= locals.userLogged.imagen %>>
                         </li>
                     </ul>
                     <%} else { %>
@@ -177,45 +181,58 @@
             <button class="hamburger-button" onclick="openNav()"><i class="fas fa-bars"></i></button>
         </div>
         <div id="mySidebar" class="sidebar">
-            <% if (false) { %>
+            <% if (locals.isLogged) { %>
+                <% if (locals.userLogged.categoria=='admin' ) { %>
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <div class="sidebar-menu">
+                <img class="img-redonda" src=<%= locals.userLogged.imagen %>>
+                <p><%= locals.userLogged.nombre %>  <%= locals.userLogged.apellido %></p>
+                <div>
                 <a class="sidebar-button" href="/">Principal</a>
                 <a class="sidebar-button" href="/products">Productos</a>
                 <a class="sidebar-button" href="/productNew">Nuevo prod</a>
                 <a class="sidebar-button" href="/profile">Perfil</a>
-                <a class="sidebar-button" href="/">Desloguear</a>
-                <a class="sidebar-button" href="#">Contact</a>
+                <a class="sidebar-button" href="/logout">Desloguear</a>
+                </div>
+                </div>
                 <%} else { %>
-                    <% if (false) { %>
+                    <% if (locals.userLogged.categoria=='user' ) { %>
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                        <img class="img-redonda" src=<%= locals.userLogged.imagen %>>
+                        <p><%= locals.userLogged.nombre %>  <%= locals.userLogged.apellido %></p>
                         <a class="sidebar-button" href="/">Principal</a>
                         <a class="sidebar-button" href="/profile">Perfil</a>
                         <a class="sidebar-button" href="/products">Productos</a>
-                        <a class="sidebar-button" href="/">Desloguear</a>
-                        <a class="sidebar-button" href="#">Contact</a>
-                        <%} else { %>
+                        <a class="sidebar-button" href="/logout">Desloguear</a>
+                        <%} %>
+                        <% } %>
+                    <% } else {%>
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                             <a class="sidebar-button" href="/">Principal</a>
                             <a class="sidebar-button" href="/login">Ingresar</a>
                             <a class="sidebar-button" href="/register">Registrarse</a>
                             <a class="sidebar-button" href="/products">Productos</a>
-                            <a class="sidebar-button" href="#">Contact</a>
                     <% } %>
-                <% } %>
         </div>
     
     </nav>
+
     <div class="overlay" id="overlay-login">
         <div class="popup" id="popup-login">
             <a href="#" id="btn-close-popup-login" class="btn-close-popup"><i class="fas fa-times"></i></a>
             <img src="./images/logos/user-icon.png">
-            <form action="">
+            <form class="container-form" action="/login" method="post">
                 <div class="container-inputs">
                     <div class="container-login-email">
-                        <input type="email" placeholder="E-mail" class="login-email">
+                        <input type="email" name="email" placeholder="E-mail" class="login-email">
+                        <% if (locals.errors && errors.email) { %>
+                            <div>
+                              <%= errors.email.msg %>
+                            </div>
+                          <% } %>
                     </div>
                     <div class="container-login-pass">
-                        <input type="password" placeholder="Contraseña" class="login-pass">
+                        <input type="password" name="password" placeholder="Contraseña" class="login-pass">
                     </div>
                     <div class="login-remember-father">
                         <input type="checkbox" class="css-checkbox" id="checkbox16" checked="checked" />

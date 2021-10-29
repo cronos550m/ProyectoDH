@@ -4,22 +4,32 @@
   padding-left: 32px;
   margin: auto;
   margin-top: 106px;
-  margin-bottom: 36px;
+  margin-bottom: 80px;
   padding-bottom: 10px;
   background-color: #2e2c2c;
   box-shadow: 0 0 0 1px rgb(196 8 202);
-  border-radius: 5px;
+  border-radius: 17px;
   }
 
   .container-profile-logo img {
-    width: 40px;
-    height: 40px;
+    width:100px;
+    height:100px;
+    border-radius:56px;
+    border:3px solid #d23eff;
   }  
   .container-profile-logo {
     display: flex;
     justify-content: center;
     height: 95px;
-    align-items: center;
+    padding: 24px;
+  }
+
+  .profile-input-description{
+    font-size: 11px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    margin-top: 4px;
   }
 
   .container-form-profile button,
