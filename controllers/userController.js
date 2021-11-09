@@ -81,8 +81,11 @@ const controller={
         return res.redirect('/')
     },
     
-    adminPanel:(req,res)=>{ 
-        res.render(path.join(__dirname,'../src/views/users/adminPanel')) //devuelve la vista del adminPanel en este evento
+    adminUser:(req,res)=>{ 
+        res.render(path.join(__dirname,'../src/views/users/adminUser')) //devuelve la vista del adminUser en este evento
+    },
+    adminProducts:(req,res)=>{ 
+        res.render(path.join(__dirname,'../src/views/users/adminProducts')) //devuelve la vista del adminProducts en este evento
     }
 };
 module.exports = controller

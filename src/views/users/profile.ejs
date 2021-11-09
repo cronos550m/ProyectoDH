@@ -26,6 +26,11 @@
                     <div class="profile-input-description">Telefono:</div>
                     <input type="text" value=<%= user.telefono %> class="profile-tel">
                 </div>
+                <div class="profile-container-dni">
+                    <div class="profile-input-description">DNI:</div>
+                    <input type="text" value=<%= user.dni %> class="profile-dni">
+                </div>
+                <div class="profile-new-address">
                 <div class="profile-container-prov">
                     <div class="profile-input-description">Provincia:</div>
                     <input type="text" value=<%= user.provincia %> class="profile-prov">
@@ -42,24 +47,16 @@
                     <div class="profile-input-description">Numero:</div>
                     <input type="text" value=<%= user.numero %> class="profile-number">
                 </div>
-                <div class="profile-container-cntry">
-                    <div class="profile-input-description">Pais:</div>
-                    <input type="text" value=<%= user.pais %> class="profile-cntry">
-                </div>
                 <div class="profile-container-zip">
                     <div class="profile-input-description">Codigo postal:</div>
                     <input type="text" value=<%= user.codigoPostal %> class="profile-zip">
                 </div>
-                <div class="profile-container-dni">
-                    <div class="profile-input-description">DNI:</div>
-                    <input type="text" value=<%= user.dni %> class="profile-dni">
+                
                 </div>
-                <div class="profile-delete-button">
-                    <input type="submit" class="button-perfil-delete" value="Eliminar usuario">
-                </div>
-                <div class="profile-change-button">
-                    <input type="submit" class="button-perfil-change" value="Modificar usuario">
-                </div>
+                <input type="submit" class="container-form-profile-buttom" value="Agregar nueva dirección"> 
+                <input type="submit" class="container-form-profile-buttom" value="Eliminar usuario">
+                <input type="submit" class="container-form-profile-buttom" value="Modificar usuario">
+                
             </form>
         </div>
 </main>

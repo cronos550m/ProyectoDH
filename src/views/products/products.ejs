@@ -4,103 +4,157 @@
     <!-- header added -->
     <%- include('../partials/header'); %>
         <main>
+            <body>
             <div class="prod-total-container">
-            <div class="prod-top-navbar">
-                <ul>
-                    <il>120 resultados</il>
-                    <il><label for="">Envio gratis&nbsp;</label><input type="checkbox"> </il>
-                    <il><label for="">Ofertas&nbsp;</label><input type="checkbox"></il>
-                    <il><label for="">Precio&nbsp;</label> <input type="text" name=""
-                            class="prod-top-navbar-input-text">
-                        <label for="">&nbsp;a&nbsp;</label><input type="text" name="" 
-                            class="prod-top-navbar-input-text">
-                    </il>
-                    <il>
+                <section class="prod-top-navbar-container">
+                <div class="prod-top-navbar">
+                    
+                    
+                        <div>120 resultados</div>
+                        <div class="align-center"><label for="">Envio gratis&nbsp;</label><input type="checkbox"> </div>
+                            <div class="align-center"><label for="">Ofertas&nbsp;</label><input type="checkbox"></div>
+                                <div><label for="">Precio&nbsp;</label> <input type="text" name=""
+                                class="prod-top-navbar-input-text">
+                            <label for="">&nbsp;a&nbsp;</label><input type="text" name=""
+                                class="prod-top-navbar-input-text">
+                            </div>
+                        <div>
 
-                        <div class="dropdown">
-                            <button onclick="myFuncDropNavBar()" class="dropbtn">Mas filtros ˅</button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <button class="accordion">
-                                    Ordenar por:</button>
-                                <div class="panel">
-                                    <p><label>Mas relevantes&nbsp;</label><input type="radio"></p>
-                                    <il><label>Menor precio&nbsp;</label><input type="radio"></il>
-                                    <il><label>Mayor precio&nbsp;</label><input type="radio"></il>
+                            <div class="dropdown">
+                                <button onclick="myFuncDropNavBar()" class="dropbtn">Mas filtros ˅</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <button class="accordion">
+                                        Ordenar por:</button>
+                                    <div class="panel">
+                                        <il><input type="radio" name="ordenar"><label>&nbsp;- Precio</label></il>
+                                        <il><input type="radio" name="ordenar"><label>&nbsp;+ Precio</label></il>
+                                        <il><input type="radio" name="ordenar"><label>&nbsp;De A-Z</label></il>
+                                        <il><input type="radio" name="ordenar"><label>&nbsp;De Z-A</label></il>
+                                    </div>
+                                    <button class="accordion">
+                                        Categorias:</button>
+                                    <div class="panel">
+                                        <il><input type="radio" name="categoria"><label>&nbsp;Micros</label></il>
+                                        <il><input type="radio" name="categoria"><label>&nbsp;Coolers</label></il>
+                                        <il><input type="radio" name="categoria"><label>&nbsp;Gabinetes</label></il>
+                                        <il><input type="radio" name="categoria"><label>&nbsp;Memorias</label></il>
+                                        <il><input type="radio" name="categoria"><label>&nbsp;Discos</label></il>
+                                        <il><input type="radio" name="categoria"><label>&nbsp;Pendrives</label></il>
+                                    </div>
+                                    <button class="accordion">
+                                        Marcas:</button>
+                                    <div class="panel">
+                                        <il><input type="radio" name="marcas"><label>&nbsp;Todos</label></il>
+                                        <il><input type="radio" name="marcas"><label>&nbsp;AMD</label></il>
+                                        <il><input type="radio" name="marcas"><label>&nbsp;Intel</label></il>
+                                        <il><input type="radio" name="marcas"><label>&nbsp;ASUS</label></il>
+                                        <il><input type="radio" name="marcas"><label>&nbsp;MSI</label></il>
+                                        <il><input type="radio" name="marcas"><label>&nbsp;Dell</label></il>
+                                    </div>
                                 </div>
-
-                                <div><a href="#about">About</a></div>
-                                <div><a href="#contact">Contact</a></div>
                             </div>
                         </div>
-                    </il>
-                </ul>
-            </div>
-            
-            <section class="prod-sidebar-container">
-                <div class="prod-sidebar">
-                    <div class="prod-filter-title">
-                        <p>Filtros</p>
-                    </div>
-                    <div class="prod-filter-search">
-                        <form action="#" class="sidebar-search-form">
-                            <input class="sidebar-search-input" type="text" placeholder="Buscar.." name="search">
+                    
+                </div>
+            </section>
+                <section class="prod-sidebar-container">
+                    <div class="prod-sidebar">
+                        <div class="prod-filter-title">
+                            <p>Filtros</p>
+                        </div>
+                        <div class="prod-filter-search">
+                            <form action="#" class="sidebar-search-form">
+                                <input class="sidebar-search-input" type="text" placeholder="Buscar.." name="search">
                             </form>
-                    </div>
-                    <div class="prod-filter-categories">
-                        <p>Categorias</p>
-                        <ul class="prod-filter-categories-list">
-                                <ul><span class="prod-filter-categories-list-cat">Partes</span>                <span class="prod-filter-categories-list-cat-num">(140)</span></ul>
-                                <li><span class="prod-filter-categories-list-cat-prod">Microprocesadores</span>       <span class="prod-filter-categories-list-cat-prod-num">(10)</span></li>
-                                <li><span class="prod-filter-categories-list-cat-prod">Coolers</span>                 <span class="prod-filter-categories-list-cat-prod-num">(20)</span></li>
-                                <li><span class="prod-filter-categories-list-cat-prod">Gabinetes</span>                <span class="prod-filter-categories-list-cat-prod-num">(5)</span></li>
-                                <li><span class="prod-filter-categories-list-cat-prod">Memoria RAM</span>             <span class="prod-filter-categories-list-cat-prod-num">(10)</span></li>
-                                <li><span class="prod-filter-categories-list-cat-prod">Discos</span>                  <span class="prod-filter-categories-list-cat-prod-num">(23)</span></li>
-                                <li><span class="prod-filter-categories-list-cat-prod">Pendrives</span>              <span class="prod-filter-categories-list-cat-prod-num">(30)</span></li>
-                                <li><span class="prod-filter-categories-list-cat-prod">Placa de video</span>          <span class="prod-filter-categories-list-cat-prod-num">(18)</span></li>
-                                <li><span class="prod-filter-categories-list-cat-prod">Fuentes</span>                 <span class="prod-filter-categories-list-cat-prod-num">(14)</span></li>
-                        </ul>
-                    </div>
-                    <div class="prod-filter-price-container"> 
-                        <p>Rango de precio</p>
-                    <div class="prod-filter-price">
-                        
-                        <div id='id66' class="range-slider">
-                            <div id='id66b' class='range__between'></div>
-                              <button id='id661' class="range__button_1"></button>
-                              <button id='id662' class="range__button_2"></button>
-                              <div class="range-slider-son">
-                              <input id='id66i1' class='range_inpt1' type='number' min='0' max='900000'>
-                              - <input id='id66i2' class='range_inpt2' type='number' min='0' max='900000'>
+                        </div>
+                        <div class="prod-filter-categories">
+                            <p>Categorias</p>
+                            <ul class="prod-filter-categories-list">
+                                <ul><span class="prod-filter-categories-list-cat">Partes</span> <span
+                                        class="prod-filter-categories-list-cat-num">(140)</span></ul>
+                                <li><span class="prod-filter-categories-list-cat-prod">Microprocesadores</span> <span
+                                        class="prod-filter-categories-list-cat-prod-num">(10)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Coolers</span> <span
+                                        class="prod-filter-categories-list-cat-prod-num">(20)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Gabinetes</span> <span
+                                        class="prod-filter-categories-list-cat-prod-num">(5)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Memoria RAM</span> <span
+                                        class="prod-filter-categories-list-cat-prod-num">(10)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Discos</span> <span
+                                        class="prod-filter-categories-list-cat-prod-num">(23)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Pendrives</span> <span
+                                        class="prod-filter-categories-list-cat-prod-num">(30)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Placa de video</span> <span
+                                        class="prod-filter-categories-list-cat-prod-num">(18)</span></li>
+                                <li><span class="prod-filter-categories-list-cat-prod">Fuentes</span> <span
+                                        class="prod-filter-categories-list-cat-prod-num">(14)</span></li>
+                            </ul>
+                        </div>
+                        <div class="prod-filter-price-container">
+                            <p>Rango de precio</p>
+                            <div class="prod-filter-price">
+
+                                <div id='id66' class="range-slider">
+                                    <div id='id66b' class='range__between'></div>
+                                    <button id='id661' class="range__button_1"></button>
+                                    <button id='id662' class="range__button_2"></button>
+                                    <div class="range-slider-son">
+                                        <input id='id66i1' class='range_inpt1' type='number' min='0' max='900000'>
+                                        - <input id='id66i2' class='range_inpt2' type='number' min='0' max='900000'>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div>
+                            <p class="prod-filter-trademark-title">Ordernar</p>
+                            <div class="prod-filter-trademark-options"><input type="radio" name="ordenar" value="Todo"
+                                    checked> Mayor precio</div>
+                            <div class="prod-filter-trademark-options"><input type="radio" name="ordenar" value="Todo">
+                                Menor precio</div>
+                            <div class="prod-filter-trademark-options"><input type="radio" name="ordenar" value="Todo">
+                                Alfabeticamente A-Z</div>
+                            <div class="prod-filter-trademark-options"><input type="radio" name="ordenar" value="Todo">
+                                Alfabeticamente Z-A</div>
+                        </div>
+                        <div class="prod-filter-trademark">
+
+
+                            <div class="prod-filter-trademark-title">Marcas</div>
+                            <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="Todo"
+                                    checked> Todo</div>
+                            <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="AMD">
+                                AMD
+                            </div>
+                            <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="Intel">
+                                Intel</div>
+                            <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="Asus">
+                                Asus</div>
+                            <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="MSI">
+                                MSI
+                            </div>
+                        </div>
+                        <div class="prod-filter-others">
+                            <div class="prod-filter-others-title">Otros</div>
+                            <div class="prod-filter-others-options"><input type="radio" name="others" value="Open"
+                                    checked> Open BOX</div>
+                            <div class="prod-filter-others-options"><input type="radio" name="others" value="Free">
+                                Envio
+                                gratis</div>
+                        </div>
+                        <div class="prod-filter-reset">
+                            <input type="submit" class="prod-filter-reset-button" value="Borrar">
+                        </div>
                     </div>
-                </div>
-                    <div class="prod-filter-trademark">
-                        
-                        
-                        <div class="prod-filter-trademark-title">Marcas</div>
-                        <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="Todo" checked>Todo</div>
-                        <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="AMD">AMD</div>
-                        <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="Intel">Intel</div>
-                        <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="Asus">Asus</div>
-                        <div class="prod-filter-trademark-options"><input type="radio" name="marcas" value="MSI">MSI</div>
-                    </div>
-                    <div class="prod-filter-others">
-                        <div class="prod-filter-others-title">Otros</div>
-                        <div class="prod-filter-others-options"><input type="radio" name="others" value="Open" checked>Open BOX</div>
-                        <div class="prod-filter-others-options"><input type="radio" name="others" value="Free">Envio gratis</div>
-                    </div>
-                    <div class="prod-filter-reset">
-                        <input type="submit" class="prod-filter-reset-button" value="Borrar">
-                    </div>
-                </div>
-            </section>
-            <section class="products-container-section">
-                <% products.forEach(function(product){ %> <!-- recorro el array de productos  -->
-                    <%- include('../partials/product',{product: product}) %> <!-- llamo a la vista parcial y le paso un producto -->
-                <% }); %>
-            </section>
-        </div>
+                </section>
+                <section class="products-container-section">
+                    <% products.forEach(function(product){ %>
+                        <!-- recorro el array de productos  -->
+                        <%- include('../partials/product',{product: product}) %>
+                            <!-- llamo a la vista parcial y le paso un producto -->
+                            <% }); %>
+                </section>
+            </div>
+        </body>
         </main>
         <!-- footer added -->
         <%- include('../partials/footer'); %>

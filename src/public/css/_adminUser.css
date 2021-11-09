@@ -1,0 +1,331 @@
+.main-section-admin-user {
+    display: flex;
+    width: 100%;
+}
+
+.section-admin-user {
+    display: flex;
+    width: 55%;
+    padding-right: 7px;
+    font-size: 8px;
+    padding-left: 7px;
+    margin-left: 147px;
+    margin-top: 168px;
+    margin-bottom: 273px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #2e2c2c;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    border-radius: 5px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.section-user-admin-user {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.icon-admin-user img {
+    border-style: none;
+    width: 40px;
+    height: 40px;
+}
+
+
+.user-admin-user { 
+
+    margin: 10px;
+}
+
+.button-admin-user input{ 
+
+    margin: 20px;
+        height: 20px;
+        width: 45px;
+        position: relative;
+        border: none;
+        background: #461466;
+        color: #f8f8f8;
+        font-size: 8px;
+        cursor: pointer;
+        box-shadow: 0 0 0 1px rgb(196 8 202);
+        transition: .3s ease all;
+        border-radius: 3px;
+
+}
+
+.text-users {
+    font-weight: 700;
+}
+
+.admin-user-sidebar-container {
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .admin-user-sidebar {
+    background-color: #2e2c2c;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    width: 90%;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 219px;
+    margin-top: 105px;
+    height: 100%;
+    left: 10px;
+    padding: 22px;
+  }
+
+  
+  .admin-user-filter-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .admin-user-filter-title p{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  .admin-user-filter-search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .prod-filter-trademark-title {
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom: 12px;
+    margin-top: 15px;
+  }
+
+  .admin-user-filter-trademark-options{
+  font-weight: 400 ;
+  font-size: 9px;
+  }
+  .admin-user-filter-others-options{
+    font-weight: 400;
+    font-size: 9px;
+  }
+  .admin-user-filter-reset{
+    display: flex;
+    justify-content: center;
+  }
+  .admin-user-filter-title {
+    font-weight: 400;
+    font-size: 9px;
+  }
+
+  .admin-user-filter-reset-button{
+    height: 19px;
+    width: 50px;
+    border: none;
+    background: #808080;
+    color: #f8f8f8;
+    font-size: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgb(90 90 90);
+    transition: .3s ease all;
+    border-radius: 3px;
+  }
+
+  .admin-user-sidebar-search-input {
+    width: 89px;
+    height: 16px;
+    border-radius: 3px;
+    border: none;
+    padding-left: 5px;
+  }
+
+
+
+  /************************************************/
+/************************************************/
+/****************Resolution 769******************/
+/************************************************/
+/************************************************/
+
+
+@media (min-width: 769px) {
+
+
+
+}
+
+
+
+
+
+
+/************************************************/
+/************************************************/
+/****************Resolution 1200******************/
+/************************************************/
+/************************************************/
+
+
+@media (min-width: 1200px) {
+
+
+  .main-section-admin-user {
+    display: grid;
+    grid-template-columns: 24% 80%;
+    grid-template-rows: 100%;
+    gap: 0px 0px;
+    grid-template-areas:
+        "admin-user-sidebar-container section-admin-user"
+        "admin-user-sidebar-container section-admin-user";
+    width: 100%;
+}
+
+.section-admin-user {
+    display: flex;
+    width: 55%;
+    padding-right: 7px;
+    font-size: 8px;
+    padding-left: 7px;
+    margin-left: 147px;
+    margin-top: 168px;
+    margin-bottom: 273px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #2e2c2c;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    border-radius: 5px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.section-user-admin-user {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.icon-admin-user img {
+    border-style: none;
+    width: 40px;
+    height: 40px;
+}
+
+
+.user-admin-user { 
+
+    margin: 10px;
+}
+
+.button-admin-user input{ 
+
+    margin: 20px;
+        height: 20px;
+        width: 45px;
+        position: relative;
+        border: none;
+        background: #461466;
+        color: #f8f8f8;
+        font-size: 8px;
+        cursor: pointer;
+        box-shadow: 0 0 0 1px rgb(196 8 202);
+        transition: .3s ease all;
+        border-radius: 3px;
+
+}
+
+.text-users {
+    font-weight: 700;
+}
+
+.admin-user-sidebar-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .admin-user-sidebar {
+    background-color: #2e2c2c;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    width: 90%;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 219px;
+    margin-top: 105px;
+    height: 100%;
+    left: 10px;
+    padding: 22px;
+  }
+
+  
+  .admin-user-filter-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .admin-user-filter-title p{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  .admin-user-filter-search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .prod-filter-trademark-title {
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom: 12px;
+    margin-top: 15px;
+  }
+
+  .admin-user-filter-trademark-options{
+  font-weight: 400 ;
+  font-size: 11px;
+  }
+  .admin-user-filter-others-options{
+    font-weight: 400 ;
+    font-size: 11px;
+  }
+  .admin-user-filter-reset{
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+  }
+  .admin-user-filter-reset-button{
+    height: 23px;
+    width: 59px;
+    border: none;
+    background: #461466;
+    color: #f8f8f8;
+    font-size: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgb(196 8 202);
+    transition: .3s ease all;
+    border-radius: 3px;
+  }
+
+
+
+}
