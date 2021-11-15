@@ -1,4 +1,7 @@
-
+.sidenavbar-username {
+font-size: 15px;
+text-align: center
+}
 
 .logo-header {    
     grid-area: logo;
@@ -227,9 +230,9 @@
   }
   
   .sidebar a {
-    padding: 8px 8px 8px 8px;
+    padding: 8px 8px 8px 4px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 14px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -473,9 +476,9 @@
   }
   
   .sidebar a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 7px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 14px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -597,8 +600,14 @@
         margin-top: 7px;
       }
       
-      .menupc ul il {
-          display: flex;
+      .menupc ul li {
+        display: flex;
+        padding: 4px;
+        text-align: center;
+      }
+      .menupc ul li p {
+        font-weight: 800;
+        font-size: 14px;
       }
  
       /* .menupc-button {
@@ -614,13 +623,13 @@
     .menupc-button {
         position: relative !important;
         display: inline-block !important;
-        padding: 9px 10px !important;
+        padding: 7px 1px !important;
         margin: 3px !important;
         color: #d23eff !important;
         text-transform: uppercase !important;
         letter-spacing: 1px !important;
         text-decoration: none !important;
-        font-size: 13px !important;
+        font-size: 12px !important;
         font-weight: 900;
         overflow: hidden !important;
         transition: 0.2s !important;
@@ -768,7 +777,7 @@
         border: none;
         border-radius: 4px;
         margin-right: 20px;
-        width: 312px;
+        width: 218px;
     }
     .header-search-button {
         width: 18%;
@@ -951,9 +960,15 @@
         margin-top: 7px;
       }
       
-      .menupc ul il {
-          display: flex;
+      .menupc ul li {
+        display: flex;
+        text-align: center;
       }
+
+      .menupc ul li p {
+        font-weight: 800;
+      }
+      
  
       /* .menupc-button {
         padding: 6px 8px 8px 7px;

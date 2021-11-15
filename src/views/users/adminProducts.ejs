@@ -5,102 +5,102 @@
   <%- include('../partials/header'); %>
 
     <main>
-    
+
       <body>
-      <section class="main-section-admin-panel">
         <section class="admin-products-navbar-container">
           <div class="admin-products-navbar">
-              
-              
-                  <div>120 resultados</div>
-                  <div class="align-center"><label for="">Envio gratis&nbsp;</label><input type="checkbox"> </div>
-                      <div class="align-center"><label for="">Ofertas&nbsp;</label><input type="checkbox"></div>
-                          <div><label for="">Precio&nbsp;</label> <input type="text" name=""
-                          class="admin-products-navbar-input-text">
-                      <label for="">&nbsp;a&nbsp;</label><input type="text" name=""
-                          class="admin-products-navbar-input-text">
-                      </div>
-                  <div>
 
-                      <div class="dropdown">
-                          <button onclick="myFuncDropNavBar()" class="dropbtn">Mas filtros ˅</button>
-                          <div id="myDropdown" class="dropdown-content">
-                              <button class="accordion">
-                                  Ordenar por:</button>
-                              <div class="panel">
-                                  <il><input type="radio" name="ordenar"><label>&nbsp;- Precio</label></il>
-                                  <il><input type="radio" name="ordenar"><label>&nbsp;+ Precio</label></il>
-                                  <il><input type="radio" name="ordenar"><label>&nbsp;De A-Z</label></il>
-                                  <il><input type="radio" name="ordenar"><label>&nbsp;De Z-A</label></il>
-                              </div>
-                              <button class="accordion">
-                                  Categorias:</button>
-                              <div class="panel">
-                                  <il><input type="radio" name="categoria"><label>&nbsp;Micros</label></il>
-                                  <il><input type="radio" name="categoria"><label>&nbsp;Coolers</label></il>
-                                  <il><input type="radio" name="categoria"><label>&nbsp;Gabinetes</label></il>
-                                  <il><input type="radio" name="categoria"><label>&nbsp;Memorias</label></il>
-                                  <il><input type="radio" name="categoria"><label>&nbsp;Discos</label></il>
-                                  <il><input type="radio" name="categoria"><label>&nbsp;Pendrives</label></il>
-                              </div>
-                              <button class="accordion">
-                                  Marcas:</button>
-                              <div class="panel">
-                                  <il><input type="radio" name="marcas"><label>&nbsp;Todos</label></il>
-                                  <il><input type="radio" name="marcas"><label>&nbsp;AMD</label></il>
-                                  <il><input type="radio" name="marcas"><label>&nbsp;Intel</label></il>
-                                  <il><input type="radio" name="marcas"><label>&nbsp;ASUS</label></il>
-                                  <il><input type="radio" name="marcas"><label>&nbsp;MSI</label></il>
-                                  <il><input type="radio" name="marcas"><label>&nbsp;Dell</label></il>
-                              </div>
-                          </div>
-                      </div>
+
+            <div>120 resultados</div>
+            <div class="align-center"><label for="">Envio gratis&nbsp;</label><input type="checkbox"> </div>
+            <div class="align-center"><label for="">Ofertas&nbsp;</label><input type="checkbox"></div>
+            <div><label for="">Precio&nbsp;</label> <input type="text" name=""
+                class="admin-products-navbar-input-text">
+              <label for="">&nbsp;a&nbsp;</label><input type="text" name="" class="admin-products-navbar-input-text">
+            </div>
+            <div>
+
+              <div class="dropdown">
+                <button onclick="myFuncDropNavBar()" class="dropbtn">Mas filtros ˅</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <button class="accordion">
+                    Ordenar por:</button>
+                  <div class="panel">
+                    <il><input type="radio" name="ordenar"><label>&nbsp;- Precio</label></il>
+                    <il><input type="radio" name="ordenar"><label>&nbsp;+ Precio</label></il>
+                    <il><input type="radio" name="ordenar"><label>&nbsp;De A-Z</label></il>
+                    <il><input type="radio" name="ordenar"><label>&nbsp;De Z-A</label></il>
                   </div>
-              
-          </div>
-      </section>
-        <section class="admin-products-sidebar-container">
-          <div class="admin-products-sidebar">
-              <div class="admin-products-filter-title">
-                  <p>Filtros</p>
+                  <button class="accordion">
+                    Categorias:</button>
+                  <div class="panel">
+                    <il><input type="radio" name="categoria"><label>&nbsp;Micros</label></il>
+                    <il><input type="radio" name="categoria"><label>&nbsp;Coolers</label></il>
+                    <il><input type="radio" name="categoria"><label>&nbsp;Gabinetes</label></il>
+                    <il><input type="radio" name="categoria"><label>&nbsp;Memorias</label></il>
+                    <il><input type="radio" name="categoria"><label>&nbsp;Discos</label></il>
+                    <il><input type="radio" name="categoria"><label>&nbsp;Pendrives</label></il>
+                  </div>
+                  <button class="accordion">
+                    Marcas:</button>
+                  <div class="panel">
+                    <il><input type="radio" name="marcas"><label>&nbsp;Todos</label></il>
+                    <il><input type="radio" name="marcas"><label>&nbsp;AMD</label></il>
+                    <il><input type="radio" name="marcas"><label>&nbsp;Intel</label></il>
+                    <il><input type="radio" name="marcas"><label>&nbsp;ASUS</label></il>
+                    <il><input type="radio" name="marcas"><label>&nbsp;MSI</label></il>
+                    <il><input type="radio" name="marcas"><label>&nbsp;Dell</label></il>
+                  </div>
+                </div>
               </div>
-              <div class="admin-products-filter-search">
-                  <form action="#" class="sidebar-search-form">
-                      <input class="sidebar-search-input" type="text" placeholder="Buscar.." name="search">
-                  </form>
-              </div>
-              <div>
-                  <p class="admin-products-filter-trademark-title">Ordernar</p>
-                  <div class="admin-products-filter-trademark-options"><input type="radio" name="ordenar" value="Todo"
-                      checked> Alfabeticamente A-Z</div>
-                  <div class="admin-products-filter-trademark-options"><input type="radio" name="ordenar" value="Todo"
-                      > Alfabeticamente Z-A</div>
-              </div>
-              <div class="admin-products-filter-reset">
-                  <input type="submit" class="admin-products-filter-reset-button" value="Borrar">
-              </div>
-          </div>
-      </section>
-        <section class="section-admin-panel">
-          <div class="section-user-admin-panel">
-            <div class="icon-admin-panel">
-              <img src="\images\imagen-no-disponible.jpg">
             </div>
-            <div class="user-admin-panel">
-              <p class="text-users">Producto</p>
-            </div>
-            <div class="text-users"><a href="">Detalle</a></div>
-            <div class="text-users">&nbsp Precio: </div>
-            <div>&nbsp 100</div>
-            <div class="button-admin-products">
-              <input type="submit" class="button-perfil-delete" value="Eliminar">
-            </div>
-            <div class="button-admin-products">
-              <input type="submit" class="button-perfil-change" value="Modificar">
-            </div>
+
           </div>
         </section>
-      </section>
+        <section class="main-section-admin-panel">
+          
+          <section class="admin-products-sidebar-container">
+            <div class="admin-products-sidebar">
+              <div class="admin-products-filter-title">
+                <p>Filtros</p>
+              </div>
+              <div class="admin-products-filter-search">
+                <form action="#" class="sidebar-search-form">
+                  <input class="sidebar-search-input" type="text" placeholder="Buscar.." name="search">
+                </form>
+              </div>
+              <div>
+                <p class="admin-products-filter-trademark-title">Ordernar</p>
+                <div class="admin-products-filter-trademark-options"><input type="radio" name="ordenar" value="Todo"
+                    checked> Alfabeticamente A-Z</div>
+                <div class="admin-products-filter-trademark-options"><input type="radio" name="ordenar" value="Todo">
+                  Alfabeticamente Z-A</div>
+              </div>
+              <div class="admin-products-filter-reset">
+                <input type="submit" class="admin-products-filter-reset-button" value="Borrar">
+              </div>
+            </div>
+          </section>
+          <section class="section-admin-panel">
+            <div class="section-user-admin-panel">
+              <div class="icon-admin-panel">
+                <img src="\images\imagen-no-disponible.jpg">
+              </div>
+              <div class="user-admin-panel">
+                <p class="text-users">Producto</p>
+              </div>
+              <div class="text-users"><a href="">Detalle</a></div>
+              <div class="text-users">&nbsp Precio: </div>
+              <div>&nbsp 100</div>
+              <div class="button-admin-products">
+                <input type="submit" class="button-perfil-delete" value="Eliminar">
+              </div>
+              <div class="button-admin-products">
+                <input type="submit" class="button-perfil-change" value="Modificar">
+              </div>
+            </div>
+          </section>
+        </section>
       </body>
     </main>
     <!-- footer added -->

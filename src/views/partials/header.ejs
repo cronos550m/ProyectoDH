@@ -53,7 +53,25 @@
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                                Nuevo prod
+                                Nuevo producto
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menupc-button" href="/adminUser">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Administrar usuarios
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menupc-button" href="/adminProducts">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                Administrar productos
                             </a>
                         </li>
                         <li>
@@ -186,11 +204,13 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <div class="sidebar-menu">
                 <img class="img-redonda" src=<%= locals.userLogged.imagen %>>
-                <p><%= locals.userLogged.nombre %>  <%= locals.userLogged.apellido %></p>
+                <p class="sidenavbar-username"><%= locals.userLogged.nombre %>  <%= locals.userLogged.apellido %></p>
                 <div>
                 <a class="sidebar-button" href="/">Principal</a>
                 <a class="sidebar-button" href="/products">Productos</a>
                 <a class="sidebar-button" href="/productNew">Nuevo prod</a>
+                <a class="sidebar-button" href="/adminUser">Admin Usuarios</a>
+                <a class="sidebar-button" href="/adminProducts">Admin prod</a>
                 <a class="sidebar-button" href="/profile">Perfil</a>
                 <a class="sidebar-button" href="/logout">Desloguear</a>
                 </div>

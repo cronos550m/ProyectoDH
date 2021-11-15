@@ -1,16 +1,5 @@
 [
     {
-        "id": 1,
-        "nombre": "Disco Duro",
-        "descripcion": "Disco Duro Expansion Portable de Seagate",
-        "detalle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est esse dolorum a expedita obcaecati aliquid aliquam, quos autem eaque ullam libero voluptatem. Maiores aperiam consectetur qui modi delectus quibusdam?",
-        "imagen": "/images/productos/disco/disco-duro.png",
-        "cantidad": 100,
-        "precio": 5000,
-        "descuento": 10,
-        "envio": 0
-    },
-    {
         "id": 2,
         "nombre": "Gabinete Gamer",
         "descripcion": "Gabinete Redragon GC-530 Ratchet",
@@ -22,15 +11,15 @@
         "envio": 0
     },
     {
-        "id": 3,
-        "nombre": "Memoria DDR4",
-        "descripcion": "Memoria DDR4 Corsair ValueSelect 16gb",
+        "id": 2,
+        "nombre": "Gabinete Gamer",
+        "descripcion": "Gabinete Redragon GC-530 Ratchet",
         "detalle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est esse dolorum a expedita obcaecati aliquid aliquam, quos autem eaque ullam libero voluptatem. Maiores aperiam consectetur qui modi delectus quibusdam?",
-        "imagen": "/images/productos/memoria/memoria-vista-lateral.png",
-        "cantidad": 100,
-        "precio": 3000,
-        "descuento": 0,
-        "envio": 0
+        "imagen": "/images/imagen-no-disponible.jpg",
+        "cantidad": "100",
+        "precio": "4600",
+        "descuento": "0",
+        "envio": "0"
     },
     {
         "id": 4,
@@ -44,15 +33,15 @@
         "envio": 0
     },
     {
-        "id": 5,
-        "nombre": "Gabinete Gamer",
-        "descripcion": "Gabinete Redragon GC-530 Ratchet",
+        "id": 4,
+        "nombre": "Disco Duro",
+        "descripcion": "Disco Duro Expansion Portable de Seagate",
         "detalle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore est esse dolorum a expedita obcaecati aliquid aliquam, quos autem eaque ullam libero voluptatem. Maiores aperiam consectetur qui modi delectus quibusdam?",
-        "imagen": "/images/productos/gabinete/gabinete-01.png",
-        "cantidad": 100,
-        "precio": 4600,
-        "descuento": 0,
-        "envio": 0
+        "imagen": "/images/imagen-no-disponible.jpg",
+        "cantidad": "100",
+        "precio": "5000",
+        "descuento": "0",
+        "envio": "0"
     },
     {
         "id": 6,

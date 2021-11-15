@@ -30,6 +30,11 @@ button {
   font-size: 100%;
 }
  */
+
+.grid-3 {
+  margin-top: 26px;
+}
+
  .my-form button,
 label {
   cursor: pointer;
@@ -388,6 +393,140 @@ footer span {
 }
 
 
+/************ checkbox**************/
+
+:root {
+  --white: #e8e9ed;
+  --gray: #2e2c2c;
+  --blue: #18172c;
+  --green: #00d084;
+  --pink: #ff4b77;
+  --violet: #d23eff;
+}
+
+a {
+  color: var(--violet);
+  text-decoration: none;
+}
+
+ol {
+  list-style: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  margin: 50px 0;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.switches {
+  max-width: 500px;
+  width: 95%;
+font-size: 11px;
+}
+
+.switches li {
+  position: relative;
+  counter-increment: switchCounter;
+}
+
+.switches li:not(:last-child) {
+  border-bottom: 1px solid var(--gray);
+}
+
+.switches li::before {
+  content: counter(switchCounter);
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--pink);
+}
+
+.switches label {
+  display: flex;
+  padding: 5px;
+  position: relative;
+  right: 4px;
+  align-items: center;
+}
+
+.switches span:last-child {
+  position: relative;
+  width: 46px;
+  height: 23px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+  background: var(--gray);
+  transition: all 0.3s;
+}
+
+.switches span:last-child::before,
+.switches span:last-child::after {
+  content: "";
+  position: absolute;
+}
+
+.switches span:last-child::before {
+  left: 1px;
+  top: 1px;
+  width: 22px;
+  height: 22px;
+  background: var(--white);
+  border-radius: 50%;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+.switches span:last-child::after {
+  top: 50%;
+  right: 8px;
+  width: 12px;
+  height: 12px;
+  transform: translateY(-50%);
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/uncheck-switcher.svg);
+  background-size: 12px 12px;
+}
+
+.switches [type="checkbox"]:checked + label span:last-child {
+  background: var(--violet);
+}
+
+.switches [type="checkbox"]:checked + label span:last-child::before {
+  transform: translateX(24px);
+}
+
+.switches [type="checkbox"]:checked + label span:last-child::after {
+  width: 14px;
+  height: 14px;
+  /*right: auto;*/
+  left: 8px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/checkmark-switcher.svg);
+  background-size: 14px 14px;
+}
+
+.term-cond-place {
+  left: 6px;
+  position: relative;
+}
+
+
 
 /************************************************/
 /************************************************/
@@ -399,6 +538,13 @@ footer span {
 @media (min-width: 769px) {
 
   
+  .switches label {
+    display: flex;
+    padding: 5px;
+    right: 6px;
+    position: relative;
+    align-items: center;
+  }
 
 /* RESET RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -418,9 +564,7 @@ footer span {
   outline: none;
 } */
 
-.my-form a {
-  color: inherit;
-}
+
 
 .my-form input,
 select,
@@ -472,8 +616,8 @@ label {
   padding-right: 32px;
   padding-left: 32px;
   margin: auto;
-  margin-top: 36px;
-  margin-bottom: 36px;
+  margin-top: 76px;
+  margin-bottom: 108px;
   padding-bottom: 10px;
   background-color: #2e2c2c;
   box-shadow: 0 0 0 1px rgb(196 8 202);
@@ -824,7 +968,7 @@ footer span {
     padding-right: 32px;
     padding-left: 32px;
     margin: auto;
-    margin-top: 36px;
+    margin-top: 57px;
     margin-bottom: 36px;
     padding-bottom: 10px;
     background-color: #2e2c2c;
@@ -838,7 +982,6 @@ footer span {
   
   .my-form {
     display: flex;
-    margin-top: 78px;
   }
   
   .my-form h1 {

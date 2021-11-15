@@ -1,7 +1,7 @@
-<!-- head added -->
+<%#-- head added --%>
 <%- include('../partials/head'); %>
 
-    <!-- header added -->
+    <%#-- header added --%>
     <%- include('../partials/header'); %>
         <main>
             <body>
@@ -148,13 +148,13 @@
                 </section>
                 <section class="products-container-section">
                     <% products.forEach(function(product){ %>
-                        <!-- recorro el array de productos  -->
+                        <%#-- recorro el array de productos  --%>
                         <%- include('../partials/product',{product: product}) %>
-                            <!-- llamo a la vista parcial y le paso un producto -->
+                            <%#-- llamo a la vista parcial y le paso un producto --%>
                             <% }); %>
                 </section>
             </div>
         </body>
         </main>
-        <!-- footer added -->
+        <%#-- footer added --%>
         <%- include('../partials/footer'); %>

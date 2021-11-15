@@ -291,8 +291,8 @@
 
   .prod-new-total-container {
     display: flex;
-    height: 996px;
-    width: 100%;
+    width: 89%;
+    margin: auto;
     align-items: center;
     justify-content: center;
     }
@@ -609,10 +609,9 @@
       gap: 0% 0%;
       grid-auto-flow: row;
       justify-content: center;
-      grid-template-areas:
-          "new-arrow new-title"
+      grid-template-areas: "new-arrow new-title"
           "container-new-prod container-new-prod";
-      width: 61%;
+      width: 84%;
   
     }
     
@@ -714,10 +713,12 @@
                 
   }
   .new-add-desc textarea{ 
-      border-radius: 3px;
-      border: none;
-      color: gray;
-      background-color: black;
+    border-radius: 3px;
+    border: none;
+    position: relative;
+    right: 5px;
+    color: gray;
+    background-color: black;
   }
   .new-detail { 
        
@@ -730,10 +731,12 @@
         
   }
   .new-add-detail textarea{ 
-      border-radius: 3px;
-      border: none;
-      color: gray;
-      background-color: black;
+    border-radius: 3px;
+    border: none;
+    position: relative;
+    color: gray;
+    right: 5px;
+    background-color: black;
   }
   
     .new-pics { 

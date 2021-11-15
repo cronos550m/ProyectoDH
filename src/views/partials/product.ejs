@@ -1,4 +1,4 @@
-<!-- viene por parametro un objero que se llama product y tiene este formato
+<%# viene por parametro un objero que se llama product y tiene este formato
 {
     "id": 6,
     "nombre": "Memoria DDR4" ,
@@ -9,12 +9,12 @@
     "precio": 3000,
     "descuento": 0,
     "envio": 0
-} -->
+} %>
 
 <article class="product-">
-    <img src="<%= product.imagen %>" alt="Producto destacado"> <!-- llamo al atributo imagen del objeto del tipo product que recibo -->
-    <h3><%= product.nombre %></h3>  <!-- llamo al atributo imagen del objeto del tipo product que recibo -->
-    <p><%= product.descripcion %></p><!-- llamo al atributo imagen del objeto del tipo product que recibo -->
-    <p class="home-precio-dest">$<%= product.precio %></p><!-- llamo al atributo imagen del objeto del tipo product que recibo -->
-    <a href="/productDetail/<%= product.id %>">ver más</a> <!-- con el id para ir al detalle  -->
+    <img src="<%= product.imagen %>" alt="Producto destacado"> <%# - llamo al atributo imagen del objeto del tipo product que recibo --%>
+    <h3><%= product.nombre %></h3>  <%#-- llamo al atributo imagen del objeto del tipo product que recibo --%>
+    <p><%= product.descripcion %></p><%#-- llamo al atributo imagen del objeto del tipo product que recibo --%>
+    <p class="home-precio-dest">$<%= product.precio %></p><%#-- llamo al atributo imagen del objeto del tipo product que recibo --%>
+    <a href="/productDetail/<%= product.id %>">ver más</a><%#-- con el id para ir al detalle  --%>
 </article>

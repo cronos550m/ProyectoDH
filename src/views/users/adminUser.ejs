@@ -3,80 +3,58 @@
 
   <!-- header added -->
   <%- include('../partials/header'); %>
-
+  <body>
     <main>
-    
-      <body>
-        <section class="prod-top-navbar-container">
-          <div class="prod-top-navbar">
-              
-              
-                  <div>1 resultado</div>
-                  <div class="admin-user-filter-search align-center">
-                    <form action="#" class="admin-user-sidebar-search-form">
-                        <input class="admin-user-sidebar-search-input" type="text" placeholder="Buscar usuario" name="search">
-                    </form>
-                </div>
-              <div><p class="admin-user-filter-title">Ordernar</p></div>
-                  
-                  <div class="admin-user-filter-trademark-options align-center"><input type="radio" name="ordenar" value="Todo"
-                      checked>A-Z</div>
-                  <div class="admin-user-filter-trademark-options align-center"><input type="radio" name="ordenar" value="Todo"
-                      >Z-A</div>
-              
-                  
-                    <div class="admin-user-filter-reset">
-                      <input type="submit" class="admin-user-filter-reset-button" value="Limpiar">
-                  </div>
-                  
-              
+        <!-- <section class="prod-top-navbar-container"> -->
+          <div class="admin-user-top-navbar">
+            <div>1 resultado</div>
+            <div class="admin-user-filter-search align-center">
+              <form action="#" class="admin-user-sidebar-search-form">
+                <input class="admin-user-sidebar-search-input" type="text" placeholder="Buscar usuario" name="search">
+              </form>
+            </div>
+            <div>
+              <p class="admin-user-filter-title">Ordernar</p>
+            </div>
+            <div class="admin-user-filter-trademark-options align-center"><input type="radio" name="ordenar"
+                value="Todo" checked>A-Z</div>
+            <div class="admin-user-filter-trademark-options align-center"><input type="radio" name="ordenar"
+                value="Todo">Z-A</div>
+            <div class="admin-user-filter-reset">
+              <input type="submit" class="admin-user-filter-reset-button" value="Limpiar">
+            </div>
           </div>
-      </section>
-      <section class="main-section-admin-user">
-        <section class="admin-user-sidebar-container">
-          <div class="admin-user-sidebar">
+        <!-- </section> -->
+        <section class="main-section-admin-user">
+          <section class="admin-user-sidebar-container">
+            <div class="admin-user-sidebar">
               <div class="admin-user-filter-title">
-                  <p>Filtros</p>
+                <p>Filtros</p>
               </div>
               <div class="admin-user-filter-search">
-                  <form action="#" class="sidebar-search-form">
-                      <input class="sidebar-search-input" type="text" placeholder="Buscar.." name="search">
-                  </form>
+                <form action="#" class="sidebar-search-form">
+                  <input class="sidebar-search-input" type="text" placeholder="Buscar.." name="search">
+                </form>
               </div>
               <div>
-                  <p class="admin-user-filter-trademark-title">Ordernar</p>
-                  <div class="admin-user-filter-trademark-options"><input type="radio" name="ordenar" value="Todo"
-                      checked> Alfabeticamente A-Z</div>
-                  <div class="admin-user-filter-trademark-options"><input type="radio" name="ordenar" value="Todo"
-                      > Alfabeticamente Z-A</div>
+                <p class="admin-user-filter-trademark-title">Ordernar</p>
+                <div class="admin-user-filter-trademark-options"><input type="radio" name="ordenar" value="Todo"
+                    checked> Alfabeticamente A-Z</div>
+                <div class="admin-user-filter-trademark-options"><input type="radio" name="ordenar" value="Todo">
+                  Alfabeticamente Z-A</div>
               </div>
               <div class="admin-user-filter-reset">
-                  <input type="submit" class="admin-user-filter-reset-button" value="Borrar">
+                <input type="submit" class="admin-user-filter-reset-button" value="Borrar">
               </div>
-          </div>
-      </section>
-        <section class="section-admin-user">
-          <div class="section-user-admin-user">
-            <div class="icon-admin-user">
-              <img src="\images\logos\user-icon.png">
             </div>
-            <div class="user-admin-user">
-              <p class="text-users">Lucho Pagnutti</p>
-            </div>
-            <div class="text-users">DNI:  </div>
-            <div>&nbsp 30000000</div>
-            <div class="text-users">&nbsp Cantidad de compras: </div>
-            <div>&nbsp 100</div>
-            <div class="button-admin-user">
-              <input type="submit" class="button-perfil-delete" value="Eliminar">
-            </div>
-            <div class="button-admin-user">
-              <input type="submit" class="button-perfil-change" value="Modificar">
-            </div>
-          </div>
+          </section>
+          <section class="section-admin-user">
+            <%- include('../partials/user-admin'); %>
+            <%- include('../partials/user-admin'); %>
+          </section>
+          
         </section>
-      </section>
-      </body>
     </main>
+  </body>
     <!-- footer added -->
     <%- include('../partials/footer'); %>

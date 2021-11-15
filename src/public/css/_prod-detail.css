@@ -904,13 +904,15 @@
       border-top: solid;
       border-image: linear-gradient(to right, rgb(255, 182, 255), rgb(207, 66, 207));
       border-image-slice: 1;
+      padding-top: 10px;
       
   }
   .prod-total-total {
-      border-top: solid;
-      border-image: linear-gradient(to right, rgb(207, 66, 207), rgb(157, 4, 204));
-      border-image-slice: 1;
-      margin-right: 14px;
+    border-top: solid;
+    border-image: linear-gradient(to right, rgb(207, 66, 207), rgb(157, 4, 204));
+    border-image-slice: 1;
+    margin-right: 14px;
+    padding-top: 10px;
   }
 
 .prod-detail-imagenes-prod { 
@@ -965,7 +967,7 @@
 }
 
 .go-back-prod-detail {
-  font-size: 53px !important;
+  font-size: 31px !important;
   padding-left: 22px !important;
 }
 

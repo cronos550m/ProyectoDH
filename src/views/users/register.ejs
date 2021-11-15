@@ -51,13 +51,14 @@
                 <input type="password"  placeholder="Repita la contraseña" required>
               </div>
             </li>
-            <li>
-
-              <input type="checkbox" class="css-checkbox" id="terms" />
-              <label for="terms" name="remember" class="css-checkbox dark-plus-purple">
-
-                Leí y estoy de acuerdo con los
-                <a href="#" id="btn-open-popup-term">terminos y condiciones.</a></label>
+            <li class="switches">
+              <%# <input type="checkbox" class="css-checkbox dark-plus-purple" id="terms" /> %>
+              <label for="terms" name="remember" class="">
+                <input type="checkbox" id="1">
+                 <label for="1">
+                  <span></span>
+                </label> 
+                <div class="term-cond-place"> Leí y estoy de acuerdo con los <a href="#" id="btn-open-popup-term">terminos y condiciones.</a></div></label>
               <div class="overlay-term" id="overlay-term">
                 <div class="popup-term" id="popup-term">
                   <a href="#" id="btn-close-popup-term" class="btn-close-popup-term"><i class="fas fa-times"></i></a>
